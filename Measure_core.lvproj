@@ -11,10 +11,16 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Loggers" Type="Folder">
+			<Item Name="Logger" Type="Folder">
+				<Item Name="Logger.lvclass" Type="LVClass" URL="../Loggers/Logger/Logger.lvclass"/>
+			</Item>
+		</Item>
 		<Item Name="Measure Controller " Type="Folder">
 			<Item Name="Messages" Type="Folder">
 				<Item Name="Init Response Msg.lvclass" Type="LVClass" URL="../Measure Controller Messages/Init Response Msg/Init Response Msg.lvclass"/>
 				<Item Name="Result Response Msg.lvclass" Type="LVClass" URL="../Measure Controller Messages/Result Response Msg/Result Response Msg.lvclass"/>
+				<Item Name="Start Measurements Msg.lvclass" Type="LVClass" URL="../Measure Controller Messages/Start Measurements Msg/Start Measurements Msg.lvclass"/>
 				<Item Name="Write Active measurements enqueuers Msg.lvclass" Type="LVClass" URL="../Measure Controller Messages/Write Active measurements enqueuers Msg/Write Active measurements enqueuers Msg.lvclass"/>
 				<Item Name="Write Active measurements names Msg.lvclass" Type="LVClass" URL="../Measure Controller Messages/Write Active measurements names Msg/Write Active measurements names Msg.lvclass"/>
 			</Item>
@@ -29,11 +35,13 @@
 				<Item Name="Result Reply Msg.lvclass" Type="LVClass" URL="../Measure Object Messages/Result Reply Msg/Result Reply Msg.lvclass"/>
 				<Item Name="Self-addressed Msg.lvclass" Type="LVClass" URL="../Measure Object Messages/Self-Addressed Msg/Self-addressed Msg.lvclass"/>
 				<Item Name="Start Measurement Msg.lvclass" Type="LVClass" URL="../Measure Object Messages/Start Measurement Msg/Start Measurement Msg.lvclass"/>
+				<Item Name="Write tdms stream Msg.lvclass" Type="LVClass" URL="../Measure Object Messages/Write tdms stream Msg/Write tdms stream Msg.lvclass"/>
 			</Item>
 			<Item Name="Measure Object.lvclass" Type="LVClass" URL="../Measure Object/Measure Object.lvclass"/>
 		</Item>
 		<Item Name="Monitor-Pulse" Type="Folder">
 			<Item Name="Messages" Type="Folder">
+				<Item Name="Start Pulse Measurements Msg.lvclass" Type="LVClass" URL="../Monitor-Pulse Messages/Start Pulse Measurements Msg/Start Pulse Measurements Msg.lvclass"/>
 				<Item Name="Update Armed Msg.lvclass" Type="LVClass" URL="../Monitor-Pulse Messages/Update Armed Msg/Update Armed Msg.lvclass"/>
 			</Item>
 			<Item Name="Monitor-Pulse.lvclass" Type="LVClass" URL="../Monitor-Pulse/Monitor-Pulse.lvclass"/>
@@ -116,6 +124,7 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
 			</Item>
+			<Item Name="Add Menu Item.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Queued Listbox/Add Menu Item.vi"/>
 			<Item Name="AF Debug.lvlib" Type="Library" URL="/&lt;resource&gt;/AFDebug/AF Debug.lvlib"/>
 			<Item Name="Any file exists.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Any file exists.vi"/>
 			<Item Name="AppendPathSeparator.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/File LLB/AppendPathSeparator.vi"/>

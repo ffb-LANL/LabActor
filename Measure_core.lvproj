@@ -37,6 +37,15 @@
 			</Item>
 		</Item>
 		<Item Name="Documentation" Type="Folder"/>
+		<Item Name="Instruments" Type="Folder">
+			<Item Name="Drivers" Type="Folder">
+				<Item Name="Instrument Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Instrument Driver.lvclass"/>
+				<Item Name="Pulse Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Pulse Driver/Pulse Driver.lvclass"/>
+			</Item>
+			<Item Name="Instrument Recorder" Type="Folder">
+				<Item Name="Instrument Recorder.lvclass" Type="LVClass" URL="../Instrument Recorders/Instrument Recorder/Instrument Recorder.lvclass"/>
+			</Item>
+		</Item>
 		<Item Name="Loggers" Type="Folder">
 			<Item Name="Logger" Type="Folder">
 				<Item Name="Logger.lvclass" Type="LVClass" URL="../Loggers/Logger/Logger.lvclass"/>
@@ -501,8 +510,8 @@
 			<Item Name="Number list to array.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Number list to array.vi"/>
 			<Item Name="Obtain top dispatch vi.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Obtain top dispatch vi.vi"/>
 			<Item Name="Plot Indexes.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Controls/Plot Indexes.ctl"/>
+			<Item Name="Plot types.ctl" Type="VI" URL="../Plots/Plot types.ctl"/>
 			<Item Name="Pulse Controller Configuration.ctl" Type="VI" URL="../Pulse Controller/Pulse Controller Configuration.ctl"/>
-			<Item Name="Pulse Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Pulse Driver/Pulse Driver.lvclass"/>
 			<Item Name="Pusle Driver Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Pulse Driver/Pusle Driver Configuration.ctl"/>
 			<Item Name="Queued Listbox.xctl" Type="XControl" URL="../../NHMFL_Core/Libraries/Queued Listbox/Queued Listbox.xctl"/>
 			<Item Name="Read Menu object array values.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Queued Listbox/Read Menu object array values.vi"/>

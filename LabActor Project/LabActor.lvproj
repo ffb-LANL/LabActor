@@ -14,9 +14,13 @@
 			<Item Name="Actors" Type="Folder">
 				<Item Name="Application Controller.lvclass" Type="LVClass" URL="../../Controllers/Application Controller/Application Controller.lvclass"/>
 				<Item Name="Monitor Controller.lvclass" Type="LVClass" URL="../../Controllers/Monitor Controller/Monitor Controller.lvclass"/>
+				<Item Name="Plot.lvclass" Type="LVClass" URL="../../Plots/Plot/Plot.lvclass"/>
+				<Item Name="Timer.lvclass" Type="LVClass" URL="../../Measurements/Timer/Timer.lvclass"/>
+				<Item Name="XY WFRM Plot.lvclass" Type="LVClass" URL="../../Plots/XY WFRM Plot/XY WFRM Plot.lvclass"/>
 			</Item>
 		</Item>
 		<Item Name="LabActor" Type="Folder">
+			<Item Name="Comms Client.vi" Type="VI" URL="../../Comms/Client/Comms Client.vi"/>
 			<Item Name="LabActor.cfg" Type="Document" URL="../LabActor Class/LabActor.cfg"/>
 			<Item Name="LabActor.lvclass" Type="LVClass" URL="../LabActor Class/LabActor.lvclass"/>
 			<Item Name="Launch LabActor.vi" Type="VI" URL="../Launch LabActor.vi"/>
@@ -34,8 +38,6 @@
 				<Item Name="Processing Test.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Test/ASPT/Processing Test.vi"/>
 			</Item>
 		</Item>
-		<Item Name="Line Detector Fit Lorentzian.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Fit Lorentzian.vi"/>
-		<Item Name="Peak Width.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Peak Width.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array of VData to VArray__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array of VData to VArray__ogtk.vi"/>
@@ -88,15 +90,18 @@
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
 				<Item Name="Actor Framework.lvlib" Type="Library" URL="/&lt;vilib&gt;/ActorFramework/Actor Framework.lvlib"/>
 				<Item Name="Append Waveforms.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Append Waveforms.vi"/>
+				<Item Name="AsciiToInt.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/AsciiToInt.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check for Equality.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Check for Equality.vi"/>
 				<Item Name="Check for multiple of dt.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Check for multiple of dt.vi"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+				<Item Name="Clear-68016.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/Clear-68016.vi"/>
 				<Item Name="ClearError.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/ClearError.vi"/>
 				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
 				<Item Name="compatReadText.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatReadText.vi"/>
+				<Item Name="configureNumberOfValues.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/configureNumberOfValues.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
@@ -117,9 +122,12 @@
 				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
 				<Item Name="ex_Modify Signal Name.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_Modify Signal Name.vi"/>
 				<Item Name="ex_Modify Signals Names.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_Modify Signals Names.vi"/>
+				<Item Name="ExtractSubstring.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/ExtractSubstring.vi"/>
+				<Item Name="fileViewerConfigData.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/fileViewerConfigData.ctl"/>
 				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
 				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
 				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
+				<Item Name="formatPropertyList.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/formatPropertyList.vi"/>
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
 				<Item Name="Generate Temporary File Path.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Generate Temporary File Path.vi"/>
@@ -130,18 +138,31 @@
 				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
 				<Item Name="Get System Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/Get System Directory.vi"/>
 				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
+				<Item Name="Get Type of Variant.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/GetType.llb/Get Type of Variant.vi"/>
 				<Item Name="Get Waveform Subset.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Get Waveform Subset.vi"/>
+				<Item Name="getChannelList.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/getChannelList.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
+				<Item Name="getNamesFromPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/getNamesFromPath.vi"/>
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
 				<Item Name="GetSetShared.lvlib" Type="Library" URL="/&lt;vilib&gt;/express/express signal manip/GetorSetDDTAttributes/Shared VIs/GetSetShared.lvlib"/>
+				<Item Name="GoTo.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/GoTo.vi"/>
 				<Item Name="I128 Timestamp.ctl" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/I128 Timestamp.ctl"/>
 				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
+				<Item Name="initFileContentsTree.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/initFileContentsTree.vi"/>
+				<Item Name="InitFromConfiguration.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/InitFromConfiguration.vi"/>
+				<Item Name="initHelpButtonVisibility.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/initHelpButtonVisibility.vi"/>
+				<Item Name="InitScrollbarAndListBox.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/InitScrollbarAndListBox.vi"/>
+				<Item Name="initTabValues.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/initTabValues.vi"/>
 				<Item Name="Is Path and Not Empty.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Is Path and Not Empty.vi"/>
 				<Item Name="List Directory and LLBs.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/List Directory and LLBs.vi"/>
+				<Item Name="loadAndFormatValues.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/loadAndFormatValues.vi"/>
+				<Item Name="LoadBufferForMultiListBoxAndFormat.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/LoadBufferForMultiListBoxAndFormat.vi"/>
+				<Item Name="LogicalSort.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/LogicalSort.vi"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVPoint32TypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPoint32TypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
+				<Item Name="LVRowAndColumnUnsignedTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnUnsignedTypeDef.ctl"/>
 				<Item Name="NI_AAL_MathFunc.lvlib" Type="Library" URL="/&lt;vilib&gt;/gmath/NI_AAL_MathFunc.lvlib"/>
 				<Item Name="NI_AAL_SigProc.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AAL_SigProc.lvlib"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
@@ -160,6 +181,8 @@
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Number of Waveform Samples.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Number of Waveform Samples.vi"/>
 				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
+				<Item Name="panelResize_tdms.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/panelResize_tdms.vi"/>
+				<Item Name="panelstate.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/panelstate.ctl"/>
 				<Item Name="Read File+ (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read File+ (string).vi"/>
 				<Item Name="Read Lines From File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Lines From File.vi"/>
 				<Item Name="Recursive File List.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Recursive File List.vi"/>
@@ -167,14 +190,18 @@
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
+				<Item Name="setListBoxColumnWidths.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/setListBoxColumnWidths.vi"/>
 				<Item Name="SetT0.vi" Type="VI" URL="/&lt;vilib&gt;/express/express signal manip/GetorSetDDTAttributes/Set DDT Attributes/SetT0.vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
+				<Item Name="sizeaction.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/sizeaction.ctl"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
+				<Item Name="status.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/status.vi"/>
 				<Item Name="subFile Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/FileDialogBlock.llb/subFile Dialog.vi"/>
 				<Item Name="subResample.vi" Type="VI" URL="/&lt;vilib&gt;/express/express signal manip/AlignandResampleBlock.llb/subResample.vi"/>
 				<Item Name="System Directory Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/System Directory Type.ctl"/>
 				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
+				<Item Name="TDMS - File Viewer.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/TDMS - File Viewer.vi"/>
 				<Item Name="TDMS Create Scaling Information (Linear).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/TDMS Create Scaling Information (Linear).vi"/>
 				<Item Name="TDMS Create Scaling Information (Polynomial).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/TDMS Create Scaling Information (Polynomial).vi"/>
 				<Item Name="TDMS Create Scaling Information (Reciprocal).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/TDMS Create Scaling Information (Reciprocal).vi"/>
@@ -188,6 +215,8 @@
 				<Item Name="TDMS Create Scaling Information (Thermocouple).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/TDMS Create Scaling Information (Thermocouple).vi"/>
 				<Item Name="TDMS Create Scaling Information.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/TDMS Create Scaling Information.vi"/>
 				<Item Name="TDMS Creating Scaling Information (Thermistor Excitation Type).ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/TDMS Creating Scaling Information (Thermistor Excitation Type).ctl"/>
+				<Item Name="TDMSFileViewer_LaunchHelp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/TDMSFileViewer_LaunchHelp.vi"/>
+				<Item Name="TDMSFileViewerLocalizedText.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/TDMSFileViewerLocalizedText.vi"/>
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
 				<Item Name="Time-Delay Override Options.ctl" Type="VI" URL="/&lt;vilib&gt;/ActorFramework/Time-Delayed Send Message/Time-Delay Override Options.ctl"/>
@@ -195,6 +224,12 @@
 				<Item Name="Time-Delayed Send Message.vi" Type="VI" URL="/&lt;vilib&gt;/ActorFramework/Time-Delayed Send Message/Time-Delayed Send Message.vi"/>
 				<Item Name="Timestamp Subtract.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/Timestamp Subtract.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
+				<Item Name="Type Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/GetType.llb/Type Enum.ctl"/>
+				<Item Name="UpdateBufferForMultiListBoxIfNecessary.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/UpdateBufferForMultiListBoxIfNecessary.vi"/>
+				<Item Name="UpdateListBoxAfterKeyEvent.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/UpdateListBoxAfterKeyEvent.vi"/>
+				<Item Name="UpdateScrollbarBeforeKeyEvent.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/UpdateScrollbarBeforeKeyEvent.vi"/>
+				<Item Name="VariantType to Type Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/GetType.llb/VariantType to Type Code.vi"/>
+				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="Version To Dotted String.vi" Type="VI" URL="/&lt;vilib&gt;/_xctls/Version To Dotted String.vi"/>
 				<Item Name="VISA Find Search Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Find Search Mode.ctl"/>
 				<Item Name="VISA Open Access Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Open Access Mode.ctl"/>
@@ -233,6 +268,7 @@
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
 			</Item>
+			<Item Name="2D Array to Dynamic Data.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/2D Array to Dynamic Data.vi"/>
 			<Item Name="Abbreviate TDMS Group Channel.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/Abbreviate TDMS Group Channel.vi"/>
 			<Item Name="Acknowledge Post Process Msg.lvclass" Type="LVClass" URL="../../Controllers/Process Controller Messages/Acknowledge Post Process Msg/Acknowledge Post Process Msg.lvclass"/>
 			<Item Name="Acquired Result.lvclass" Type="LVClass" URL="../../Results/Acquired Result/Acquired Result.lvclass"/>
@@ -257,6 +293,9 @@
 			<Item Name="Clear Errors from Array.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Clear Errors from Array.vi"/>
 			<Item Name="Clear GPIB Timeout.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/GPIB/Clear GPIB Timeout.vi"/>
 			<Item Name="Clear Single Error.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Clear Single Error.vi"/>
+			<Item Name="Client Message Msg.lvclass" Type="LVClass" URL="../../Comms/Communications Messages/Client Message Msg/Client Message Msg.lvclass"/>
+			<Item Name="Communications Configuration.ctl" Type="VI" URL="../../Comms/Communications Configuration.ctl"/>
+			<Item Name="Communications.lvclass" Type="LVClass" URL="../../Comms/Communications/Communications.lvclass"/>
 			<Item Name="Configuration Value Changed Msg.lvclass" Type="LVClass" URL="../../Template Module Messages/Configuration Value Changed Msg/Configuration Value Changed Msg.lvclass"/>
 			<Item Name="Configure serial bus.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Cryo-con/Configure serial bus.vi"/>
 			<Item Name="Convert TDMS channel.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/File Format Converter/Convert TDMS channel.vi"/>
@@ -297,6 +336,7 @@
 			<Item Name="GenerateUniqueFilename.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/File LLB/GenerateUniqueFilename.vi"/>
 			<Item Name="Get file group chan waveform.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/Get file group chan waveform.vi"/>
 			<Item Name="Get HP 53132 Data.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/HP/HP53132/Get HP 53132 Data.vi"/>
+			<Item Name="Get Index.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/Get Index.vi"/>
 			<Item Name="Get Keithley meter Data.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Keithley/Meter/Get Keithley meter Data.vi"/>
 			<Item Name="Get LakeShore 340 Data.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/LakeShore/LakeShore340/Get LakeShore 340 Data.vi"/>
 			<Item Name="Get LakeShore 370 Resistance_VISA.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/LakeShore/LakeShore370/Get LakeShore 370 Resistance_VISA.vi"/>
@@ -317,6 +357,7 @@
 			<Item Name="IdentifyAndReadInstr.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/IdentifyAndReadInstr.vi"/>
 			<Item Name="IdentifyEG_G_Lockin.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/EG_G/IdentifyEG_G_Lockin.vi"/>
 			<Item Name="IdentifyHP5385A.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/HP/HP5385/IdentifyHP5385A.vi"/>
+			<Item Name="Init Comms Msg.lvclass" Type="LVClass" URL="../../Comms/Communications Messages/Init Comms Msg/Init Comms Msg.lvclass"/>
 			<Item Name="Init Response Msg.lvclass" Type="LVClass" URL="../../Controllers/Process Controller Messages/Init Response Msg/Init Response Msg.lvclass"/>
 			<Item Name="Initialize Work Msg.lvclass" Type="LVClass" URL="../../Worker Messages/Initialize Work Msg/Initialize Work Msg.lvclass"/>
 			<Item Name="Instrument Actor.lvclass" Type="LVClass" URL="../../Instrument Actor/Instrument Actor.lvclass"/>
@@ -340,6 +381,7 @@
 			<Item Name="LakeShore T Controller Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/LakeShore/LakeShore T Controller Driver/LakeShore T Controller Driver.lvclass"/>
 			<Item Name="Launch Object by Type Response Msg.lvclass" Type="LVClass" URL="../../Template Module Messages/Launch Object by Type Response Msg/Launch Object by Type Response Msg.lvclass"/>
 			<Item Name="Letter to number.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Letter to number.vi"/>
+			<Item Name="Line Detector Fit Lorentzian.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Fit Lorentzian.vi"/>
 			<Item Name="Load Complete Msg.lvclass" Type="LVClass" URL="../../Controllers/Application Controller Messages/Load Complete Msg/Load Complete Msg.lvclass"/>
 			<Item Name="Locate edges.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Locate edges.vi"/>
 			<Item Name="Lock-in Configuration.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Lock-in Driver/Lock-in Configuration.ctl"/>
@@ -372,6 +414,7 @@
 			<Item Name="Micron Optics Recorder.lvclass" Type="LVClass" URL="../../Recorders/Micron Optics/Micron Optics Recorder.lvclass"/>
 			<Item Name="Mode.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/Mode.ctl"/>
 			<Item Name="Module Types.ctl" Type="VI" URL="../../Monitor-Pulse/Module Types.ctl"/>
+			<Item Name="Monitor Command Msg.lvclass" Type="LVClass" URL="../../Controllers/Application Controller Messages/Monitor Command Msg/Monitor Command Msg.lvclass"/>
 			<Item Name="Monitor Controller Configuration.ctl" Type="VI" URL="../../Controllers/Monitor Controller/Monitor Controller Configuration.ctl"/>
 			<Item Name="Monitor-Pulse.lvclass" Type="LVClass" URL="../../Monitor-Pulse/Monitor-Pulse.lvclass"/>
 			<Item Name="Neocera Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Neocera/Neocera Driver/Neocera Driver.lvclass"/>
@@ -390,13 +433,13 @@
 			<Item Name="Oxford set termination.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Oxford set termination.vi"/>
 			<Item Name="Oxford visa write read.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Oxford visa write read.vi"/>
 			<Item Name="Pad TAB.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Pad TAB.vi"/>
+			<Item Name="Peak Width.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Peak Width.vi"/>
 			<Item Name="Perform Work Msg.lvclass" Type="LVClass" URL="../../Worker Messages/Perform Work Msg/Perform Work Msg.lvclass"/>
 			<Item Name="Phase word to Frequency.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/Phase word to Frequency.vi"/>
 			<Item Name="Plot Closed Msg.lvclass" Type="LVClass" URL="../../Controllers/Application Controller Messages/Plot Closed Msg/Plot Closed Msg.lvclass"/>
 			<Item Name="Plot Indexes.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Controls/Plot Indexes.ctl"/>
 			<Item Name="Plot Spectrum Msg.lvclass" Type="LVClass" URL="../../Recorders/Micron Optics Recorder Messages/Plot Spectrum Msg/Plot Spectrum Msg.lvclass"/>
 			<Item Name="Plot types.ctl" Type="VI" URL="../../Plots/Plot types.ctl"/>
-			<Item Name="Plot.lvclass" Type="LVClass" URL="../../Plots/Plot/Plot.lvclass"/>
 			<Item Name="Populate and conf ethernet bus.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Instrument/Populate and conf ethernet bus.vi"/>
 			<Item Name="Populate Recorder List.vi" Type="VI" URL="../../Recorders/Populate Recorder List.vi"/>
 			<Item Name="Process Controller.lvclass" Type="LVClass" URL="../../Controllers/Process Controller/Process Controller.lvclass"/>
@@ -478,6 +521,7 @@
 			<Item Name="Set LakeShore 340 Set Point.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/LakeShore/LakeShore340/Set LakeShore 340 Set Point.vi"/>
 			<Item Name="Set Plot Type Msg.lvclass" Type="LVClass" URL="../../Plots/XY WFRM Plot Messages/Set Plot Type Msg/Set Plot Type Msg.lvclass"/>
 			<Item Name="Set Point Msg.lvclass" Type="LVClass" URL="../../Recorders/Temperature Controller Messages/Set Point Msg/Set Point Msg.lvclass"/>
+			<Item Name="Set Topic Value Msg.lvclass" Type="LVClass" URL="../../Comms/Communications Messages/Set Topic Value Msg/Set Topic Value Msg.lvclass"/>
 			<Item Name="Simple VISA Reader Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Simple VISA Reader/Simple VISA Reader Driver.lvclass"/>
 			<Item Name="SimpleGetPeaks.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Micron Optics/hyperion library source/SimpleGetPeaks.vi"/>
 			<Item Name="SimpleGetSpectrum.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Micron Optics/hyperion library source/SimpleGetSpectrum.vi"/>
@@ -495,6 +539,7 @@
 			<Item Name="Start-up Configuration.ctl" Type="VI" URL="../../Monitor-Pulse/Start-up Configuration.ctl"/>
 			<Item Name="Stop Measurements Command Msg.lvclass" Type="LVClass" URL="../../Monitor-Pulse Messages/Stop Measurements Command Msg/Stop Measurements Command Msg.lvclass"/>
 			<Item Name="Stop Measurements Msg.lvclass" Type="LVClass" URL="../../Controllers/Process Controller Messages/Stop Measurements Msg/Stop Measurements Msg.lvclass"/>
+			<Item Name="Stop Response Msg.lvclass" Type="LVClass" URL="../../Controllers/Process Controller Messages/Stop Response Msg/Stop Response Msg.lvclass"/>
 			<Item Name="Stop Work Msg.lvclass" Type="LVClass" URL="../../Worker Messages/Stop Work Msg/Stop Work Msg.lvclass"/>
 			<Item Name="Store Value in TDMS.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/TDMS/Store Value in TDMS.vi"/>
 			<Item Name="Store XY Msg.lvclass" Type="LVClass" URL="../../Utilities/Cursor Digitizer Messages/Store XY Msg/Store XY Msg.lvclass"/>
@@ -504,6 +549,9 @@
 			<Item Name="Sweep.lvclass" Type="LVClass" URL="../../Sequence Elements/Sweep Sequence/Sweep.lvclass"/>
 			<Item Name="T controller configuration.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Temperature Controller Driver/T controller configuration.ctl"/>
 			<Item Name="T-controller reading type.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Temperature Controller/Controls/T-controller reading type.ctl"/>
+			<Item Name="TCP Communications.lvclass" Type="LVClass" URL="../../Comms/TCP Communications/TCP Communications.lvclass"/>
+			<Item Name="TCP Recieve Message.vi" Type="VI" URL="../../Comms/Client/TCP Recieve Message.vi"/>
+			<Item Name="TCP Transmit Message.vi" Type="VI" URL="../../Comms/Client/TCP Transmit Message.vi"/>
 			<Item Name="TDMS channel info.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/File/Controls/TDMS channel info.ctl"/>
 			<Item Name="TDMS delete channel.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/TDMS delete channel.vi"/>
 			<Item Name="Temperature Controller Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Temperature Controller Driver/Temperature Controller Driver.lvclass"/>
@@ -511,7 +559,6 @@
 			<Item Name="Template Module.lvclass" Type="LVClass" URL="../../Template Module/Template Module.lvclass"/>
 			<Item Name="Time-Delayed Response Msg.lvclass" Type="LVClass" URL="../../Measurements/Timer Messages/Time-Delayed Response Msg/Time-Delayed Response Msg.lvclass"/>
 			<Item Name="TimedPeakStreaming.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Micron Optics/TimedPeakStreaming.vi"/>
-			<Item Name="Timer.lvclass" Type="LVClass" URL="../../Measurements/Timer/Timer.lvclass"/>
 			<Item Name="TryAgain.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/File LLB/TryAgain.vi"/>
 			<Item Name="Unubscribe Request Msg.lvclass" Type="LVClass" URL="../../Template Module Messages/Unubscribe Request Msg/Unubscribe Request Msg.lvclass"/>
 			<Item Name="Update Armed Msg.lvclass" Type="LVClass" URL="../../Monitor-Pulse Messages/Update Armed Msg/Update Armed Msg.lvclass"/>
@@ -526,6 +573,7 @@
 			<Item Name="Wait for Result Msg.lvclass" Type="LVClass" URL="../../Pulse Recorders/Pulse Recorder Messages/Wait for Data Msg/Wait for Result Msg.lvclass"/>
 			<Item Name="Wait miliseconds.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Wait miliseconds.vi"/>
 			<Item Name="Waveform parameters.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/Waform generation/Waveform parameters.ctl"/>
+			<Item Name="Worker State.ctl" Type="VI" URL="../../Worker/Worker State.ctl"/>
 			<Item Name="Worker.lvclass" Type="LVClass" URL="../../Worker/Worker.lvclass"/>
 			<Item Name="Workers by Function Response Msg.lvclass" Type="LVClass" URL="../../Sequence Elements/Sequence Element Messages/Workers by Function Response Msg/Workers by Function Response Msg.lvclass"/>
 			<Item Name="Write File history depth Msg.lvclass" Type="LVClass" URL="../../Plots/Plot Messages/Write Keep # of preceding files Msg/Write File history depth Msg.lvclass"/>
@@ -536,7 +584,6 @@
 			<Item Name="Write Peak Field Msg.lvclass" Type="LVClass" URL="../../Monitor-Pulse Messages/Write Peak Field Msg/Write Peak Field Msg.lvclass"/>
 			<Item Name="Write tdms stream Msg.lvclass" Type="LVClass" URL="../../Template Module Messages/Write tdms stream Msg/Write tdms stream Msg.lvclass"/>
 			<Item Name="XY Plot.lvclass" Type="LVClass" URL="../../Plots/XY Plot/XY Plot.lvclass"/>
-			<Item Name="XY WFRM Plot.lvclass" Type="LVClass" URL="../../Plots/XY WFRM Plot/XY WFRM Plot.lvclass"/>
 			<Item Name="Z to circle.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Z to circle.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
@@ -554,7 +601,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/github/builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{39905001-7DD4-4D41-B9D0-005A438F7D8E}</Property>
-				<Property Name="Bld_version.build" Type="Int">3</Property>
+				<Property Name="Bld_version.build" Type="Int">9</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/github/builds/NI_AB_PROJECTNAME/LabActor.exe</Property>

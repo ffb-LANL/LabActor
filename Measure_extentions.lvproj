@@ -11,6 +11,22 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Comms" Type="Folder">
+			<Item Name="Client" Type="Folder">
+				<Item Name="Comms Client.vi" Type="VI" URL="../Comms/Client/Comms Client.vi"/>
+			</Item>
+			<Item Name="Messades" Type="Folder">
+				<Item Name="Client Message Msg.lvclass" Type="LVClass" URL="../Comms/Communications Messages/Client Message Msg/Client Message Msg.lvclass"/>
+				<Item Name="Init Comms Msg.lvclass" Type="LVClass" URL="../Comms/Communications Messages/Init Comms Msg/Init Comms Msg.lvclass"/>
+				<Item Name="Monitor Command Msg.lvclass" Type="LVClass" URL="../Controllers/Application Controller Messages/Monitor Command Msg/Monitor Command Msg.lvclass"/>
+				<Item Name="Set Topic Value Msg.lvclass" Type="LVClass" URL="../Comms/Communications Messages/Set Topic Value Msg/Set Topic Value Msg.lvclass"/>
+			</Item>
+			<Item Name="Modules" Type="Folder">
+				<Item Name="Communications Configuration.ctl" Type="VI" URL="../Comms/Communications Configuration.ctl"/>
+				<Item Name="Communications.lvclass" Type="LVClass" URL="../Comms/Communications/Communications.lvclass"/>
+				<Item Name="TCP Communications.lvclass" Type="LVClass" URL="../Comms/TCP Communications/TCP Communications.lvclass"/>
+			</Item>
+		</Item>
 		<Item Name="Dependencies" Type="Folder">
 			<Item Name="Actors" Type="Folder">
 				<Item Name="Application Controller.lvclass" Type="LVClass" URL="../Controllers/Application Controller/Application Controller.lvclass"/>
@@ -25,6 +41,7 @@
 				<Item Name="Sequence Element.lvclass" Type="LVClass" URL="../Sequence Elements/Sequence Element/Sequence Element.lvclass"/>
 				<Item Name="Template Module.lvclass" Type="LVClass" URL="../Template Module/Template Module.lvclass"/>
 				<Item Name="Timer.lvclass" Type="LVClass" URL="../Measurements/Timer/Timer.lvclass"/>
+				<Item Name="Worker State.ctl" Type="VI" URL="../Worker/Worker State.ctl"/>
 				<Item Name="Worker.lvclass" Type="LVClass" URL="../Worker/Worker.lvclass"/>
 				<Item Name="XY Plot.lvclass" Type="LVClass" URL="../Plots/XY Plot/XY Plot.lvclass"/>
 				<Item Name="XY WFRM Plot.lvclass" Type="LVClass" URL="../Plots/XY WFRM Plot/XY WFRM Plot.lvclass"/>
@@ -47,8 +64,17 @@
 				<Item Name="Software Lock-in.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/SoftwareLockin/Software Lock-in/Software Lock-in.lvclass"/>
 				<Item Name="Temperature Controller Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Temperature Controller Driver/Temperature Controller Driver.lvclass"/>
 				<Item Name="VISA Instrument.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/VISA Instrument/VISA Instrument.lvclass"/>
+				<Item Name="Fit Result.lvclass" Type="LVClass" URL="../Results/Fit Result/Fit Result.lvclass"/>
 			</Item>
 			<Item Name="Messages" Type="Folder">
+				<Item Name="Response Messages" Type="Folder">
+					<Item Name="Init Response Msg.lvclass" Type="LVClass" URL="../Controllers/Process Controller Messages/Init Response Msg/Init Response Msg.lvclass"/>
+					<Item Name="Result Reply Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Result Reply Msg/Result Reply Msg.lvclass"/>
+					<Item Name="Result Response Msg.lvclass" Type="LVClass" URL="../Controllers/Process Controller Messages/Result Response Msg/Result Response Msg.lvclass"/>
+					<Item Name="Self-addressed Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Self-Addressed Msg/Self-addressed Msg.lvclass"/>
+					<Item Name="Stop Response Msg.lvclass" Type="LVClass" URL="../Controllers/Process Controller Messages/Stop Response Msg/Stop Response Msg.lvclass"/>
+					<Item Name="Time-Delayed Response Msg.lvclass" Type="LVClass" URL="../Measurements/Timer Messages/Time-Delayed Response Msg/Time-Delayed Response Msg.lvclass"/>
+				</Item>
 				<Item Name="Attach to Sub-pannel Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Attach to Sub-pannel Msg/Attach to Sub-pannel Msg.lvclass"/>
 				<Item Name="File updated Msg.lvclass" Type="LVClass" URL="../Plots/XY Plot Messages/File updated Msg/File updated Msg.lvclass"/>
 				<Item Name="Initialize Work Msg.lvclass" Type="LVClass" URL="../Worker Messages/Initialize Work Msg/Initialize Work Msg.lvclass"/>
@@ -59,14 +85,13 @@
 				<Item Name="Perform Work Msg.lvclass" Type="LVClass" URL="../Worker Messages/Perform Work Msg/Perform Work Msg.lvclass"/>
 				<Item Name="Process Result Msg.lvclass" Type="LVClass" URL="../Process Object Messages/Process Result Msg/Process Result Msg.lvclass"/>
 				<Item Name="Remove Sequence Element Msg.lvclass" Type="LVClass" URL="../Controllers/Sequence Controller Messages/Remove Sequence Element Msg/Remove Sequence Element Msg.lvclass"/>
-				<Item Name="Result Response Msg.lvclass" Type="LVClass" URL="../Controllers/Process Controller Messages/Result Response Msg/Result Response Msg.lvclass"/>
 				<Item Name="Set Frequency Msg.lvclass" Type="LVClass" URL="../Recorders/Lock-in Messages/Set Frequency Msg/Set Frequency Msg.lvclass"/>
 				<Item Name="Set Plot Type Msg.lvclass" Type="LVClass" URL="../Plots/XY WFRM Plot Messages/Set Plot Type Msg/Set Plot Type Msg.lvclass"/>
 				<Item Name="Set Point Msg.lvclass" Type="LVClass" URL="../Recorders/Temperature Controller Messages/Set Point Msg/Set Point Msg.lvclass"/>
 				<Item Name="Stop Measurements Command Msg.lvclass" Type="LVClass" URL="../Monitor-Pulse Messages/Stop Measurements Command Msg/Stop Measurements Command Msg.lvclass"/>
 				<Item Name="Stop Object Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Stop Object Msg/Stop Object Msg.lvclass"/>
+				<Item Name="Subscribe Request Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Subscribe Request Msg/Subscribe Request Msg.lvclass"/>
 				<Item Name="Time to subscribe Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Time to subscribe Msg/Time to subscribe Msg.lvclass"/>
-				<Item Name="Time-Delayed Response Msg.lvclass" Type="LVClass" URL="../Measurements/Timer Messages/Time-Delayed Response Msg/Time-Delayed Response Msg.lvclass"/>
 				<Item Name="Unubscribe Request Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Unubscribe Request Msg/Unubscribe Request Msg.lvclass"/>
 				<Item Name="Update Monitor State Msg.lvclass" Type="LVClass" URL="../Controllers/Update Monitor State Msg/Update Monitor State Msg.lvclass"/>
 				<Item Name="Write File history depth Msg.lvclass" Type="LVClass" URL="../Plots/Plot Messages/Write Keep # of preceding files Msg/Write File history depth Msg.lvclass"/>
@@ -231,10 +256,13 @@
 			</Item>
 			<Item Name="Find Visa Recorders.vi" Type="VI" URL="../Recorders/Find Visa Recorders.vi"/>
 		</Item>
+		<Item Name="2D Array to Dynamic Data.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/2D Array to Dynamic Data.vi"/>
 		<Item Name="Check output file.vi" Type="VI" URL="../Spectrum Recorder too/Check output file.vi"/>
 		<Item Name="Defragment TDMS.vi" Type="VI" URL="../../NHMFL_Core/Applications/Utilities/Defragment TDMS.vi"/>
 		<Item Name="Find Value Indexies.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Find Value Indexies.vi"/>
+		<Item Name="Get Index.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Get Index.vi"/>
 		<Item Name="Launch Monitor-Pulse.vi" Type="VI" URL="../Launch Monitor-Pulse.vi"/>
+		<Item Name="Non-zero increment min max.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Non-zero increment min max.vi"/>
 		<Item Name="TDMS - File Viewer.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/TDMS - File Viewer.vi"/>
 		<Item Name="Test TDMS store recall.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/TDMS/Test TDMS store recall.vi"/>
 		<Item Name="Test Viewer.vi" Type="VI" URL="../../NHMFL_Core/Libraries/SoftwareLockin/Test Viewer.vi"/>
@@ -802,7 +830,6 @@
 			<Item Name="IdentifyAndReadInstr.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/IdentifyAndReadInstr.vi"/>
 			<Item Name="IdentifyEG_G_Lockin.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/EG_G/IdentifyEG_G_Lockin.vi"/>
 			<Item Name="IdentifyHP5385A.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/HP/HP5385/IdentifyHP5385A.vi"/>
-			<Item Name="Init Response Msg.lvclass" Type="LVClass" URL="../Controllers/Process Controller Messages/Init Response Msg/Init Response Msg.lvclass"/>
 			<Item Name="Integrate channel from file.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/File LLB/Integrate channel from file.vi"/>
 			<Item Name="Integrate channel.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Controls/Integrate channel.ctl"/>
 			<Item Name="IntegrateWaveForm.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Waveform/IntegrateWaveForm.vi"/>
@@ -891,7 +918,6 @@
 			<Item Name="Replace dt.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Replace dt.vi"/>
 			<Item Name="Replot Msg.lvclass" Type="LVClass" URL="../Plots/Plot Messages/Replot Msg/Replot Msg.lvclass"/>
 			<Item Name="Restore Configuration Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Restore Configuration Msg/Restore Configuration Msg.lvclass"/>
-			<Item Name="Result Reply Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Result Reply Msg/Result Reply Msg.lvclass"/>
 			<Item Name="Ring plots update.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Ring plots update.vi"/>
 			<Item Name="Rotate Lockin Phase.vi" Type="VI" URL="../../NHMFL_Core/Libraries/SoftwareLockin/Rotate Lockin Phase.vi"/>
 			<Item Name="RP block write.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP block write.vi"/>
@@ -917,7 +943,6 @@
 			<Item Name="Save defaults Msg.lvclass" Type="LVClass" URL="../Plots/XY Plot Messages/Save defaults Msg/Save defaults Msg.lvclass"/>
 			<Item Name="Save keep old plots Msg.lvclass" Type="LVClass" URL="../Plots/XY Plot Messages/Save keep old plots Msg/Save keep old plots Msg.lvclass"/>
 			<Item Name="Select multiplexer LR700.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/LR-700/Select multiplexer LR700.vi"/>
-			<Item Name="Self-addressed Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Self-Addressed Msg/Self-addressed Msg.lvclass"/>
 			<Item Name="Send Receive.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/GPIB/Send Receive.vi"/>
 			<Item Name="Sequence Element Configuration.ctl" Type="VI" URL="../Sequence Elements/Sequence Element/Sequence Element Configuration.ctl"/>
 			<Item Name="Set LakeShore 340 Set Point.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/LakeShore/LakeShore340/Set LakeShore 340 Set Point.vi"/>
@@ -936,7 +961,6 @@
 			<Item Name="Store Value in TDMS.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/TDMS/Store Value in TDMS.vi"/>
 			<Item Name="Store XY Msg.lvclass" Type="LVClass" URL="../Utilities/Cursor Digitizer Messages/Store XY Msg/Store XY Msg.lvclass"/>
 			<Item Name="Sub_2016_05_04_SinBias.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Waform generation/Sub_2016_05_04_SinBias.vi"/>
-			<Item Name="Subscribe Request Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Subscribe Request Msg/Subscribe Request Msg.lvclass"/>
 			<Item Name="Sweep Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Sweeper Driver/Sweep Configuration.ctl"/>
 			<Item Name="Sweep Sequence Configuration.ctl" Type="VI" URL="../Sequence Elements/Sweep Sequence/Sweep Sequence Configuration.ctl"/>
 			<Item Name="Sweep.lvclass" Type="LVClass" URL="../Sequence Elements/Sweep Sequence/Sweep.lvclass"/>
@@ -948,6 +972,8 @@
 			<Item Name="Synth Set Amplitude.vi" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/NHMFL Synthesizer/Synth Set Amplitude.vi"/>
 			<Item Name="T controller configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Temperature Controller Driver/T controller configuration.ctl"/>
 			<Item Name="T-controller reading type.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Temperature Controller/Controls/T-controller reading type.ctl"/>
+			<Item Name="TCP Recieve Message.vi" Type="VI" URL="../Comms/Client/TCP Recieve Message.vi"/>
+			<Item Name="TCP Transmit Message.vi" Type="VI" URL="../Comms/Client/TCP Transmit Message.vi"/>
 			<Item Name="TDMS channel info.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/File/Controls/TDMS channel info.ctl"/>
 			<Item Name="TDMS delete channel.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/TDMS delete channel.vi"/>
 			<Item Name="TimedPeakStreaming.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Micron Optics/TimedPeakStreaming.vi"/>
@@ -1194,7 +1220,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{630C6A79-7DB9-4C88-A629-CE71489D02DC}</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">TDMS File Viewer.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/TDMS File Viewer/TDMS File Viewer.exe</Property>
@@ -1203,7 +1229,7 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/TDMS File Viewer/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{0612F634-E5D1-4D5A-BD1B-3E56B5F8085A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{E49B1F6B-3A24-44CA-AC86-9ABDA8CD5558}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/TDMS - File Viewer.vi</Property>

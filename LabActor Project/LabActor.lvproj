@@ -309,6 +309,7 @@
 			<Item Name="Device type.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Device/Device type.ctl"/>
 			<Item Name="Display Error Msg.lvclass" Type="LVClass" URL="../../Controllers/Application Controller Messages/Display Error Msg/Display Error Msg.lvclass"/>
 			<Item Name="Driver Pattern Exists.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Driver Pattern Exists.vi"/>
+			<Item Name="Dynamic Load  Line Detector.vi" Type="VI" URL="../../Post-Processors/Line Detector/Dynamic Load  Line Detector.vi"/>
 			<Item Name="Dynamic Load  NHMFL Synth .vi" Type="VI" URL="../../Post-Processors/NHMFL Synthesizer/Dynamic Load  NHMFL Synth .vi"/>
 			<Item Name="Dynamic Load DAQmx.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Digitizer/Dynamic Load DAQmx.vi"/>
 			<Item Name="Dynamic Load NI Scope.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/NI-DAQ/NI-Scope Digitizer/Dynamic Load NI Scope.vi"/>
@@ -370,6 +371,7 @@
 			<Item Name="is AH bridge.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/AH/is AH bridge.vi"/>
 			<Item Name="Is Control Present.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Is Control Present.vi"/>
 			<Item Name="Is DAQmx installed.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/NI-DAQ/Is DAQmx installed.vi"/>
+			<Item Name="Is Line Detector Available.vi" Type="VI" URL="../../Post-Processors/Line Detector/Is Line Detector Available.vi"/>
 			<Item Name="Is Valid File.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/Is Valid File.vi"/>
 			<Item Name="Items Mouse Click Msg.lvclass" Type="LVClass" URL="../../Sequence Elements/Sequence Element Messages/Items Mouse Click Msg/Items Mouse Click Msg.lvclass"/>
 			<Item Name="Keithley Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Keithley/Keithley Driver/Keithley Driver.lvclass"/>

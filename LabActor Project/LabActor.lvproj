@@ -18,6 +18,9 @@
 				<Item Name="Timer.lvclass" Type="LVClass" URL="../../Measurements/Timer/Timer.lvclass"/>
 				<Item Name="XY WFRM Plot.lvclass" Type="LVClass" URL="../../Plots/XY WFRM Plot/XY WFRM Plot.lvclass"/>
 			</Item>
+			<Item Name="Utilities" Type="Folder">
+				<Item Name="Line Detector Crop Region.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Crop Region.vi"/>
+			</Item>
 		</Item>
 		<Item Name="LabActor" Type="Folder">
 			<Item Name="Comms Client.vi" Type="VI" URL="../../Comms/Client/Comms Client.vi"/>
@@ -27,6 +30,7 @@
 		</Item>
 		<Item Name="Monitor" Type="Folder">
 			<Item Name="Spectrum Recorder" Type="Folder">
+				<Item Name="Spectrum Configuration.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Red Pitaya Transceiver Driver/Spectrum Configuration.ctl"/>
 				<Item Name="Spectrum Recorder too.lvclass" Type="LVClass" URL="../../Spectrum Recorder too/Spectrum Recorder too.lvclass"/>
 			</Item>
 		</Item>
@@ -38,6 +42,9 @@
 				<Item Name="Processing Test.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Test/ASPT/Processing Test.vi"/>
 			</Item>
 		</Item>
+		<Item Name="Array Subset by Value.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Array Subset by Value.vi"/>
+		<Item Name="Create Frequency Steps Array.vi" Type="VI" URL="../../Spectrum Recorder too/Create Frequency Steps Array.vi"/>
+		<Item Name="Line Detector Create rusin_dat.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Create rusin_dat.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array of VData to VArray__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array of VData to VArray__ogtk.vi"/>
@@ -334,6 +341,7 @@
 			<Item Name="Frequency Word to Frequency .vi" Type="VI" URL="../../../NHMFL_Core/Libraries/SoftwareLockin/Frequency Word to Frequency .vi"/>
 			<Item Name="Generate mounth year strings.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/File LLB/Generate mounth year strings.vi"/>
 			<Item Name="Generate pulse.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/Waform generation/Generate pulse.vi"/>
+			<Item Name="Generate step array.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Generate step array.vi"/>
 			<Item Name="GenerateUniqueFilename.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/File LLB/GenerateUniqueFilename.vi"/>
 			<Item Name="Get file group chan waveform.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/Get file group chan waveform.vi"/>
 			<Item Name="Get HP 53132 Data.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/HP/HP53132/Get HP 53132 Data.vi"/>
@@ -358,6 +366,7 @@
 			<Item Name="IdentifyAndReadInstr.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/IdentifyAndReadInstr.vi"/>
 			<Item Name="IdentifyEG_G_Lockin.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/EG_G/IdentifyEG_G_Lockin.vi"/>
 			<Item Name="IdentifyHP5385A.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/HP/HP5385/IdentifyHP5385A.vi"/>
+			<Item Name="Increment mode.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Increment mode.ctl"/>
 			<Item Name="Init Comms Msg.lvclass" Type="LVClass" URL="../../Comms/Communications Messages/Init Comms Msg/Init Comms Msg.lvclass"/>
 			<Item Name="Init Response Msg.lvclass" Type="LVClass" URL="../../Controllers/Process Controller Messages/Init Response Msg/Init Response Msg.lvclass"/>
 			<Item Name="Initialize Work Msg.lvclass" Type="LVClass" URL="../../Worker Messages/Initialize Work Msg/Initialize Work Msg.lvclass"/>
@@ -384,6 +393,7 @@
 			<Item Name="Launch Object by Type Response Msg.lvclass" Type="LVClass" URL="../../Template Module Messages/Launch Object by Type Response Msg/Launch Object by Type Response Msg.lvclass"/>
 			<Item Name="Letter to number.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Letter to number.vi"/>
 			<Item Name="Line Detector Fit Lorentzian.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Fit Lorentzian.vi"/>
+			<Item Name="Line Detector Read File.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Read File.vi"/>
 			<Item Name="Load Complete Msg.lvclass" Type="LVClass" URL="../../Controllers/Application Controller Messages/Load Complete Msg/Load Complete Msg.lvclass"/>
 			<Item Name="Locate edges.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Locate edges.vi"/>
 			<Item Name="Lock-in Configuration.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Lock-in Driver/Lock-in Configuration.ctl"/>
@@ -410,6 +420,7 @@
 			<Item Name="Mercury Open.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/NHMFL Mercury/Mercury Open.vi"/>
 			<Item Name="Mercury Query.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/NHMFL Mercury/Mercury Query.vi"/>
 			<Item Name="Meta Data to TDMS.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/OO config/Meta Data to TDMS.vi"/>
+			<Item Name="Meta Data to Variant.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/OO config/Meta Data to Variant.vi"/>
 			<Item Name="Micron Hyperion Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Micron Optics/Micron Hyperion Driver/Micron Hyperion Driver.lvclass"/>
 			<Item Name="Micron optics configuration.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Micron Optics/Micron optics configuration.ctl"/>
 			<Item Name="Micron Optics Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Micron Optics/Micron Optics Driver/Micron Optics Driver.lvclass"/>
@@ -534,7 +545,6 @@
 			<Item Name="Smooth Background WFRM DBL.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Smooth Background WFRM DBL.vi"/>
 			<Item Name="Smooth Background.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Smooth Background.vi"/>
 			<Item Name="Software Lock-in.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/SoftwareLockin/Software Lock-in/Software Lock-in.lvclass"/>
-			<Item Name="Spectrum Configuration.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Red Pitaya Transceiver Driver/Spectrum Configuration.ctl"/>
 			<Item Name="SRS Lockin Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/SRS/SRS Lockin Driver/SRS Lockin Driver.lvclass"/>
 			<Item Name="Start Measurements Command Msg.lvclass" Type="LVClass" URL="../../Monitor-Pulse Messages/Start Pulse Measurements Msg/Start Measurements Command Msg.lvclass"/>
 			<Item Name="Start Measurements Msg.lvclass" Type="LVClass" URL="../../Controllers/Process Controller Messages/Start Measurements Msg/Start Measurements Msg.lvclass"/>
@@ -556,6 +566,7 @@
 			<Item Name="TCP Transmit Message.vi" Type="VI" URL="../../Comms/Client/TCP Transmit Message.vi"/>
 			<Item Name="TDMS channel info.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/File/Controls/TDMS channel info.ctl"/>
 			<Item Name="TDMS delete channel.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/TDMS delete channel.vi"/>
+			<Item Name="TDMS to Meta Data.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/OO config/TDMS to Meta Data.vi"/>
 			<Item Name="Temperature Controller Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Temperature Controller Driver/Temperature Controller Driver.lvclass"/>
 			<Item Name="Temperature Controller.lvclass" Type="LVClass" URL="../../Recorders/Temperature Controller/Temperature Controller.lvclass"/>
 			<Item Name="Template Module.lvclass" Type="LVClass" URL="../../Template Module/Template Module.lvclass"/>

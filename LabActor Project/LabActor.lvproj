@@ -10,20 +10,51 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Batch Processor" Type="Folder">
+			<Item Name="Messages" Type="Folder">
+				<Item Name="List Folder Files Msg.lvclass" Type="LVClass" URL="../../Controllers/Batch Processor Messages/List Folder Files Msg/List Folder Files Msg.lvclass"/>
+				<Item Name="Start Batch Process Msg.lvclass" Type="LVClass" URL="../../Controllers/Batch Processor Messages/Start Batch Process Msg/Start Batch Process Msg.lvclass"/>
+			</Item>
+			<Item Name="Batch Processor.cfg" Type="Document" URL="../../Controllers/Batch Processor/Batch Processor.cfg"/>
+			<Item Name="Batch Processor.lvclass" Type="LVClass" URL="../../Controllers/Batch Processor/Batch Processor.lvclass"/>
+			<Item Name="Launch Batch Processor.vi" Type="VI" URL="../../Controllers/Batch Processor/Launch Batch Processor.vi"/>
+		</Item>
 		<Item Name="Dependencies" Type="Folder">
 			<Item Name="Actors" Type="Folder">
+				<Item Name="Messages" Type="Folder">
+					<Item Name="Update Focus Msg.lvclass" Type="LVClass" URL="../../Spectrum Recorder too Messages/Update Focus Msg/Update Focus Msg.lvclass"/>
+				</Item>
 				<Item Name="Application Controller.lvclass" Type="LVClass" URL="../../Controllers/Application Controller/Application Controller.lvclass"/>
 				<Item Name="Monitor Controller.lvclass" Type="LVClass" URL="../../Controllers/Monitor Controller/Monitor Controller.lvclass"/>
+				<Item Name="Monitor-Pulse.lvclass" Type="LVClass" URL="../../Monitor-Pulse/Monitor-Pulse.lvclass"/>
 				<Item Name="Plot.lvclass" Type="LVClass" URL="../../Plots/Plot/Plot.lvclass"/>
+				<Item Name="Process Controller.lvclass" Type="LVClass" URL="../../Controllers/Process Controller/Process Controller.lvclass"/>
+				<Item Name="Process Object.lvclass" Type="LVClass" URL="../../Process Object/Process Object.lvclass"/>
 				<Item Name="Template Module.lvclass" Type="LVClass" URL="../../Template Module/Template Module.lvclass"/>
 				<Item Name="Timer.lvclass" Type="LVClass" URL="../../Measurements/Timer/Timer.lvclass"/>
 				<Item Name="XY WFRM Plot.lvclass" Type="LVClass" URL="../../Plots/XY WFRM Plot/XY WFRM Plot.lvclass"/>
 			</Item>
+			<Item Name="Non-Actors" Type="Folder">
+				<Item Name="Acquired Result.lvclass" Type="LVClass" URL="../../Results/Acquired Result/Acquired Result.lvclass"/>
+				<Item Name="File Path Result.lvclass" Type="LVClass" URL="../../Results/File Path Result/File Path Result.lvclass"/>
+				<Item Name="Fit Result.lvclass" Type="LVClass" URL="../../Results/Fit Result/Fit Result.lvclass"/>
+			</Item>
 			<Item Name="Utilities" Type="Folder">
+				<Item Name="Array Subset by Value.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Array Subset by Value.vi"/>
+				<Item Name="Create Frequency Steps Array.vi" Type="VI" URL="../../Spectrum Recorder too/Create Frequency Steps Array.vi"/>
+				<Item Name="Line Detector Create rusin_dat.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Create rusin_dat.vi"/>
 				<Item Name="Line Detector Crop Region.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Crop Region.vi"/>
+				<Item Name="Merge Arrays.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Merge Arrays.vi"/>
+				<Item Name="Merge Overlapping Regions.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Merge Overlapping Regions.vi"/>
+				<Item Name="Test resample.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Test resample.vi"/>
 			</Item>
 		</Item>
+		<Item Name="Helper apps" Type="Folder">
+			<Item Name="Bin to TDMS.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/Bin to TDMS.vi"/>
+			<Item Name="Save Start-up Configuration.vi" Type="VI" URL="../../Monitor-Pulse/Save Start-up Configuration.vi"/>
+		</Item>
 		<Item Name="LabActor" Type="Folder">
+			<Item Name="About LabActor.vi" Type="VI" URL="../About LabActor.vi"/>
 			<Item Name="Comms Client.vi" Type="VI" URL="../../Comms/Client/Comms Client.vi"/>
 			<Item Name="LabActor.cfg" Type="Document" URL="../LabActor Class/LabActor.cfg"/>
 			<Item Name="LabActor.lvclass" Type="LVClass" URL="../LabActor Class/LabActor.lvclass"/>
@@ -37,17 +68,14 @@
 		</Item>
 		<Item Name="Post-Processors" Type="Folder">
 			<Item Name="Line Detector" Type="Folder">
+				<Item Name="Get Line Detector Object.vi" Type="VI" URL="../../Post-Processors/Line Detector/Get Line Detector Object.vi"/>
 				<Item Name="Line Detector Configuration.ctl" Type="VI" URL="../../Post-Processors/Line Detector/Line Detector Configuration.ctl"/>
 				<Item Name="Line Detector Process.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Process.vi"/>
 				<Item Name="Line Detector.lvclass" Type="LVClass" URL="../../Post-Processors/Line Detector/Line Detector.lvclass"/>
+				<Item Name="Lorentz Fit Test.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Lorentz Fit Test.vi"/>
 				<Item Name="Processing Test.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Test/ASPT/Processing Test.vi"/>
 			</Item>
 		</Item>
-		<Item Name="Array Subset by Value.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Array Subset by Value.vi"/>
-		<Item Name="Create Frequency Steps Array.vi" Type="VI" URL="../../Spectrum Recorder too/Create Frequency Steps Array.vi"/>
-		<Item Name="Line Detector Create rusin_dat.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Create rusin_dat.vi"/>
-		<Item Name="Merge Arrays.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Merge Arrays.vi"/>
-		<Item Name="Update Focus Msg.lvclass" Type="LVClass" URL="../../Spectrum Recorder too Messages/Update Focus Msg/Update Focus Msg.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array of VData to VArray__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array of VData to VArray__ogtk.vi"/>
@@ -170,6 +198,7 @@
 				<Item Name="LogicalSort.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/LogicalSort.vi"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
 				<Item Name="LVPoint32TypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPoint32TypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="LVRowAndColumnUnsignedTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnUnsignedTypeDef.ctl"/>
@@ -281,7 +310,6 @@
 			<Item Name="2D Array to Dynamic Data.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/2D Array to Dynamic Data.vi"/>
 			<Item Name="Abbreviate TDMS Group Channel.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/Abbreviate TDMS Group Channel.vi"/>
 			<Item Name="Acknowledge Post Process Msg.lvclass" Type="LVClass" URL="../../Controllers/Process Controller Messages/Acknowledge Post Process Msg/Acknowledge Post Process Msg.lvclass"/>
-			<Item Name="Acquired Result.lvclass" Type="LVClass" URL="../../Results/Acquired Result/Acquired Result.lvclass"/>
 			<Item Name="Add file Msg.lvclass" Type="LVClass" URL="../../Plots/Plot Messages/Add file Msg/Add file Msg.lvclass"/>
 			<Item Name="Add Menu Item.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Queued Listbox/Add Menu Item.vi"/>
 			<Item Name="AF Debug.lvlib" Type="Library" URL="/&lt;resource&gt;/AFDebug/AF Debug.lvlib"/>
@@ -306,6 +334,7 @@
 			<Item Name="Client Message Msg.lvclass" Type="LVClass" URL="../../Comms/Communications Messages/Client Message Msg/Client Message Msg.lvclass"/>
 			<Item Name="Communications Configuration.ctl" Type="VI" URL="../../Comms/Communications Configuration.ctl"/>
 			<Item Name="Communications.lvclass" Type="LVClass" URL="../../Comms/Communications/Communications.lvclass"/>
+			<Item Name="comparison control.ctl" Type="VI" URL="../../../resonant_ultrasound/maglab ultrasound -- arkady/comparison control.ctl"/>
 			<Item Name="Configuration Value Changed Msg.lvclass" Type="LVClass" URL="../../Template Module Messages/Configuration Value Changed Msg/Configuration Value Changed Msg.lvclass"/>
 			<Item Name="Configure serial bus.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Cryo-con/Configure serial bus.vi"/>
 			<Item Name="Convert TDMS channel.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/File Format Converter/Convert TDMS channel.vi"/>
@@ -324,9 +353,10 @@
 			<Item Name="Dynamic Load DAQmx.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Digitizer/Dynamic Load DAQmx.vi"/>
 			<Item Name="Dynamic Load NI Scope.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/NI-DAQ/NI-Scope Digitizer/Dynamic Load NI Scope.vi"/>
 			<Item Name="Empty buffer.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/GPIB/Empty buffer.vi"/>
+			<Item Name="file -- scan filename action.ctl" Type="VI" URL="../../../resonant_ultrasound/maglab ultrasound -- arkady/file -- scan filename action.ctl"/>
+			<Item Name="file -- scan filename logic -- datestring.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/file -- scan filename logic -- datestring.vi"/>
 			<Item Name="File Format Converter.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/File Format Converter/File Format Converter.vi"/>
 			<Item Name="File formats.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/File/Controls/File formats.ctl"/>
-			<Item Name="File Path Result.lvclass" Type="LVClass" URL="../../Results/File Path Result/File Path Result.lvclass"/>
 			<Item Name="File updated Msg.lvclass" Type="LVClass" URL="../../Plots/XY Plot Messages/File updated Msg/File updated Msg.lvclass"/>
 			<Item Name="File_Group_Chan_Abbr.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/File/File_Group_Chan_Abbr.ctl"/>
 			<Item Name="Filter Device List.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Device/Filter Device List.vi"/>
@@ -400,6 +430,7 @@
 			<Item Name="Line Detector Initial Guess from Peak Findervi.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Initial Guess from Peak Findervi.vi"/>
 			<Item Name="Line Detector Peak Finder.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Peak Finder.vi"/>
 			<Item Name="Line Detector Read File.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Read File.vi"/>
+			<Item Name="Line Detector Resample.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Resample.vi"/>
 			<Item Name="Line Detector Smooth.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Smooth.vi"/>
 			<Item Name="Load Complete Msg.lvclass" Type="LVClass" URL="../../Controllers/Application Controller Messages/Load Complete Msg/Load Complete Msg.lvclass"/>
 			<Item Name="Locate edges.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Locate edges.vi"/>
@@ -437,7 +468,6 @@
 			<Item Name="Module Types.ctl" Type="VI" URL="../../Monitor-Pulse/Module Types.ctl"/>
 			<Item Name="Monitor Command Msg.lvclass" Type="LVClass" URL="../../Controllers/Application Controller Messages/Monitor Command Msg/Monitor Command Msg.lvclass"/>
 			<Item Name="Monitor Controller Configuration.ctl" Type="VI" URL="../../Controllers/Monitor Controller/Monitor Controller Configuration.ctl"/>
-			<Item Name="Monitor-Pulse.lvclass" Type="LVClass" URL="../../Monitor-Pulse/Monitor-Pulse.lvclass"/>
 			<Item Name="Neocera Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Neocera/Neocera Driver/Neocera Driver.lvclass"/>
 			<Item Name="Neocera21 Get T.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Neocera/Neocera21 Get T.vi"/>
 			<Item Name="New Data File Msg.lvclass" Type="LVClass" URL="../../Controllers/Application Controller Messages/New Data File Msg/New Data File Msg.lvclass"/>
@@ -454,6 +484,7 @@
 			<Item Name="Oxford set termination.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Oxford set termination.vi"/>
 			<Item Name="Oxford visa write read.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Oxford visa write read.vi"/>
 			<Item Name="Pad TAB.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Pad TAB.vi"/>
+			<Item Name="parse -- get list of matches -- numbers.vi" Type="VI" URL="../../../resonant_ultrasound/maglab ultrasound -- arkady/parse -- get list of matches -- numbers.vi"/>
 			<Item Name="Peak Width.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Peak Width.vi"/>
 			<Item Name="Perform Work Msg.lvclass" Type="LVClass" URL="../../Worker Messages/Perform Work Msg/Perform Work Msg.lvclass"/>
 			<Item Name="Phase word to Frequency.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/Phase word to Frequency.vi"/>
@@ -463,8 +494,6 @@
 			<Item Name="Plot types.ctl" Type="VI" URL="../../Plots/Plot types.ctl"/>
 			<Item Name="Populate and conf ethernet bus.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Instrument/Populate and conf ethernet bus.vi"/>
 			<Item Name="Populate Recorder List.vi" Type="VI" URL="../../Recorders/Populate Recorder List.vi"/>
-			<Item Name="Process Controller.lvclass" Type="LVClass" URL="../../Controllers/Process Controller/Process Controller.lvclass"/>
-			<Item Name="Process Object.lvclass" Type="LVClass" URL="../../Process Object/Process Object.lvclass"/>
 			<Item Name="Process Result Msg.lvclass" Type="LVClass" URL="../../Process Object Messages/Process Result Msg/Process Result Msg.lvclass"/>
 			<Item Name="Pulse Acquired Result.lvclass" Type="LVClass" URL="../../Controllers/Application Controller Messages/Pulse Acquired Result/Pulse Acquired Result.lvclass"/>
 			<Item Name="Pulse Controller Configuration.ctl" Type="VI" URL="../../Controllers/Pulse Controller/Pulse Controller Configuration.ctl"/>
@@ -473,6 +502,8 @@
 			<Item Name="Pulse Recorder.lvclass" Type="LVClass" URL="../../Pulse Recorders/Pulse Recorder/Pulse Recorder.lvclass"/>
 			<Item Name="Pupulate and conf serial bus.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Instrument/Pupulate and conf serial bus.vi"/>
 			<Item Name="Pusle Driver Configuration.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Pulse Driver/Pusle Driver Configuration.ctl"/>
+			<Item Name="Q - not nan -- integer.vi" Type="VI" URL="../../../resonant_ultrasound/maglab ultrasound -- arkady/Q - not nan -- integer.vi"/>
+			<Item Name="Q -- check range -- i -- integer.vi" Type="VI" URL="../../../resonant_ultrasound/maglab ultrasound -- arkady/Q -- check range -- i -- integer.vi"/>
 			<Item Name="Queued Listbox.xctl" Type="XControl" URL="../../../NHMFL_Core/Libraries/Queued Listbox/Queued Listbox.xctl"/>
 			<Item Name="Read 2 Traces.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/SRS/sr850/Read 2 Traces.vi"/>
 			<Item Name="Read Lockin Parameters.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/SoftwareLockin/Read Lockin Parameters.vi"/>
@@ -621,7 +652,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/github/builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{39905001-7DD4-4D41-B9D0-005A438F7D8E}</Property>
-				<Property Name="Bld_version.build" Type="Int">9</Property>
+				<Property Name="Bld_version.build" Type="Int">12</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/github/builds/NI_AB_PROJECTNAME/LabActor.exe</Property>
@@ -632,7 +663,7 @@
 				<Property Name="Destination[1].path" Type="Path">/C/github/builds/NI_AB_PROJECTNAME/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{57167144-4F29-4A6B-A213-E18FFCB0DA33}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{0F42C28E-681A-4DA6-B84E-45783B4FF974}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/LabActor/Launch LabActor.vi</Property>
@@ -670,7 +701,15 @@
 				<Property Name="Source[6].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[6].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[6].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">7</Property>
+				<Property Name="Source[7].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/My Computer/Post-Processors/Line Detector/Line Detector.lvclass</Property>
+				<Property Name="Source[7].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[7].type" Type="Str">Library</Property>
+				<Property Name="Source[8].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/My Computer/Post-Processors/Line Detector/Get Line Detector Object.vi</Property>
+				<Property Name="Source[8].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[8].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">9</Property>
 				<Property Name="TgtF_companyName" Type="Str">Los Alamos National Laboratory</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">LabActor</Property>
 				<Property Name="TgtF_internalName" Type="Str">LabActor</Property>

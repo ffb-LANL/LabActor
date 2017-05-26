@@ -38,6 +38,7 @@
 				<Item Name="Acquired Result.lvclass" Type="LVClass" URL="../../Results/Acquired Result/Acquired Result.lvclass"/>
 				<Item Name="File Path Result.lvclass" Type="LVClass" URL="../../Results/File Path Result/File Path Result.lvclass"/>
 				<Item Name="Fit Result.lvclass" Type="LVClass" URL="../../Results/Fit Result/Fit Result.lvclass"/>
+				<Item Name="LakeShore T Controller Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/LakeShore/LakeShore T Controller Driver/LakeShore T Controller Driver.lvclass"/>
 			</Item>
 			<Item Name="Utilities" Type="Folder">
 				<Item Name="Array Subset by Value.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Array Subset by Value.vi"/>
@@ -422,7 +423,6 @@
 			<Item Name="KeithleyMeter Function.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Keithley/Meter/KeithleyMeter Function.ctl"/>
 			<Item Name="KeithleyMeter Init.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Keithley/Meter/KeithleyMeter Init.vi"/>
 			<Item Name="LakeShore 370 Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/LakeShore/LakeShore 370 Driver/LakeShore 370 Driver.lvclass"/>
-			<Item Name="LakeShore T Controller Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/LakeShore/LakeShore T Controller Driver/LakeShore T Controller Driver.lvclass"/>
 			<Item Name="Launch Object by Type Response Msg.lvclass" Type="LVClass" URL="../../Template Module Messages/Launch Object by Type Response Msg/Launch Object by Type Response Msg.lvclass"/>
 			<Item Name="Letter to number.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Letter to number.vi"/>
 			<Item Name="Line Detector Fit Lorentzian.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Fit Lorentzian.vi"/>
@@ -441,6 +441,7 @@
 			<Item Name="Lockin Proccess.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/SoftwareLockin/Lockin Proccess.vi"/>
 			<Item Name="Lockin Processor Configuration.ctl" Type="VI" URL="../../Post-Processors/Lockin Processor/Lockin Processor Configuration.ctl"/>
 			<Item Name="Lockin Processor.lvclass" Type="LVClass" URL="../../Post-Processors/Lockin Processor/Lockin Processor.lvclass"/>
+			<Item Name="Lorentzian complex bg test Jacobian.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Test functions/Lorentzian complex bg test Jacobian.vi"/>
 			<Item Name="Lorentzian complex bg test.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Test functions/Lorentzian complex bg test.vi"/>
 			<Item Name="Lorentzian phase test.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Test functions/Lorentzian phase test.vi"/>
 			<Item Name="Low Pass Filter.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/SoftwareLockin/Low Pass Filter.vi"/>
@@ -638,6 +639,100 @@
 			<Item Name="Z to circle.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Z to circle.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
+			<Item Name="Batch Processor" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{2E7E91F2-3C95-4CB0-A7F1-2844934BC6D1}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{958F0ECD-D48A-4234-980D-757240179FC9}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{205A650A-20DC-4470-978A-D099665B5739}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Batch Processor</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/github/builds/NI_AB_PROJECTNAME</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{7FE09E58-306B-4058-B8B9-12C2BE83AD0A}</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Batch Processor.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/github/builds/NI_AB_PROJECTNAME/Batch Processor.exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">/C/github/builds/NI_AB_PROJECTNAME/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{63569171-1EE8-4409-A0A7-10326AE4E433}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Batch Processor/Launch Batch Processor.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Post-Processors/Line Detector/Get Line Detector Object.vi</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[2].type" Type="Str">VI</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Post-Processors/Line Detector/Line Detector.lvclass</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[3].type" Type="Str">Library</Property>
+				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Batch Processor/Batch Processor.cfg</Property>
+				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="SourceCount" Type="Int">5</Property>
+				<Property Name="TgtF_companyName" Type="Str">Los Alamos National Laboratory</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Batch Processor</Property>
+				<Property Name="TgtF_internalName" Type="Str">Batch Processor</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2017 Los Alamos National Laboratory</Property>
+				<Property Name="TgtF_productName" Type="Str">Batch Processor</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{7FFCD35B-5192-4686-B722-596C63B61223}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Batch Processor.exe</Property>
+			</Item>
+			<Item Name="Bin to TDMS" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{EAA3917D-4B08-4075-8A73-57496C3FCEFD}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{47876EDD-896A-438A-8511-27B598E3329E}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{F0C1E5AA-781C-4AE8-9A86-05C46EB8EB2C}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Bin to TDMS</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/github/builds/NI_AB_PROJECTNAME</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{EDCA7E97-FE89-4AC8-A5B7-D223B209A9D3}</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Bin to TDMS.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/github/builds/NI_AB_PROJECTNAME/Bin to TDMS.exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">/C/github/builds/NI_AB_PROJECTNAME/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{63569171-1EE8-4409-A0A7-10326AE4E433}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Helper apps/Bin to TDMS.vi</Property>
+				<Property Name="Source[1].properties[0].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[1].propertiesCount" Type="Int">1</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">Los Alamos National Laboratory</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Bin to TDMS</Property>
+				<Property Name="TgtF_internalName" Type="Str">Bin to TDMS</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2017 Los Alamos National Laboratory</Property>
+				<Property Name="TgtF_productName" Type="Str">Bin to TDMS</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{869EA668-9058-4346-9A80-B39CE68578FF}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Bin to TDMS.exe</Property>
+			</Item>
 			<Item Name="LabActor" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{4BF7D91F-C88A-420D-BAF5-3A806E711008}</Property>
@@ -652,7 +747,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/github/builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{39905001-7DD4-4D41-B9D0-005A438F7D8E}</Property>
-				<Property Name="Bld_version.build" Type="Int">12</Property>
+				<Property Name="Bld_version.build" Type="Int">18</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/github/builds/NI_AB_PROJECTNAME/LabActor.exe</Property>
@@ -663,7 +758,7 @@
 				<Property Name="Destination[1].path" Type="Path">/C/github/builds/NI_AB_PROJECTNAME/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{0F42C28E-681A-4DA6-B84E-45783B4FF974}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{63569171-1EE8-4409-A0A7-10326AE4E433}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/LabActor/Launch LabActor.vi</Property>

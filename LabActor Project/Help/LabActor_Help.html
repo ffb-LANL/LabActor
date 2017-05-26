@@ -24,17 +24,17 @@ w\:* {behavior:url(#default#VML);}
  <o:DocumentProperties>
   <o:Author>Fedor Balakirev</o:Author>
   <o:LastAuthor>Fedor Balakirev</o:LastAuthor>
-  <o:Revision>8</o:Revision>
-  <o:TotalTime>33</o:TotalTime>
+  <o:Revision>15</o:Revision>
+  <o:TotalTime>1294</o:TotalTime>
   <o:Created>2017-04-28T17:43:00Z</o:Created>
-  <o:LastSaved>2017-05-16T18:47:00Z</o:LastSaved>
+  <o:LastSaved>2017-05-25T16:30:00Z</o:LastSaved>
   <o:Pages>8</o:Pages>
-  <o:Words>1420</o:Words>
-  <o:Characters>8155</o:Characters>
+  <o:Words>1662</o:Words>
+  <o:Characters>9361</o:Characters>
   <o:Company>LANL</o:Company>
-  <o:Lines>679</o:Lines>
-  <o:Paragraphs>398</o:Paragraphs>
-  <o:CharactersWithSpaces>9177</o:CharactersWithSpaces>
+  <o:Lines>624</o:Lines>
+  <o:Paragraphs>334</o:Paragraphs>
+  <o:CharactersWithSpaces>10689</o:CharactersWithSpaces>
   <o:Version>15.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -46,6 +46,7 @@ w\:* {behavior:url(#default#VML);}
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Print</w:View>
+  <w:Zoom>130</w:Zoom>
   <w:SpellingState>Clean</w:SpellingState>
   <w:GrammarState>Clean</w:GrammarState>
   <w:TrackMoves>false</w:TrackMoves>
@@ -651,11 +652,10 @@ w\:* {behavior:url(#default#VML);}
  @font-face
 	{font-family:"Cambria Math";
 	panose-1:2 4 5 3 5 4 6 3 2 4;
-	mso-font-charset:1;
+	mso-font-charset:0;
 	mso-generic-font-family:roman;
-	mso-font-format:other;
 	mso-font-pitch:variable;
-	mso-font-signature:0 0 0 0 0 0;}
+	mso-font-signature:-536870145 1107305727 0 0 415 0;}
  /* Style Definitions */
  p.MsoNormal, li.MsoNormal, div.MsoNormal
 	{mso-style-unhide:no;
@@ -685,7 +685,8 @@ h2
 	mso-fareast-theme-font:minor-fareast;
 	font-weight:bold;}
 p
-	{mso-style-priority:99;
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-margin-top-alt:auto;
 	margin-right:0in;
 	mso-margin-bottom-alt:auto;
@@ -695,6 +696,11 @@ p
 	font-family:"Times New Roman",serif;
 	mso-fareast-font-family:"Times New Roman";
 	mso-fareast-theme-font:minor-fareast;}
+span.MsoPlaceholderText
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	color:gray;}
 span.Heading2Char
 	{mso-style-name:"Heading 2 Char";
 	mso-style-noshow:yes;
@@ -719,6 +725,9 @@ span.Heading2Char
 span.SpellE
 	{mso-style-name:"";
 	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
 .MsoChpDefault
 	{mso-style-type:export-only;
 	mso-default-props:yes;
@@ -770,7 +779,8 @@ div.WordSection1
 style='mso-fareast-font-family:"Times New Roman"'>LabActor</span></span><span
 style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h2>
 
-<p>Main control panel</p>
+<p>Main control module &#8211; select and access measurement modules, control
+measurements etc. </p>
 
 <p><span style='mso-no-proof:yes'><img width=708 height=302 id="_x0000_i1087"
 src="LabActor_lvclass_Actor_Corep.png" alt="LabActor.lvclass:Actor Core.vi"></span></p>
@@ -1015,7 +1025,7 @@ style='mso-fareast-font-family:"Times New Roman"'>
 <h2><a name="Monitor_Controller.lvclass:Actor_Core.vi"></a><span
 style='mso-fareast-font-family:"Times New Roman"'>Monitor <o:p></o:p></span></h2>
 
-<p>Monitor configuration</p>
+<p>Configure measurement flow</p>
 
 <p><span style='mso-no-proof:yes'><img width=144 height=233 id="_x0000_i1074"
 src="Monitor_Controller_lvclass_Actor_Corep.png"
@@ -1126,7 +1136,10 @@ style='mso-fareast-font-family:"Times New Roman"'>
 style='mso-fareast-font-family:"Times New Roman"'>Spectrum Recorder<o:p></o:p></span></h2>
 
 <p>Spectrum Recorder module sweeps frequency and records complex response using
-Red Pitaya</p>
+Red Pitaya. The sweep frequency increment is either uniform and equal to
+Frequency step, or equal to Frequency step<span style='mso-no-proof:yes'> only
+inside defined focus regions and </span>Frequency step*acceleration factor
+elsewhere<span style='mso-no-proof:yes'><o:p></o:p></span></p>
 
 <p><span style='mso-no-proof:yes'><img width=644 height=441 id="_x0000_i1068"
 src="../../Documentation/Draft/Spectrum_Recorder_too_lvclass_Actor_Corep.png"
@@ -1462,9 +1475,22 @@ style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
 <p>Line Detector module finds amplitude peaks in spectrum file and fits complex
 Lorentzian around peaks </p>
 
-<p><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
- coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
- filled="f" stroked="f">
+<p>Each individual resonance parameters are determined via non-linear curve fit
+of the signal data in complex <span class=GramE>representation </span><!--[if gte msEquation 12]><m:oMath><i
+ style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>Z</m:r><m:r>(</m:r><m:r>f</m:r><m:r>)=</m:r><m:r>X</m:r><m:r>(</m:r><m:r>f</m:r><m:r>)+</m:r><m:r>iY</m:r><m:r>(</m:r><m:r>f</m:r><m:r>)=</m:r><m:r>M</m:r><m:r>(</m:r><m:r>f</m:r><m:r>)</m:r></span></i><m:sSup><m:sSupPr><span
+   style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+   mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+   normal'><m:ctrlPr></m:ctrlPr></span></m:sSupPr><m:e><i style='mso-bidi-font-style:
+   normal'><span style='font-family:"Cambria Math",serif'><m:r>e</m:r></span></i></m:e><m:sup><i
+   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>i&#966;</m:r><m:r>(</m:r><m:r>f</m:r><m:r>)</m:r></span></i></m:sup></m:sSup></m:oMath><![endif]--><![if !msEquation]><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+position:relative;top:17.5pt;mso-text-raise:-17.5pt;mso-ansi-language:EN-US;
+mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
  <v:stroke joinstyle="miter"/>
  <v:formulas>
   <v:f eqn="if lineDrawn pixelLineWidth 0"/>
@@ -1482,11 +1508,127 @@ Lorentzian around peaks </p>
  </v:formulas>
  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
  <o:lock v:ext="edit" aspectratio="t"/>
-</v:shapetype><v:shape id="Picture_x0020_61" o:spid="_x0000_i1053" type="#_x0000_t75"
- style='width:510pt;height:303.75pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="LabActor_Help_files/image001.png" o:title=""/>
-</v:shape><![endif]--><![if !vml]><img width=680 height=405
-src="LabActor_Help_files/image002.png" v:shapes="Picture_x0020_61"><![endif]></span></p>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:179.25pt;
+ height:28.5pt'>
+ <v:imagedata src="LabActor_Help_files/image001.png" o:title="" chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=239 height=38
+src="LabActor_Help_files/image002.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]>,
+where&#8217;re<span style='mso-spacerun:yes'>&nbsp; </span><i style='mso-bidi-font-style:
+normal'>X</i> is &#8220;Signal X&#8221;, <i style='mso-bidi-font-style:normal'>Y</i>
+is &#8220;Signal Y&#8221;, <i style='mso-bidi-font-style:normal'>M</i> is
+magnitude, <!--[if gte msEquation 12]><m:oMath><i style='mso-bidi-font-style:
+ normal'><span style='font-family:"Cambria Math",serif'><m:r>&#966;</m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+position:relative;top:17.5pt;mso-text-raise:-17.5pt;mso-ansi-language:EN-US;
+mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:8.25pt;height:27.75pt'>
+ <v:imagedata src="LabActor_Help_files/image003.png" o:title="" chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=11 height=37
+src="LabActor_Help_files/image004.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+style='mso-spacerun:yes'>&nbsp;</span>is phase, and <i style='mso-bidi-font-style:
+normal'>f </i>is frequency. The resonance fit model <span class=GramE>is </span><!--[if gte msEquation 12]><m:oMath><i
+ style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
+ color:black;mso-themecolor:text1;background:white;mso-shading-themecolor:background1'><m:r>Z</m:r><m:r>(</m:r><m:r>f</m:r><m:r>)=
+  </m:r></span></i><m:f><m:fPr><span style='font-family:"Cambria Math",serif;
+   mso-ascii-font-family:"Cambria Math";mso-hansi-font-family:"Cambria Math";
+   color:black;mso-themecolor:text1;background:white;mso-shading-themecolor:
+   background1;font-style:italic;mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:fPr><m:num><m:sSup><m:sSupPr><span
+     style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+     mso-hansi-font-family:"Cambria Math";color:black;mso-themecolor:text1;
+     background:white;mso-shading-themecolor:background1;font-style:italic;
+     mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSupPr><m:e><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
+     color:black;mso-themecolor:text1;background:white;mso-shading-themecolor:
+     background1'><m:r>Ae</m:r></span></i></m:e><m:sup><i style='mso-bidi-font-style:
+     normal'><span style='font-family:"Cambria Math",serif;color:black;
+     mso-themecolor:text1;background:white;mso-shading-themecolor:background1'><m:r>i&#952;</m:r></span></i></m:sup></m:sSup></m:num><m:den><i
+   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
+   color:black;mso-themecolor:text1;background:white;mso-shading-themecolor:
+   background1'><m:r>f</m:r><m:r>-</m:r></span></i><m:sSub><m:sSubPr><span
+     style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+     mso-hansi-font-family:"Cambria Math";color:black;mso-themecolor:text1;
+     background:white;mso-shading-themecolor:background1;font-style:italic;
+     mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
+     color:black;mso-themecolor:text1;background:white;mso-shading-themecolor:
+     background1'><m:r>f</m:r></span></i></m:e><m:sub><i style='mso-bidi-font-style:
+     normal'><span style='font-family:"Cambria Math",serif;color:black;
+     mso-themecolor:text1;background:white;mso-shading-themecolor:background1'><m:r>0</m:r></span></i></m:sub></m:sSub><i
+   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
+   color:black;mso-themecolor:text1;background:white;mso-shading-themecolor:
+   background1'><m:r>+</m:r><m:r>i&#947;</m:r></span></i></m:den></m:f><i
+ style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
+ color:black;mso-themecolor:text1;background:white;mso-shading-themecolor:background1'><m:r>+</m:r></span></i><m:sSub><m:sSubPr><span
+   style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+   mso-hansi-font-family:"Cambria Math";color:black;mso-themecolor:text1;
+   background:white;mso-shading-themecolor:background1;font-style:italic;
+   mso-bidi-font-style:normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i
+   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif;
+   color:black;mso-themecolor:text1;background:white;mso-shading-themecolor:
+   background1'><m:r>Z</m:r></span></i></m:e><m:sub><i style='mso-bidi-font-style:
+   normal'><span style='font-family:"Cambria Math",serif;color:black;
+   mso-themecolor:text1;background:white;mso-shading-themecolor:background1'><m:r>bg</m:r></span></i></m:sub></m:sSub></m:oMath><![endif]--><![if !msEquation]><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+position:relative;top:22.5pt;mso-text-raise:-22.5pt;mso-ansi-language:EN-US;
+mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:108.75pt;height:39pt'>
+ <v:imagedata src="LabActor_Help_files/image005.png" o:title="" chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=145 height=52
+src="LabActor_Help_files/image006.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]>,
+with fit parameters as follows: <i style='mso-bidi-font-style:normal'>f</i><sub>0</sub>
+is center frequency, <!--[if gte msEquation 12]><m:oMath><i style='mso-bidi-font-style:
+ normal'><span style='font-family:"Cambria Math",serif'><m:r>&#947;</m:r><m:r> </m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+position:relative;top:17.5pt;mso-text-raise:-17.5pt;mso-ansi-language:EN-US;
+mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:9pt;height:27.75pt'>
+ <v:imagedata src="LabActor_Help_files/image007.png" o:title="" chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=12 height=37
+src="LabActor_Help_files/image008.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]>is
+resonance half-width, <i style='mso-bidi-font-style:normal'>A</i> is amplitude,
+<i style='mso-bidi-font-style:normal'>&#952;</i> is phase, and <!--[if gte msEquation 12]><m:oMath><m:sSub><m:sSubPr><span
+   style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+   mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
+   normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
+   normal'><span style='font-family:"Cambria Math",serif'><m:r>Z</m:r></span></i></m:e><m:sub><i
+   style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>bg</m:r></span></i></m:sub></m:sSub></m:oMath><![endif]--><![if !msEquation]><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+position:relative;top:19.0pt;mso-text-raise:-19.0pt;mso-ansi-language:EN-US;
+mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:18pt;height:29.25pt'>
+ <v:imagedata src="LabActor_Help_files/image009.png" o:title="" chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=24 height=39
+src="LabActor_Help_files/image010.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+style='mso-spacerun:yes'>&nbsp;</span>is background signal.</p>
+
+<p>The initial guess for fit parameters can be provided by either a Peak finder
+or by last fit results obtained in preceding Line Detector processing run shown
+in Best fit results control. The Best fit results array can be manually edited
+by overwriting the values or inserting or deleting rows via right-click pop-up
+menu.<span style='mso-spacerun:yes'>&nbsp; </span>Each separate resonance is
+fitted within a frequency Fit window centered on its guessed f<sub>0</sub>.</p>
+
+<p>Line Detector can optionally send the updated the list of focus regions (<i
+style='mso-bidi-font-style:normal'>f</i><sub>0</sub>) to Spectrum Recorder, in
+other words to follow peaks. The update is delayed depending on how full Red
+Pitaya input buffer is.<span style='mso-no-proof:yes'> <!--[if gte vml 1]><v:shape
+ id="Picture_x0020_1" o:spid="_x0000_i1053" type="#_x0000_t75" style='width:468pt;
+ height:286.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="LabActor_Help_files/image011.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=624 height=382
+src="LabActor_Help_files/image012.jpg" v:shapes="Picture_x0020_1"><![endif]></span></p>
 
 <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
 display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
@@ -1749,7 +1891,7 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
   <td colspan=4 valign=top style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Follow
   peaks</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  <p>Auto-update Spectrum recorder focus regions with best fit results</p>
+  <p>Auto-update Spectrum Recorder focus regions with best fit results</p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:2'>
@@ -1809,9 +1951,9 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
  <![if !supportMisalignedColumns]>
  <tr height=0>
   <td width=37 style='border:none'></td>
-  <td width=352 style='border:none'></td>
-  <td width=25 style='border:none'></td>
-  <td width=25 style='border:none'></td>
+  <td width=357 style='border:none'></td>
+  <td width=26 style='border:none'></td>
+  <td width=26 style='border:none'></td>
   <td width=22 style='border:none'></td>
  </tr>
  <![endif]>
@@ -1833,7 +1975,7 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Re-process</span></b><span
   style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  <p>Re-process spectrum selected in the Input file window</p>
+  <p>Re-process spectrum file selected in the Input file window</p>
   </td>
  </tr>
 </table>
@@ -1866,7 +2008,8 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Spectrum
   plot</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  <p>Spectrum data with complex Lorentzian fit</p>
+  <p>Spectrum data (thin lines) with complex Lorentzian fit results (thick
+  lines)</p>
   </td>
  </tr>
 </table>
@@ -1884,7 +2027,9 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Peak
   Plot</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
-  <p>Filtered and smoothed magnitude with peaks found</p>
+  <p>Filtered and smoothed magnitude with peaks found by Peak<span
+  style='mso-spacerun:yes'>&nbsp; </span>Finder, if Peak<span
+  style='mso-spacerun:yes'>&nbsp; </span>Finder is enabled</p>
   </td>
  </tr>
 </table>
@@ -1920,6 +2065,15 @@ display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
 </table>
 
 <p><b style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;
+mso-no-proof:yes'><o:p>&nbsp;</o:p></span></b></p>
+
+<p><b style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;
+mso-no-proof:yes'><o:p>&nbsp;</o:p></span></b></p>
+
+<p><b style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;
+mso-no-proof:yes'><o:p>&nbsp;</o:p></span></b></p>
+
+<p><b style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;
 mso-no-proof:yes'>Data<span style='mso-spacerun:yes'>&nbsp; </span>Plot Module<o:p></o:p></span></b></p>
 
 <p>Plots listed TDMS data files</p>
@@ -1932,7 +2086,7 @@ mso-no-proof:yes'>Data<span style='mso-spacerun:yes'>&nbsp; </span>Plot Module<o
  <v:imagedata src="../../Documentation/Draft/XY_WFRM_Plot_lvclass_Actor_Corep.png"
   cropbottom="20212f" cropleft="-1f" cropright="-799f"/>
 </v:shape><![endif]--><![if !vml]><img width=617 height=381
-src="LabActor_Help_files/image003.jpg" alt="XY WFRM Plot.lvclass:Actor Core.vi"
+src="LabActor_Help_files/image013.jpg" alt="XY WFRM Plot.lvclass:Actor Core.vi"
 v:shapes="_x0000_i1032"><![endif]></span><span style='mso-fareast-font-family:
 "Times New Roman"'><o:p></o:p></span></p>
 
@@ -1953,8 +2107,8 @@ v:shapes="_x0000_i1032"><![endif]></span><span style='mso-fareast-font-family:
   "Times New Roman"'>File(s)</span></b><span style='mso-fareast-font-family:
   "Times New Roman"'> <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-left:.5in'><span style='mso-fareast-font-family:
-  "Times New Roman"'>List of files to plot. Click browse buttons on the right to
-  add/replace<o:p></o:p></span></p>
+  "Times New Roman"'>List of files to plot. Click browse buttons on the right
+  to add/replace<o:p></o:p></span></p>
   </td>
  </tr>
 </table>

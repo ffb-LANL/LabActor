@@ -336,6 +336,7 @@
 			<Item Name="Client Message Msg.lvclass" Type="LVClass" URL="../../Comms/Communications Messages/Client Message Msg/Client Message Msg.lvclass"/>
 			<Item Name="Communications Configuration.ctl" Type="VI" URL="../../Comms/Communications Configuration.ctl"/>
 			<Item Name="Communications.lvclass" Type="LVClass" URL="../../Comms/Communications/Communications.lvclass"/>
+			<Item Name="comparison control.ctl" Type="VI" URL="../../../resonant_ultrasound/maglab ultrasound -- arkady/comparison control.ctl"/>
 			<Item Name="Configuration Value Changed Msg.lvclass" Type="LVClass" URL="../../Template Module Messages/Configuration Value Changed Msg/Configuration Value Changed Msg.lvclass"/>
 			<Item Name="Configure serial bus.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Cryo-con/Configure serial bus.vi"/>
 			<Item Name="Convert TDMS channel.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/File Format Converter/Convert TDMS channel.vi"/>
@@ -609,7 +610,6 @@
 			<Item Name="TDMS to Meta Data.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/OO config/TDMS to Meta Data.vi"/>
 			<Item Name="Temperature Controller Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Temperature Controller Driver/Temperature Controller Driver.lvclass"/>
 			<Item Name="Temperature Controller.lvclass" Type="LVClass" URL="../../Recorders/Temperature Controller/Temperature Controller.lvclass"/>
-			<Item Name="Time-Delayed Response Msg.lvclass" Type="LVClass" URL="../../Measurements/Timer Messages/Time-Delayed Response Msg/Time-Delayed Response Msg.lvclass"/>
 			<Item Name="TimedPeakStreaming.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Micron Optics/TimedPeakStreaming.vi"/>
 			<Item Name="TryAgain.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/File LLB/TryAgain.vi"/>
 			<Item Name="Unubscribe Request Msg.lvclass" Type="LVClass" URL="../../Template Module Messages/Unubscribe Request Msg/Unubscribe Request Msg.lvclass"/>

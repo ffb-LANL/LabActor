@@ -40,6 +40,9 @@
 				<Item Name="File Path Result.lvclass" Type="LVClass" URL="../../Results/File Path Result/File Path Result.lvclass"/>
 				<Item Name="Fit Result.lvclass" Type="LVClass" URL="../../Results/Fit Result/Fit Result.lvclass"/>
 				<Item Name="LakeShore T Controller Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/LakeShore/LakeShore T Controller Driver/LakeShore T Controller Driver.lvclass"/>
+				<Item Name="RP Communicator.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Core/RP Communicator/RP Communicator.lvclass"/>
+				<Item Name="RP EEPROM Calibration.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP EEPROM Calibration.ctl"/>
+				<Item Name="RP Instrument.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Core/RP Instrument/RP Instrument.lvclass"/>
 			</Item>
 			<Item Name="Utilities" Type="Folder">
 				<Item Name="Array Subset by Value.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Array Subset by Value.vi"/>
@@ -78,6 +81,8 @@
 				<Item Name="Processing Test.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Test/ASPT/Processing Test.vi"/>
 			</Item>
 		</Item>
+		<Item Name="Driver Interface Template.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Driver Interface Template.vi"/>
+		<Item Name="RP scale to EEprom.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/Test/RP scale to EEprom.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array of VData to VArray__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array of VData to VArray__ogtk.vi"/>
@@ -487,6 +492,7 @@
 			<Item Name="Oxford visa write read.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Oxford visa write read.vi"/>
 			<Item Name="Pad TAB.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Pad TAB.vi"/>
 			<Item Name="parse -- get list of matches -- numbers.vi" Type="VI" URL="../../../resonant_ultrasound/maglab ultrasound -- arkady/parse -- get list of matches -- numbers.vi"/>
+			<Item Name="Pause Work Msg.lvclass" Type="LVClass" URL="../../Worker Messages/Pause Work Msg/Pause Work Msg.lvclass"/>
 			<Item Name="Peak Width.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Peak Width.vi"/>
 			<Item Name="Perform Work Msg.lvclass" Type="LVClass" URL="../../Worker Messages/Perform Work Msg/Perform Work Msg.lvclass"/>
 			<Item Name="Phase word to Frequency.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/Phase word to Frequency.vi"/>
@@ -535,12 +541,10 @@
 			<Item Name="RP calculate subset.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP calculate subset.vi"/>
 			<Item Name="RP Command.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Command.ctl"/>
 			<Item Name="RP Communicator VISA.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Core/RP Communicator VISA/RP Communicator VISA.lvclass"/>
-			<Item Name="RP Communicator.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Core/RP Communicator/RP Communicator.lvclass"/>
 			<Item Name="RP Config Offsets.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Config Offsets.ctl"/>
 			<Item Name="RP I-V Configuration.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Rep Pitaya I-V driver/RP I-V Configuration.ctl"/>
 			<Item Name="RP I-V Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Rep Pitaya I-V driver/RP I-V Driver.lvclass"/>
 			<Item Name="RP I-V.lvclass" Type="LVClass" URL="../../Recorders/RP I-V/RP I-V.lvclass"/>
-			<Item Name="RP Instrument.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Core/RP Instrument/RP Instrument.lvclass"/>
 			<Item Name="RP IV pattern write.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP IV pattern write.vi"/>
 			<Item Name="RP Read RX FIFO Fast TCP.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Read RX FIFO Fast TCP.vi"/>
 			<Item Name="RP Read RX FIFO Fast VISA.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Read RX FIFO Fast VISA.vi"/>
@@ -611,7 +615,9 @@
 			<Item Name="Temperature Controller Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Temperature Controller Driver/Temperature Controller Driver.lvclass"/>
 			<Item Name="Temperature Controller.lvclass" Type="LVClass" URL="../../Recorders/Temperature Controller/Temperature Controller.lvclass"/>
 			<Item Name="TimedPeakStreaming.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Micron Optics/TimedPeakStreaming.vi"/>
+			<Item Name="Trigger Msg.lvclass" Type="LVClass" URL="../../Worker Messages/Trigger Msg/Trigger Msg.lvclass"/>
 			<Item Name="TryAgain.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/File LLB/TryAgain.vi"/>
+			<Item Name="Un-Pause Work Msg.lvclass" Type="LVClass" URL="../../Worker Messages/Un-Pause Work Msg/Un-Pause Work Msg.lvclass"/>
 			<Item Name="Unubscribe Request Msg.lvclass" Type="LVClass" URL="../../Template Module Messages/Unubscribe Request Msg/Unubscribe Request Msg.lvclass"/>
 			<Item Name="Update Armed Msg.lvclass" Type="LVClass" URL="../../Monitor-Pulse Messages/Update Armed Msg/Update Armed Msg.lvclass"/>
 			<Item Name="Update Cursor State Msg.lvclass" Type="LVClass" URL="../../Utilities/Cursor Digitizer Messages/Update Cursor State Msg/Update Cursor State Msg.lvclass"/>

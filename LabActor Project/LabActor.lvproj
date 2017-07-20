@@ -360,6 +360,7 @@
 			<Item Name="Dynamic Load DAQmx.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Digitizer/Dynamic Load DAQmx.vi"/>
 			<Item Name="Dynamic Load NI Scope.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/NI-DAQ/NI-Scope Digitizer/Dynamic Load NI Scope.vi"/>
 			<Item Name="Empty buffer.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/GPIB/Empty buffer.vi"/>
+			<Item Name="Extend Array.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Extend Array.vi"/>
 			<Item Name="file -- scan filename action.ctl" Type="VI" URL="../../../resonant_ultrasound/maglab ultrasound -- arkady/file -- scan filename action.ctl"/>
 			<Item Name="file -- scan filename logic -- datestring.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/file -- scan filename logic -- datestring.vi"/>
 			<Item Name="File Format Converter.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/File Format Converter/File Format Converter.vi"/>

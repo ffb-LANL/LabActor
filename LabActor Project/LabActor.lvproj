@@ -25,6 +25,7 @@
 					<Item Name="Update Focus Msg.lvclass" Type="LVClass" URL="../../Spectrum Recorder too Messages/Update Focus Msg/Update Focus Msg.lvclass"/>
 				</Item>
 				<Item Name="Application Controller.lvclass" Type="LVClass" URL="../../Controllers/Application Controller/Application Controller.lvclass"/>
+				<Item Name="Instrument Actor.lvclass" Type="LVClass" URL="../../Instrument Actor/Instrument Actor.lvclass"/>
 				<Item Name="Monitor Controller.lvclass" Type="LVClass" URL="../../Controllers/Monitor Controller/Monitor Controller.lvclass"/>
 				<Item Name="Monitor-Pulse.lvclass" Type="LVClass" URL="../../Monitor-Pulse/Monitor-Pulse.lvclass"/>
 				<Item Name="Plot.lvclass" Type="LVClass" URL="../../Plots/Plot/Plot.lvclass"/>
@@ -72,6 +73,10 @@
 			</Item>
 		</Item>
 		<Item Name="Post-Processors" Type="Folder">
+			<Item Name="Elastic Moduli" Type="Folder">
+				<Item Name="Elastic Moduli Configuration.ctl" Type="VI" URL="../../Post-Processors/Elastic Moduli/Elastic Moduli Configuration.ctl"/>
+				<Item Name="Elastic Moduli.lvclass" Type="LVClass" URL="../../Post-Processors/Elastic Moduli/Elastic Moduli.lvclass"/>
+			</Item>
 			<Item Name="Line Detector" Type="Folder">
 				<Item Name="Get Line Detector Object.vi" Type="VI" URL="../../Post-Processors/Line Detector/Get Line Detector Object.vi"/>
 				<Item Name="Line Detector Configuration.ctl" Type="VI" URL="../../Post-Processors/Line Detector/Line Detector Configuration.ctl"/>
@@ -411,7 +416,6 @@
 			<Item Name="Init Comms Msg.lvclass" Type="LVClass" URL="../../Comms/Communications Messages/Init Comms Msg/Init Comms Msg.lvclass"/>
 			<Item Name="Init Response Msg.lvclass" Type="LVClass" URL="../../Controllers/Process Controller Messages/Init Response Msg/Init Response Msg.lvclass"/>
 			<Item Name="Initialize Work Msg.lvclass" Type="LVClass" URL="../../Worker Messages/Initialize Work Msg/Initialize Work Msg.lvclass"/>
-			<Item Name="Instrument Actor.lvclass" Type="LVClass" URL="../../Instrument Actor/Instrument Actor.lvclass"/>
 			<Item Name="Instrument Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Instrument Driver.lvclass"/>
 			<Item Name="Integrate channel from file.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/File LLB/Integrate channel from file.vi"/>
 			<Item Name="Integrate channel.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Controls/Integrate channel.ctl"/>

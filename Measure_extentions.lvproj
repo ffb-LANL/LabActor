@@ -256,7 +256,6 @@
 				<Item Name="Magnet Strain" Type="Folder">
 					<Item Name="Strain Digitizer.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Strain Digitizer/Strain Digitizer.lvclass"/>
 				</Item>
-				<Item Name="NI-Scope Recorder" Type="Folder"/>
 				<Item Name="RP I-V" Type="Folder">
 					<Item Name="RP I-V Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Rep Pitaya I-V driver/RP I-V Configuration.ctl"/>
 					<Item Name="RP I-V.lvclass" Type="LVClass" URL="../Recorders/RP I-V/RP I-V.lvclass"/>

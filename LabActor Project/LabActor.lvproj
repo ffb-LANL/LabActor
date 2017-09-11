@@ -38,6 +38,7 @@
 			</Item>
 			<Item Name="Non-Actors" Type="Folder">
 				<Item Name="Acquired Result.lvclass" Type="LVClass" URL="../../Results/Acquired Result/Acquired Result.lvclass"/>
+				<Item Name="Cryo-Con Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Cryo-con/Cryo-Con Driver/Cryo-Con Driver.lvclass"/>
 				<Item Name="File Path Result.lvclass" Type="LVClass" URL="../../Results/File Path Result/File Path Result.lvclass"/>
 				<Item Name="Fit Result.lvclass" Type="LVClass" URL="../../Results/Fit Result/Fit Result.lvclass"/>
 				<Item Name="LakeShore T Controller Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/LakeShore/LakeShore T Controller Driver/LakeShore T Controller Driver.lvclass"/>
@@ -344,15 +345,14 @@
 			<Item Name="Clear GPIB Timeout.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/GPIB/Clear GPIB Timeout.vi"/>
 			<Item Name="Clear Single Error.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Clear Single Error.vi"/>
 			<Item Name="Client Message Msg.lvclass" Type="LVClass" URL="../../Comms/Communications Messages/Client Message Msg/Client Message Msg.lvclass"/>
+			<Item Name="clog2.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/clog2.vi"/>
 			<Item Name="Communications Configuration.ctl" Type="VI" URL="../../Comms/Communications Configuration.ctl"/>
 			<Item Name="Communications.lvclass" Type="LVClass" URL="../../Comms/Communications/Communications.lvclass"/>
-			<Item Name="comparison control.ctl" Type="VI" URL="../../../resonant_ultrasound/maglab ultrasound -- arkady/comparison control.ctl"/>
 			<Item Name="Configuration Value Changed Msg.lvclass" Type="LVClass" URL="../../Template Module Messages/Configuration Value Changed Msg/Configuration Value Changed Msg.lvclass"/>
 			<Item Name="Configure serial bus.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Cryo-con/Configure serial bus.vi"/>
 			<Item Name="Convert TDMS channel.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/File Format Converter/Convert TDMS channel.vi"/>
 			<Item Name="Create folder if not exist.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/File LLB/Create folder if not exist.vi"/>
 			<Item Name="Create plots - ring selector.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/Create plots - ring selector.vi"/>
-			<Item Name="Cryo-Con Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Cryo-con/Cryo-Con Driver/Cryo-Con Driver.lvclass"/>
 			<Item Name="Cryo-Con Get T.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Cryo-con/Cryo-Con Get T.vi"/>
 			<Item Name="Cursor Digitizer.lvclass" Type="LVClass" URL="../../Utilities/Cursor Digitizer/Cursor Digitizer.lvclass"/>
 			<Item Name="Cursor State.ctl" Type="VI" URL="../../Utilities/Cursor Digitizer/Cursor State.ctl"/>
@@ -407,6 +407,7 @@
 			<Item Name="HP Counter Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/HP/HP Counter Driver/HP Counter Driver.lvclass"/>
 			<Item Name="I-V parameters.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/Waform generation/I-V parameters.ctl"/>
 			<Item Name="I-V to Waveform parameters.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/Waform generation/I-V to Waveform parameters.vi"/>
+			<Item Name="Identify Cryo-Con.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Cryo-con/Identify Cryo-Con.vi"/>
 			<Item Name="Identify Neocera.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Neocera/Identify Neocera.vi"/>
 			<Item Name="Identify Oxford.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Identify Oxford.vi"/>
 			<Item Name="IdentifyAndReadInstr.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/IdentifyAndReadInstr.vi"/>
@@ -621,6 +622,7 @@
 			<Item Name="Temperature Controller.lvclass" Type="LVClass" URL="../../Recorders/Temperature Controller/Temperature Controller.lvclass"/>
 			<Item Name="TimedPeakStreaming.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Micron Optics/TimedPeakStreaming.vi"/>
 			<Item Name="Trigger Msg.lvclass" Type="LVClass" URL="../../Worker Messages/Trigger Msg/Trigger Msg.lvclass"/>
+			<Item Name="Truncate I32 to I 16.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Truncate I32 to I 16.vi"/>
 			<Item Name="TryAgain.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/File LLB/TryAgain.vi"/>
 			<Item Name="Un-Pause Work Msg.lvclass" Type="LVClass" URL="../../Worker Messages/Un-Pause Work Msg/Un-Pause Work Msg.lvclass"/>
 			<Item Name="Unubscribe Request Msg.lvclass" Type="LVClass" URL="../../Template Module Messages/Unubscribe Request Msg/Unubscribe Request Msg.lvclass"/>
@@ -636,7 +638,7 @@
 			<Item Name="Wait for Result Msg.lvclass" Type="LVClass" URL="../../Pulse Recorders/Pulse Recorder Messages/Wait for Data Msg/Wait for Result Msg.lvclass"/>
 			<Item Name="Wait miliseconds.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Wait miliseconds.vi"/>
 			<Item Name="Waveform parameters.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/Waform generation/Waveform parameters.ctl"/>
-			<Item Name="Worker State.ctl" Type="VI" URL="../../Worker/Worker State.ctl"/>
+			<Item Name="Worker State.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Worker State.ctl"/>
 			<Item Name="Workers by Function Response Msg.lvclass" Type="LVClass" URL="../../Sequence Elements/Sequence Element Messages/Workers by Function Response Msg/Workers by Function Response Msg.lvclass"/>
 			<Item Name="Write File history depth Msg.lvclass" Type="LVClass" URL="../../Plots/Plot Messages/Write Keep # of preceding files Msg/Write File history depth Msg.lvclass"/>
 			<Item Name="Write Files Msg.lvclass" Type="LVClass" URL="../../Plots/Plot Messages/Write Files Msg/Write Files Msg.lvclass"/>

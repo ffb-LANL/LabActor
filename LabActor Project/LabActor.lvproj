@@ -79,6 +79,7 @@
 			<Item Name="Elastic Moduli" Type="Folder">
 				<Item Name="Elastic Moduli Configuration.ctl" Type="VI" URL="../../Post-Processors/Elastic Moduli/Elastic Moduli Configuration.ctl"/>
 				<Item Name="Elastic Moduli.lvclass" Type="LVClass" URL="../../Post-Processors/Elastic Moduli/Elastic Moduli.lvclass"/>
+				<Item Name="Launch Elastic Module.vi" Type="VI" URL="../../Post-Processors/Elastic Moduli/Launch Elastic Module.vi"/>
 			</Item>
 			<Item Name="Line Detector" Type="Folder">
 				<Item Name="Get Line Detector Object.vi" Type="VI" URL="../../Post-Processors/Line Detector/Get Line Detector Object.vi"/>
@@ -355,7 +356,6 @@
 			<Item Name="clog2.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/clog2.vi"/>
 			<Item Name="Communications Configuration.ctl" Type="VI" URL="../../Comms/Communications Configuration.ctl"/>
 			<Item Name="Communications.lvclass" Type="LVClass" URL="../../Comms/Communications/Communications.lvclass"/>
-			<Item Name="comparison control.ctl" Type="VI" URL="../../../resonant_ultrasound/maglab ultrasound -- arkady/comparison control.ctl"/>
 			<Item Name="Configuration Value Changed Msg.lvclass" Type="LVClass" URL="../../Template Module Messages/Configuration Value Changed Msg/Configuration Value Changed Msg.lvclass"/>
 			<Item Name="Configure serial bus.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Cryo-con/Configure serial bus.vi"/>
 			<Item Name="Convert TDMS channel.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/File Format Converter/Convert TDMS channel.vi"/>

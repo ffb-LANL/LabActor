@@ -53,7 +53,9 @@
 				<Item Name="Line Detector Crop Region.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Crop Region.vi"/>
 				<Item Name="Merge Arrays.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Merge Arrays.vi"/>
 				<Item Name="Merge Overlapping Regions.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Merge Overlapping Regions.vi"/>
+				<Item Name="RP scale to EEprom.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/Test/RP scale to EEprom.vi"/>
 				<Item Name="Test resample.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Test resample.vi"/>
+				<Item Name="Time Stamp to Dynamic Data.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Time Stamp to Dynamic Data.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Helper apps" Type="Folder">
@@ -73,6 +75,8 @@
 			<Item Name="Spectrum Recorder" Type="Folder">
 				<Item Name="Spectrum Configuration.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Red Pitaya Transceiver Driver/Spectrum Configuration.ctl"/>
 				<Item Name="Spectrum Recorder too.lvclass" Type="LVClass" URL="../../Spectrum Recorder too/Spectrum Recorder too.lvclass"/>
+				<Item Name="Stream Segment.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Stream Segment.ctl"/>
+				<Item Name="Stream Splitter.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Stream Splitter.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Post-Processors" Type="Folder">
@@ -91,8 +95,6 @@
 			</Item>
 		</Item>
 		<Item Name="Driver Interface Template.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Driver Interface Template.vi"/>
-		<Item Name="RP scale to EEprom.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/Test/RP scale to EEprom.vi"/>
-		<Item Name="Time Stamp to Dynamic Data.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Time Stamp to Dynamic Data.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array of VData to VArray__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array of VData to VArray__ogtk.vi"/>
@@ -361,6 +363,7 @@
 			<Item Name="clog2.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/clog2.vi"/>
 			<Item Name="Communications Configuration.ctl" Type="VI" URL="../../Comms/Communications Configuration.ctl"/>
 			<Item Name="Communications.lvclass" Type="LVClass" URL="../../Comms/Communications/Communications.lvclass"/>
+			<Item Name="comparison control.ctl" Type="VI" URL="../../../resonant_ultrasound/maglab ultrasound -- arkady/comparison control.ctl"/>
 			<Item Name="Configuration Value Changed Msg.lvclass" Type="LVClass" URL="../../Template Module Messages/Configuration Value Changed Msg/Configuration Value Changed Msg.lvclass"/>
 			<Item Name="Configure serial bus.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Cryo-con/Configure serial bus.vi"/>
 			<Item Name="Convert TDMS channel.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/File Format Converter/Convert TDMS channel.vi"/>

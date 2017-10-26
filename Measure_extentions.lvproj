@@ -927,6 +927,7 @@
 			<Item Name="Pupulate and conf serial bus.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Instrument/Pupulate and conf serial bus.vi"/>
 			<Item Name="Queued Listbox.xctl" Type="XControl" URL="../../NHMFL_Core/Libraries/Queued Listbox/Queued Listbox.xctl"/>
 			<Item Name="Read 2 Traces.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/SRS/sr850/Read 2 Traces.vi"/>
+			<Item Name="Read I-V Configuration.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Rep Pitaya I-V driver/Read I-V Configuration.vi"/>
 			<Item Name="Read Menu object array values.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Queued Listbox/Read Menu object array values.vi"/>
 			<Item Name="Read object configuration.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/OO config/Read object configuration.vi"/>
 			<Item Name="Read TDMS Channel-Group Names.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Read TDMS Channel-Group Names.vi"/>
@@ -983,6 +984,8 @@
 			<Item Name="Stop Work Msg.lvclass" Type="LVClass" URL="../Worker Messages/Stop Work Msg/Stop Work Msg.lvclass"/>
 			<Item Name="Store Value in TDMS.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/TDMS/Store Value in TDMS.vi"/>
 			<Item Name="Store XY Msg.lvclass" Type="LVClass" URL="../Utilities/Cursor Digitizer Messages/Store XY Msg/Store XY Msg.lvclass"/>
+			<Item Name="Stream Segment.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Stream Segment.ctl"/>
+			<Item Name="Stream Splitter.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Stream Splitter.vi"/>
 			<Item Name="Sub_2016_05_04_SinBias.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Waform generation/Sub_2016_05_04_SinBias.vi"/>
 			<Item Name="Sweep Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Sweeper Driver/Sweep Configuration.ctl"/>
 			<Item Name="Sweep Sequence Configuration.ctl" Type="VI" URL="../Sequence Elements/Sweep Sequence/Sweep Sequence Configuration.ctl"/>

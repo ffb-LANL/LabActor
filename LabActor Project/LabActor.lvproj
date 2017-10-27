@@ -75,8 +75,8 @@
 			<Item Name="Spectrum Recorder" Type="Folder">
 				<Item Name="Spectrum Configuration.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Red Pitaya Transceiver Driver/Spectrum Configuration.ctl"/>
 				<Item Name="Spectrum Recorder too.lvclass" Type="LVClass" URL="../../Spectrum Recorder too/Spectrum Recorder too.lvclass"/>
+				<Item Name="Stream Compress Splitter.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Stream Compress Splitter.vi"/>
 				<Item Name="Stream Segment.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Stream Segment.ctl"/>
-				<Item Name="Stream Splitter.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Stream Splitter.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Post-Processors" Type="Folder">

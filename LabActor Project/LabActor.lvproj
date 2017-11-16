@@ -49,6 +49,7 @@
 			<Item Name="Utilities" Type="Folder">
 				<Item Name="Array Subset by Value.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Array Subset by Value.vi"/>
 				<Item Name="Create Frequency Steps Array.vi" Type="VI" URL="../../Spectrum Recorder too/Create Frequency Steps Array.vi"/>
+				<Item Name="LabActor Error.ctl" Type="VI" URL="../../Template Module/LabActor Error.ctl"/>
 				<Item Name="Line Detector Create rusin_dat.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Create rusin_dat.vi"/>
 				<Item Name="Line Detector Crop Region.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Crop Region.vi"/>
 				<Item Name="Merge Arrays.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Merge Arrays.vi"/>
@@ -80,18 +81,18 @@
 			</Item>
 		</Item>
 		<Item Name="Post-Processors" Type="Folder">
-			<Item Name="Elastic Moduli" Type="Folder">
-				<Item Name="Elastic Moduli Configuration.ctl" Type="VI" URL="../../Post-Processors/Elastic Moduli/Elastic Moduli Configuration.ctl"/>
-				<Item Name="Elastic Moduli.lvclass" Type="LVClass" URL="../../Post-Processors/Elastic Moduli/Elastic Moduli.lvclass"/>
-				<Item Name="Launch Elastic Module.vi" Type="VI" URL="../../Post-Processors/Elastic Moduli/Launch Elastic Module.vi"/>
+			<Item Name="Format Resonances" Type="Folder">
+				<Item Name="Format Resonances Configuration.ctl" Type="VI" URL="../../Post-Processors/Elastic Moduli/Format Resonances Configuration.ctl"/>
+				<Item Name="Format Resonances.lvclass" Type="LVClass" URL="../../Post-Processors/Elastic Moduli/Format Resonances.lvclass"/>
+				<Item Name="Launch Format Resonances.vi" Type="VI" URL="../../Post-Processors/Elastic Moduli/Launch Format Resonances.vi"/>
 			</Item>
-			<Item Name="Line Detector" Type="Folder">
-				<Item Name="Get Line Detector Object.vi" Type="VI" URL="../../Post-Processors/Line Detector/Get Line Detector Object.vi"/>
-				<Item Name="Line Detector Configuration.ctl" Type="VI" URL="../../Post-Processors/Line Detector/Line Detector Configuration.ctl"/>
-				<Item Name="Line Detector Process.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Process.vi"/>
-				<Item Name="Line Detector.lvclass" Type="LVClass" URL="../../Post-Processors/Line Detector/Line Detector.lvclass"/>
+			<Item Name="Resonance Detector" Type="Folder">
+				<Item Name="Get Resonance Detector Object.vi" Type="VI" URL="../../Post-Processors/Line Detector/Get Resonance Detector Object.vi"/>
 				<Item Name="Lorentz Fit Test.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Lorentz Fit Test.vi"/>
 				<Item Name="Processing Test.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Test/ASPT/Processing Test.vi"/>
+				<Item Name="Resonance Detector Configuration.ctl" Type="VI" URL="../../Post-Processors/Line Detector/Resonance Detector Configuration.ctl"/>
+				<Item Name="Resonance Detector Process.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Resonance Detector Process.vi"/>
+				<Item Name="Resonance Detector.lvclass" Type="LVClass" URL="../../Post-Processors/Line Detector/Resonance Detector.lvclass"/>
 			</Item>
 		</Item>
 		<Item Name="Driver Interface Template.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Driver Interface Template.vi"/>
@@ -553,6 +554,7 @@
 			<Item Name="Replace dt SGL.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Replace dt SGL.vi"/>
 			<Item Name="Replace dt.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Replace dt.vi"/>
 			<Item Name="Replot Msg.lvclass" Type="LVClass" URL="../../Plots/Plot Messages/Replot Msg/Replot Msg.lvclass"/>
+			<Item Name="Resonance Detector Create sp_dat.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Resonance Detector Create sp_dat.vi"/>
 			<Item Name="Restore Configuration Msg.lvclass" Type="LVClass" URL="../../Template Module Messages/Restore Configuration Msg/Restore Configuration Msg.lvclass"/>
 			<Item Name="Restore Permissions.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/File LLB/Restore Permissions.vi"/>
 			<Item Name="Result Reply Msg.lvclass" Type="LVClass" URL="../../Template Module Messages/Result Reply Msg/Result Reply Msg.lvclass"/>
@@ -699,11 +701,11 @@
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Post-Processors/Line Detector/Get Line Detector Object.vi</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Post-Processors/Resonance Detector/Get Resonance Detector Object.vi</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Post-Processors/Line Detector/Line Detector.lvclass</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Post-Processors/Resonance Detector/Resonance Detector.lvclass</Property>
 				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[3].type" Type="Str">Library</Property>
 				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
@@ -775,7 +777,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/github/builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{39905001-7DD4-4D41-B9D0-005A438F7D8E}</Property>
-				<Property Name="Bld_version.build" Type="Int">20</Property>
+				<Property Name="Bld_version.build" Type="Int">22</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/github/builds/NI_AB_PROJECTNAME/LabActor.exe</Property>
@@ -810,7 +812,7 @@
 				<Property Name="Source[4].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[4].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[4].type" Type="Str">VI</Property>
-				<Property Name="Source[5].itemID" Type="Ref">/My Computer/Post-Processors/Line Detector/Line Detector.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/Post-Processors/Resonance Detector/Resonance Detector.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[5].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[5].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[5].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -825,11 +827,11 @@
 				<Property Name="Source[6].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[6].type" Type="Str">VI</Property>
 				<Property Name="Source[7].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/My Computer/Post-Processors/Line Detector/Line Detector.lvclass</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/My Computer/Post-Processors/Resonance Detector/Resonance Detector.lvclass</Property>
 				<Property Name="Source[7].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[7].type" Type="Str">Library</Property>
 				<Property Name="Source[8].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[8].itemID" Type="Ref">/My Computer/Post-Processors/Line Detector/Get Line Detector Object.vi</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/My Computer/Post-Processors/Resonance Detector/Get Resonance Detector Object.vi</Property>
 				<Property Name="Source[8].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[8].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">9</Property>
@@ -869,15 +871,15 @@
 				<Property Name="Source[0].itemID" Type="Str">{69907B2D-3A78-4AD1-A05C-050BF93A8EA4}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Post-Processors/Elastic Moduli/Launch Elastic Module.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Post-Processors/Format Resonances/Launch Format Resonances.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Post-Processors/Elastic Moduli/Elastic Moduli.lvclass</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Post-Processors/Format Resonances/Format Resonances.lvclass</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">Library</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Post-Processors/Elastic Moduli/Elastic Moduli.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Post-Processors/Format Resonances/Format Resonances.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[3].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">4</Property>

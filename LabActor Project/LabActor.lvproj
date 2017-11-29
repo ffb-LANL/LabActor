@@ -25,12 +25,14 @@
 					<Item Name="Update Focus Msg.lvclass" Type="LVClass" URL="../../Spectrum Recorder too Messages/Update Focus Msg/Update Focus Msg.lvclass"/>
 				</Item>
 				<Item Name="Application Controller.lvclass" Type="LVClass" URL="../../Controllers/Application Controller/Application Controller.lvclass"/>
+				<Item Name="Communications.lvclass" Type="LVClass" URL="../../Comms/Communications/Communications.lvclass"/>
 				<Item Name="Instrument Actor.lvclass" Type="LVClass" URL="../../Instrument Actor/Instrument Actor.lvclass"/>
 				<Item Name="Monitor Controller.lvclass" Type="LVClass" URL="../../Controllers/Monitor Controller/Monitor Controller.lvclass"/>
 				<Item Name="Monitor-Pulse.lvclass" Type="LVClass" URL="../../Monitor-Pulse/Monitor-Pulse.lvclass"/>
 				<Item Name="Plot.lvclass" Type="LVClass" URL="../../Plots/Plot/Plot.lvclass"/>
 				<Item Name="Process Controller.lvclass" Type="LVClass" URL="../../Controllers/Process Controller/Process Controller.lvclass"/>
 				<Item Name="Process Object.lvclass" Type="LVClass" URL="../../Process Object/Process Object.lvclass"/>
+				<Item Name="TCP Communications.lvclass" Type="LVClass" URL="../../Comms/TCP Communications/TCP Communications.lvclass"/>
 				<Item Name="Template Module.lvclass" Type="LVClass" URL="../../Template Module/Template Module.lvclass"/>
 				<Item Name="Timer.lvclass" Type="LVClass" URL="../../Measurements/Timer/Timer.lvclass"/>
 				<Item Name="Worker.lvclass" Type="LVClass" URL="../../Worker/Worker.lvclass"/>
@@ -74,6 +76,9 @@
 		</Item>
 		<Item Name="Monitor" Type="Folder">
 			<Item Name="Spectrum Recorder" Type="Folder">
+				<Item Name="Driver" Type="Folder">
+					<Item Name="Red Pitaya Transceiver Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Red Pitaya Transceiver Driver/Red Pitaya Transceiver Driver.lvclass"/>
+				</Item>
 				<Item Name="Spectrum Configuration.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Red Pitaya Transceiver Driver/Spectrum Configuration.ctl"/>
 				<Item Name="Spectrum Recorder too.lvclass" Type="LVClass" URL="../../Spectrum Recorder too/Spectrum Recorder too.lvclass"/>
 				<Item Name="Stream Compress Splitter.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Stream Compress Splitter.vi"/>
@@ -363,7 +368,6 @@
 			<Item Name="Client Message Msg.lvclass" Type="LVClass" URL="../../Comms/Communications Messages/Client Message Msg/Client Message Msg.lvclass"/>
 			<Item Name="clog2.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/clog2.vi"/>
 			<Item Name="Communications Configuration.ctl" Type="VI" URL="../../Comms/Communications Configuration.ctl"/>
-			<Item Name="Communications.lvclass" Type="LVClass" URL="../../Comms/Communications/Communications.lvclass"/>
 			<Item Name="comparison control.ctl" Type="VI" URL="../../../resonant_ultrasound/maglab ultrasound -- arkady/comparison control.ctl"/>
 			<Item Name="Configuration Value Changed Msg.lvclass" Type="LVClass" URL="../../Template Module Messages/Configuration Value Changed Msg/Configuration Value Changed Msg.lvclass"/>
 			<Item Name="Configure serial bus.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Cryo-con/Configure serial bus.vi"/>
@@ -547,7 +551,6 @@
 			<Item Name="Record.lvclass" Type="LVClass" URL="../../Sequence Elements/Record/Record.lvclass"/>
 			<Item Name="Red Pitaya Digitizer.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Red Pitaya/Red Pitaya Digitizer/Red Pitaya Digitizer.lvclass"/>
 			<Item Name="Red Pitaya Lock-in Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Red Pitaya Lock-in Driver/Red Pitaya Lock-in Driver.lvclass"/>
-			<Item Name="Red Pitaya Transceiver Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Red Pitaya Transceiver Driver/Red Pitaya Transceiver Driver.lvclass"/>
 			<Item Name="Reduce WFRM.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Reduce WFRM.vi"/>
 			<Item Name="Replace dt DBL.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Replace dt DBL.vi"/>
 			<Item Name="Replace dt I16.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Replace dt I16.vi"/>
@@ -630,7 +633,6 @@
 			<Item Name="Sweep.lvclass" Type="LVClass" URL="../../Sequence Elements/Sweep Sequence/Sweep.lvclass"/>
 			<Item Name="T controller configuration.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Temperature Controller Driver/T controller configuration.ctl"/>
 			<Item Name="T-controller reading type.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Temperature Controller/Controls/T-controller reading type.ctl"/>
-			<Item Name="TCP Communications.lvclass" Type="LVClass" URL="../../Comms/TCP Communications/TCP Communications.lvclass"/>
 			<Item Name="TCP Recieve Message.vi" Type="VI" URL="../../Comms/Client/TCP Recieve Message.vi"/>
 			<Item Name="TCP Transmit Message.vi" Type="VI" URL="../../Comms/Client/TCP Transmit Message.vi"/>
 			<Item Name="TDMS channel info.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/File/Controls/TDMS channel info.ctl"/>
@@ -777,7 +779,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/github/builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{39905001-7DD4-4D41-B9D0-005A438F7D8E}</Property>
-				<Property Name="Bld_version.build" Type="Int">22</Property>
+				<Property Name="Bld_version.build" Type="Int">26</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/github/builds/NI_AB_PROJECTNAME/LabActor.exe</Property>

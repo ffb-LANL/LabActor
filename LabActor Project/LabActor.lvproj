@@ -44,6 +44,7 @@
 				<Item Name="File Path Result.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Results/File Path Result/File Path Result.lvclass"/>
 				<Item Name="Fit Result.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Results/Fit Result/Fit Result.lvclass"/>
 				<Item Name="Instrument Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Instrument Driver.lvclass"/>
+				<Item Name="ITC-503 Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/ITC503 Driver/ITC-503 Driver.lvclass"/>
 				<Item Name="LakeShore T Controller Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/LakeShore/LakeShore T Controller Driver/LakeShore T Controller Driver.lvclass"/>
 				<Item Name="RP Communicator.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Core/RP Communicator/RP Communicator.lvclass"/>
 				<Item Name="RP EEPROM Calibration.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP EEPROM Calibration.ctl"/>
@@ -54,6 +55,7 @@
 			<Item Name="Utilities" Type="Folder">
 				<Item Name="Array Subset by Value.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Array Subset by Value.vi"/>
 				<Item Name="Create Frequency Steps Array.vi" Type="VI" URL="../../Spectrum Recorder too/Create Frequency Steps Array.vi"/>
+				<Item Name="IdentifyAndReadInstr.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/IdentifyAndReadInstr.vi"/>
 				<Item Name="LabActor Error.ctl" Type="VI" URL="../../Template Module/LabActor Error.ctl"/>
 				<Item Name="Line Detector Create rusin_dat.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Create rusin_dat.vi"/>
 				<Item Name="Line Detector Crop Region.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Crop Region.vi"/>
@@ -371,7 +373,6 @@
 			<Item Name="Client Message Msg.lvclass" Type="LVClass" URL="../../Comms/Communications Messages/Client Message Msg/Client Message Msg.lvclass"/>
 			<Item Name="clog2.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/clog2.vi"/>
 			<Item Name="Communications Configuration.ctl" Type="VI" URL="../../Comms/Communications Configuration.ctl"/>
-			<Item Name="comparison control.ctl" Type="VI" URL="../../../resonant_ultrasound/maglab ultrasound -- arkady/comparison control.ctl"/>
 			<Item Name="Configuration Value Changed Msg.lvclass" Type="LVClass" URL="../../Template Module Messages/Configuration Value Changed Msg/Configuration Value Changed Msg.lvclass"/>
 			<Item Name="Configure serial bus.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Cryo-con/Configure serial bus.vi"/>
 			<Item Name="Convert TDMS channel.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/File Format Converter/Convert TDMS channel.vi"/>
@@ -434,7 +435,6 @@
 			<Item Name="Identify Cryo-Con.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Cryo-con/Identify Cryo-Con.vi"/>
 			<Item Name="Identify Neocera.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Neocera/Identify Neocera.vi"/>
 			<Item Name="Identify Oxford.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Identify Oxford.vi"/>
-			<Item Name="IdentifyAndReadInstr.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/IdentifyAndReadInstr.vi"/>
 			<Item Name="IdentifyEG_G_Lockin.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/EG_G/IdentifyEG_G_Lockin.vi"/>
 			<Item Name="IdentifyHP5385A.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/HP/HP5385/IdentifyHP5385A.vi"/>
 			<Item Name="Increment mode.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Increment mode.ctl"/>
@@ -515,8 +515,10 @@
 			<Item Name="Open Waveform File Plot Msg.lvclass" Type="LVClass" URL="../../Controllers/Application Controller Messages/Open Waveform File Plot Msg/Open Waveform File Plot Msg.lvclass"/>
 			<Item Name="Output Value.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Utilities/Output Value/Output Value.lvclass"/>
 			<Item Name="Oxford clear buffer.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Oxford clear buffer.vi"/>
+			<Item Name="Oxford crappy logic options.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Oxford crappy logic options.ctl"/>
 			<Item Name="Oxford Merc PS Get Field.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Merq PS/Oxford Merc PS Get Field.vi"/>
 			<Item Name="Oxford PS Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Oxford PS Driver/Oxford PS Driver.lvclass"/>
+			<Item Name="Oxford Read Channel.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Oxford Read Channel.vi"/>
 			<Item Name="Oxford set termination.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Oxford set termination.vi"/>
 			<Item Name="Oxford visa write read.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Oxford visa write read.vi"/>
 			<Item Name="Pad TAB.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Pad TAB.vi"/>
@@ -779,7 +781,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/github/builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{39905001-7DD4-4D41-B9D0-005A438F7D8E}</Property>
-				<Property Name="Bld_version.build" Type="Int">26</Property>
+				<Property Name="Bld_version.build" Type="Int">27</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/github/builds/NI_AB_PROJECTNAME/LabActor.exe</Property>

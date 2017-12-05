@@ -43,10 +43,13 @@
 				<Item Name="Cryo-Con Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Cryo-con/Cryo-Con Driver/Cryo-Con Driver.lvclass"/>
 				<Item Name="File Path Result.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Results/File Path Result/File Path Result.lvclass"/>
 				<Item Name="Fit Result.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Results/Fit Result/Fit Result.lvclass"/>
+				<Item Name="Instrument Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Instrument Driver.lvclass"/>
 				<Item Name="LakeShore T Controller Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/LakeShore/LakeShore T Controller Driver/LakeShore T Controller Driver.lvclass"/>
 				<Item Name="RP Communicator.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Core/RP Communicator/RP Communicator.lvclass"/>
 				<Item Name="RP EEPROM Calibration.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP EEPROM Calibration.ctl"/>
 				<Item Name="RP Instrument.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Core/RP Instrument/RP Instrument.lvclass"/>
+				<Item Name="Simple VISA Reader Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Simple VISA Reader/Simple VISA Reader Driver.lvclass"/>
+				<Item Name="VISA Instrument.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/VISA Instrument/VISA Instrument.lvclass"/>
 			</Item>
 			<Item Name="Utilities" Type="Folder">
 				<Item Name="Array Subset by Value.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Array Subset by Value.vi"/>
@@ -438,7 +441,6 @@
 			<Item Name="Init Comms Msg.lvclass" Type="LVClass" URL="../../Comms/Communications Messages/Init Comms Msg/Init Comms Msg.lvclass"/>
 			<Item Name="Init Response Msg.lvclass" Type="LVClass" URL="../../Controllers/Process Controller Messages/Init Response Msg/Init Response Msg.lvclass"/>
 			<Item Name="Initialize Work Msg.lvclass" Type="LVClass" URL="../../Worker Messages/Initialize Work Msg/Initialize Work Msg.lvclass"/>
-			<Item Name="Instrument Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Instrument Driver.lvclass"/>
 			<Item Name="Integrate channel from file.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/File LLB/Integrate channel from file.vi"/>
 			<Item Name="Integrate channel.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Controls/Integrate channel.ctl"/>
 			<Item Name="Integrate.lvclass" Type="LVClass" URL="../../Post-Processors/Integrate/Integrate.lvclass"/>
@@ -607,7 +609,6 @@
 			<Item Name="Set Plot Type Msg.lvclass" Type="LVClass" URL="../../Plots/XY WFRM Plot Messages/Set Plot Type Msg/Set Plot Type Msg.lvclass"/>
 			<Item Name="Set Point Msg.lvclass" Type="LVClass" URL="../../Recorders/Temperature Controller Messages/Set Point Msg/Set Point Msg.lvclass"/>
 			<Item Name="Set Topic Value Msg.lvclass" Type="LVClass" URL="../../Comms/Communications Messages/Set Topic Value Msg/Set Topic Value Msg.lvclass"/>
-			<Item Name="Simple VISA Reader Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Simple VISA Reader/Simple VISA Reader Driver.lvclass"/>
 			<Item Name="SimpleGetPeaks.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Micron Optics/hyperion library source/SimpleGetPeaks.vi"/>
 			<Item Name="SimpleGetSpectrum.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Micron Optics/hyperion library source/SimpleGetSpectrum.vi"/>
 			<Item Name="Sine ramps pattern.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/Waform generation/Sine ramps pattern.vi"/>
@@ -654,7 +655,6 @@
 			<Item Name="Variant to Meta Data.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/OO config/Variant to Meta Data.vi"/>
 			<Item Name="Variation Band.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Variation Band.vi"/>
 			<Item Name="VISA  Send Receive.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/GPIB/VISA  Send Receive.vi"/>
-			<Item Name="VISA Instrument.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/VISA Instrument/VISA Instrument.lvclass"/>
 			<Item Name="Wait for Result Msg.lvclass" Type="LVClass" URL="../../Pulse Recorders/Pulse Recorder Messages/Wait for Data Msg/Wait for Result Msg.lvclass"/>
 			<Item Name="Wait miliseconds.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Wait miliseconds.vi"/>
 			<Item Name="Waveform parameters.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/Waform generation/Waveform parameters.ctl"/>

@@ -39,18 +39,24 @@
 				<Item Name="XY WFRM Plot.lvclass" Type="LVClass" URL="../../Plots/XY WFRM Plot/XY WFRM Plot.lvclass"/>
 			</Item>
 			<Item Name="Non-Actors" Type="Folder">
+				<Property Name="NI.SortType" Type="Int">3</Property>
+				<Item Name="Instrument drivers" Type="Folder">
+					<Item Name="Cryo-Con Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Cryo-con/Cryo-Con Driver/Cryo-Con Driver.lvclass"/>
+					<Item Name="Instrument Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Instrument Driver.lvclass"/>
+					<Item Name="ITC-503 Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/ITC503 Driver/ITC-503 Driver.lvclass"/>
+					<Item Name="Oxford PS Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Oxford PS Driver/Oxford PS Driver.lvclass"/>
+					<Item Name="LakeShore T Controller Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/LakeShore/LakeShore T Controller Driver/LakeShore T Controller Driver.lvclass"/>
+					<Item Name="VISA Instrument.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/VISA Instrument/VISA Instrument.lvclass"/>
+					<Item Name="Simple VISA Reader Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Simple VISA Reader/Simple VISA Reader Driver.lvclass"/>
+					<Item Name="RP Instrument.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Core/RP Instrument/RP Instrument.lvclass"/>
+					<Item Name="RP Communicator.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Core/RP Communicator/RP Communicator.lvclass"/>
+					<Item Name="RP EEPROM Calibration.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP EEPROM Calibration.ctl"/>
+					<Item Name="IPS120.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/IPS120/IPS120.lvclass"/>
+					<Item Name="Magnet Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Magnet/Magnet Driver.lvclass"/>
+				</Item>
 				<Item Name="Acquired Result.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Results/Acquired Result/Acquired Result.lvclass"/>
-				<Item Name="Cryo-Con Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Cryo-con/Cryo-Con Driver/Cryo-Con Driver.lvclass"/>
 				<Item Name="File Path Result.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Results/File Path Result/File Path Result.lvclass"/>
 				<Item Name="Fit Result.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Results/Fit Result/Fit Result.lvclass"/>
-				<Item Name="Instrument Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Instrument Driver.lvclass"/>
-				<Item Name="ITC-503 Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/ITC503 Driver/ITC-503 Driver.lvclass"/>
-				<Item Name="LakeShore T Controller Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/LakeShore/LakeShore T Controller Driver/LakeShore T Controller Driver.lvclass"/>
-				<Item Name="RP Communicator.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Core/RP Communicator/RP Communicator.lvclass"/>
-				<Item Name="RP EEPROM Calibration.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP EEPROM Calibration.ctl"/>
-				<Item Name="RP Instrument.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP Core/RP Instrument/RP Instrument.lvclass"/>
-				<Item Name="Simple VISA Reader Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Simple VISA Reader/Simple VISA Reader Driver.lvclass"/>
-				<Item Name="VISA Instrument.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/VISA Instrument/VISA Instrument.lvclass"/>
 			</Item>
 			<Item Name="Utilities" Type="Folder">
 				<Item Name="Array Subset by Value.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Array Subset by Value.vi"/>
@@ -106,6 +112,7 @@
 			</Item>
 		</Item>
 		<Item Name="Driver Interface Template.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Driver Interface Template.vi"/>
+		<Item Name="Test Oxford ID and Read.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Test Oxford ID and Read.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array of VData to VArray__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array of VData to VArray__ogtk.vi"/>
@@ -517,7 +524,6 @@
 			<Item Name="Oxford clear buffer.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Oxford clear buffer.vi"/>
 			<Item Name="Oxford crappy logic options.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Oxford crappy logic options.ctl"/>
 			<Item Name="Oxford Merc PS Get Field.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Merq PS/Oxford Merc PS Get Field.vi"/>
-			<Item Name="Oxford PS Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Oxford PS Driver/Oxford PS Driver.lvclass"/>
 			<Item Name="Oxford Read Channel.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Oxford Read Channel.vi"/>
 			<Item Name="Oxford set termination.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Oxford set termination.vi"/>
 			<Item Name="Oxford visa write read.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Oxford visa write read.vi"/>
@@ -545,6 +551,7 @@
 			<Item Name="Q -- check range -- i -- integer.vi" Type="VI" URL="../../../resonant_ultrasound/maglab ultrasound -- arkady/Q -- check range -- i -- integer.vi"/>
 			<Item Name="Queued Listbox.xctl" Type="XControl" URL="../../../NHMFL_Core/Libraries/Queued Listbox/Queued Listbox.xctl"/>
 			<Item Name="Read 2 Traces.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/SRS/sr850/Read 2 Traces.vi"/>
+			<Item Name="Read IPS120.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/IPS120/Read IPS120.vi"/>
 			<Item Name="Read Lockin Parameters.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/SoftwareLockin/Read Lockin Parameters.vi"/>
 			<Item Name="Read Menu object array values.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Queued Listbox/Read Menu object array values.vi"/>
 			<Item Name="Read object configuration.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/OO config/Read object configuration.vi"/>

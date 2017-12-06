@@ -41,9 +41,10 @@
 			<Item Name="Non-Actors" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">3</Property>
 				<Item Name="Instrument drivers" Type="Folder">
+					<Item Name="IdentifyAndReadInstr.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/IdentifyAndReadInstr.vi"/>
 					<Item Name="Cryo-Con Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Cryo-con/Cryo-Con Driver/Cryo-Con Driver.lvclass"/>
 					<Item Name="Instrument Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Instrument Driver.lvclass"/>
-					<Item Name="ITC-503 Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/ITC503 Driver/ITC-503 Driver.lvclass"/>
+					<Item Name="ITC-503 Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/ITC503/ITC-503 Driver.lvclass"/>
 					<Item Name="Oxford PS Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Oxford PS Driver/Oxford PS Driver.lvclass"/>
 					<Item Name="LakeShore T Controller Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/LakeShore/LakeShore T Controller Driver/LakeShore T Controller Driver.lvclass"/>
 					<Item Name="VISA Instrument.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/VISA Instrument/VISA Instrument.lvclass"/>
@@ -53,6 +54,8 @@
 					<Item Name="RP EEPROM Calibration.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/RP EEPROM Calibration.ctl"/>
 					<Item Name="IPS120.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/IPS120/IPS120.lvclass"/>
 					<Item Name="Magnet Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Magnet/Magnet Driver.lvclass"/>
+					<Item Name="Populate Recorder List.vi" Type="VI" URL="../../Recorders/Populate Recorder List.vi"/>
+					<Item Name="Identify Oxford.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Identify Oxford.vi"/>
 				</Item>
 				<Item Name="Acquired Result.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Results/Acquired Result/Acquired Result.lvclass"/>
 				<Item Name="File Path Result.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Results/File Path Result/File Path Result.lvclass"/>
@@ -61,7 +64,6 @@
 			<Item Name="Utilities" Type="Folder">
 				<Item Name="Array Subset by Value.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Array Subset by Value.vi"/>
 				<Item Name="Create Frequency Steps Array.vi" Type="VI" URL="../../Spectrum Recorder too/Create Frequency Steps Array.vi"/>
-				<Item Name="IdentifyAndReadInstr.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/IdentifyAndReadInstr.vi"/>
 				<Item Name="LabActor Error.ctl" Type="VI" URL="../../Template Module/LabActor Error.ctl"/>
 				<Item Name="Line Detector Create rusin_dat.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Create rusin_dat.vi"/>
 				<Item Name="Line Detector Crop Region.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Crop Region.vi"/>
@@ -441,7 +443,6 @@
 			<Item Name="I-V to Waveform parameters.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/Waform generation/I-V to Waveform parameters.vi"/>
 			<Item Name="Identify Cryo-Con.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Cryo-con/Identify Cryo-Con.vi"/>
 			<Item Name="Identify Neocera.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Neocera/Identify Neocera.vi"/>
-			<Item Name="Identify Oxford.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Identify Oxford.vi"/>
 			<Item Name="IdentifyEG_G_Lockin.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/EG_G/IdentifyEG_G_Lockin.vi"/>
 			<Item Name="IdentifyHP5385A.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/HP/HP5385/IdentifyHP5385A.vi"/>
 			<Item Name="Increment mode.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Increment mode.ctl"/>
@@ -525,7 +526,6 @@
 			<Item Name="Oxford crappy logic options.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Oxford crappy logic options.ctl"/>
 			<Item Name="Oxford Merc PS Get Field.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Merq PS/Oxford Merc PS Get Field.vi"/>
 			<Item Name="Oxford Read Channel.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Oxford Read Channel.vi"/>
-			<Item Name="Oxford set termination.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Oxford set termination.vi"/>
 			<Item Name="Oxford visa write read.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Oxford/Oxford visa write read.vi"/>
 			<Item Name="Pad TAB.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Pad TAB.vi"/>
 			<Item Name="parse -- get list of matches -- numbers.vi" Type="VI" URL="../../../resonant_ultrasound/maglab ultrasound -- arkady/parse -- get list of matches -- numbers.vi"/>
@@ -538,7 +538,6 @@
 			<Item Name="Plot Spectrum Msg.lvclass" Type="LVClass" URL="../../Recorders/Micron Optics Recorder Messages/Plot Spectrum Msg/Plot Spectrum Msg.lvclass"/>
 			<Item Name="Plot types.ctl" Type="VI" URL="../../Plots/Plot types.ctl"/>
 			<Item Name="Populate and conf ethernet bus.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Instrument/Populate and conf ethernet bus.vi"/>
-			<Item Name="Populate Recorder List.vi" Type="VI" URL="../../Recorders/Populate Recorder List.vi"/>
 			<Item Name="Process Result Msg.lvclass" Type="LVClass" URL="../../Process Object Messages/Process Result Msg/Process Result Msg.lvclass"/>
 			<Item Name="Pulse Acquired Result.lvclass" Type="LVClass" URL="../../Controllers/Application Controller Messages/Pulse Acquired Result/Pulse Acquired Result.lvclass"/>
 			<Item Name="Pulse Controller Configuration.ctl" Type="VI" URL="../../Controllers/Pulse Controller/Pulse Controller Configuration.ctl"/>
@@ -664,6 +663,7 @@
 			<Item Name="Variant to Meta Data.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/OO config/Variant to Meta Data.vi"/>
 			<Item Name="Variation Band.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Fit/Variation Band.vi"/>
 			<Item Name="VISA  Send Receive.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/GPIB/VISA  Send Receive.vi"/>
+			<Item Name="Visa set timeot and termination.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/VISA Instrument/Visa set timeot and termination.vi"/>
 			<Item Name="Wait for Result Msg.lvclass" Type="LVClass" URL="../../Pulse Recorders/Pulse Recorder Messages/Wait for Data Msg/Wait for Result Msg.lvclass"/>
 			<Item Name="Wait miliseconds.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/Wait miliseconds.vi"/>
 			<Item Name="Waveform parameters.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/Waform generation/Waveform parameters.ctl"/>
@@ -788,7 +788,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/github/builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{39905001-7DD4-4D41-B9D0-005A438F7D8E}</Property>
-				<Property Name="Bld_version.build" Type="Int">27</Property>
+				<Property Name="Bld_version.build" Type="Int">29</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/github/builds/NI_AB_PROJECTNAME/LabActor.exe</Property>

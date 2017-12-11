@@ -241,6 +241,7 @@
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
 				<Item Name="LVPoint32TypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPoint32TypeDef.ctl"/>
+				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="LVRowAndColumnUnsignedTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnUnsignedTypeDef.ctl"/>
 				<Item Name="NI_AAL_MathFunc.lvlib" Type="Library" URL="/&lt;vilib&gt;/gmath/NI_AAL_MathFunc.lvlib"/>
@@ -382,7 +383,6 @@
 			<Item Name="Client Message Msg.lvclass" Type="LVClass" URL="../../Comms/Communications Messages/Client Message Msg/Client Message Msg.lvclass"/>
 			<Item Name="clog2.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Utilities/clog2.vi"/>
 			<Item Name="Communications Configuration.ctl" Type="VI" URL="../../Comms/Communications Configuration.ctl"/>
-			<Item Name="comparison control.ctl" Type="VI" URL="../../../resonant_ultrasound/maglab ultrasound -- arkady/comparison control.ctl"/>
 			<Item Name="Configuration Value Changed Msg.lvclass" Type="LVClass" URL="../../Template Module Messages/Configuration Value Changed Msg/Configuration Value Changed Msg.lvclass"/>
 			<Item Name="Configure serial bus.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/Instruments/Cryo-con/Configure serial bus.vi"/>
 			<Item Name="Convert TDMS channel.vi" Type="VI" URL="../../../NHMFL_Core/Libraries/File/File Format Converter/Convert TDMS channel.vi"/>
@@ -510,7 +510,7 @@
 			<Item Name="Micron Optics Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Micron Optics/Micron Optics Driver/Micron Optics Driver.lvclass"/>
 			<Item Name="Micron Optics Recorder.lvclass" Type="LVClass" URL="../../Recorders/Micron Optics/Micron Optics Recorder.lvclass"/>
 			<Item Name="Mode.ctl" Type="VI" URL="../../../NHMFL_Core/Libraries/Red Pitaya/Mode.ctl"/>
-			<Item Name="Module Types.ctl" Type="VI" URL="../../Monitor-Pulse/Module Types.ctl"/>
+			<Item Name="Module Types.ctl" Type="VI" URL="../../Controllers/Application Controller/Module Types.ctl"/>
 			<Item Name="Monitor Command Msg.lvclass" Type="LVClass" URL="../../Controllers/Application Controller Messages/Monitor Command Msg/Monitor Command Msg.lvclass"/>
 			<Item Name="Monitor Controller Configuration.ctl" Type="VI" URL="../../Controllers/Monitor Controller/Monitor Controller Configuration.ctl"/>
 			<Item Name="Neocera Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/Neocera/Neocera Driver/Neocera Driver.lvclass"/>
@@ -630,7 +630,7 @@
 			<Item Name="SRS Lockin Driver.lvclass" Type="LVClass" URL="../../../NHMFL_Core/Libraries/Instruments/SRS/SRS Lockin Driver/SRS Lockin Driver.lvclass"/>
 			<Item Name="Start Measurements Command Msg.lvclass" Type="LVClass" URL="../../Monitor-Pulse Messages/Start Pulse Measurements Msg/Start Measurements Command Msg.lvclass"/>
 			<Item Name="Start Measurements Msg.lvclass" Type="LVClass" URL="../../Controllers/Process Controller Messages/Start Measurements Msg/Start Measurements Msg.lvclass"/>
-			<Item Name="Start-up Configuration.ctl" Type="VI" URL="../../Monitor-Pulse/Start-up Configuration.ctl"/>
+			<Item Name="Start-up Configuration.ctl" Type="VI" URL="../../Controllers/Application Controller/Start-up Configuration.ctl"/>
 			<Item Name="Stop Measurements Command Msg.lvclass" Type="LVClass" URL="../../Monitor-Pulse Messages/Stop Measurements Command Msg/Stop Measurements Command Msg.lvclass"/>
 			<Item Name="Stop Measurements Msg.lvclass" Type="LVClass" URL="../../Controllers/Process Controller Messages/Stop Measurements Msg/Stop Measurements Msg.lvclass"/>
 			<Item Name="Stop Response Msg.lvclass" Type="LVClass" URL="../../Controllers/Process Controller Messages/Stop Response Msg/Stop Response Msg.lvclass"/>

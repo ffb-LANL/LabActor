@@ -139,6 +139,7 @@
 			</Item>
 			<Item Name="LabActor.lvclass" Type="LVClass" URL="../LabActor/LabActor.lvclass"/>
 			<Item Name="LabActor.cfg" Type="Document" URL="../LabActor/LabActor.cfg"/>
+			<Item Name="ResonanceSpectrometer.cfg" Type="Document" URL="../LabActor/ResonanceSpectrometer.cfg"/>
 		</Item>
 		<Item Name="Post-Processors" Type="Folder">
 			<Item Name="Format Converter" Type="Folder">
@@ -779,9 +780,6 @@
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
 				<Item Name="Version To Dotted String.vi" Type="VI" URL="/&lt;vilib&gt;/_xctls/Version To Dotted String.vi"/>
-				<Item Name="DAQmx Create Channel (AI-Acceleration-4 Wire DC Voltage).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Acceleration-4 Wire DC Voltage).vi"/>
-				<Item Name="DAQmx Create Channel (AI-Acceleration-Charge).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Acceleration-Charge).vi"/>
-				<Item Name="DAQmx Create Channel (AI-Charge).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Charge).vi"/>
 				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
 				<Item Name="NI_AdvSigProcWA.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/_Advanced Signal Processing/NI_AdvSigProcWA.lvlib"/>
 				<Item Name="Read Lines From File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Lines From File.vi"/>
@@ -789,6 +787,16 @@
 				<Item Name="wa remove artificial peak.vi" Type="VI" URL="/&lt;vilib&gt;/addons/Wavelet Analysis/application.llb/wa remove artificial peak.vi"/>
 				<Item Name="NI_AAL_SigProc.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AAL_SigProc.lvlib"/>
 				<Item Name="NI_AdvSigProcTFA.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/_Advanced Signal Processing/NI_AdvSigProcTFA.lvlib"/>
+				<Item Name="DAQmx Rollback Channel If Error.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Rollback Channel If Error.vi"/>
+				<Item Name="DAQmx Create AI Channel (sub).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create AI Channel (sub).vi"/>
+				<Item Name="DAQmx Set CJC Parameters (sub).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Set CJC Parameters (sub).vi"/>
+				<Item Name="DAQmx Create AO Channel (sub).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create AO Channel (sub).vi"/>
+				<Item Name="DAQmx Create DI Channel (sub).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create DI Channel (sub).vi"/>
+				<Item Name="DAQmx Create DO Channel (sub).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create DO Channel (sub).vi"/>
+				<Item Name="DAQmx Create CI Channel (sub).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create CI Channel (sub).vi"/>
+				<Item Name="DAQmx Create CO Channel (sub).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create CO Channel (sub).vi"/>
+				<Item Name="DAQmx Create AI Channel TEDS(sub).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create AI Channel TEDS(sub).vi"/>
+				<Item Name="DAQmx Create Strain Rosette AI Channels (sub).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Strain Rosette AI Channels (sub).vi"/>
 			</Item>
 			<Item Name="Abbreviate TDMS Group Channel.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Abbreviate TDMS Group Channel.vi"/>
 			<Item Name="Acknowledge Post Process Msg.lvclass" Type="LVClass" URL="../Controllers/Process Controller Messages/Acknowledge Post Process Msg/Acknowledge Post Process Msg.lvclass"/>
@@ -900,12 +908,6 @@
 			<Item Name="Monitor Controller Configuration.ctl" Type="VI" URL="../Controllers/Monitor Controller/Monitor Controller Configuration.ctl"/>
 			<Item Name="Neocera21 Get T.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Neocera/Neocera21 Get T.vi"/>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="niModInst_64.dll" Type="Document" URL="niModInst_64.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="niScope_64.dll" Type="Document" URL="niScope_64.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Number list to array.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Number list to array.vi"/>
@@ -1054,6 +1056,12 @@
 			<Item Name="Resonance Detector Process.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Fit/Resonance Detector Process.vi"/>
 			<Item Name="LVASPT_WA.dll" Type="Document" URL="/&lt;resource&gt;/LVASPT_WA.dll"/>
 			<Item Name="Lorentzian complex bg test.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Fit/Test functions/Lorentzian complex bg test.vi"/>
+			<Item Name="niScope_64.dll" Type="Document" URL="niScope_64.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="niModInst_64.dll" Type="Document" URL="niModInst_64.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">
@@ -1071,7 +1079,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">60</Property>
+				<Property Name="Bld_version.build" Type="Int">61</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/LabActor.exe</Property>
@@ -1318,6 +1326,269 @@
 				<Property Name="TgtF_productName" Type="Str">TDMS File Viewer</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{21FBB6AB-87CD-43A7-9B07-7CB21366F6A3}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">TDMS File Viewer.exe</Property>
+			</Item>
+			<Item Name="ResonanceSpectrometer" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{59EC8791-FB9D-491F-8ACA-5699473FAD2D}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{58671019-6C2A-42A6-A816-F70C2F3FC168}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{BE2EBF86-BE3A-4777-94F1-2610CA2962BC}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">ResonanceSpectrometer</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/ResonanceSpectrometer</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{6D09FC58-9DB8-486B-961C-4F1C695F32F8}</Property>
+				<Property Name="Bld_version.build" Type="Int">61</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">ResonanceSpectrometer.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/ResonanceSpectrometer/ResonanceSpectrometer.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/ResonanceSpectrometer/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{E86523E0-5054-4779-B5BA-FC431FAC6A97}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Monitor Controller.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[1].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[1].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[1].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[10].itemID" Type="Ref">/My Computer/Post-Processors/Integrate/Integrate.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[10].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[10].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[10].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[10].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[10].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[10].type" Type="Str">VI</Property>
+				<Property Name="Source[11].itemID" Type="Ref">/My Computer/Post-Processors/Lockin Proc/Lockin Processor.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[11].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[11].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[11].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[11].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[11].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[11].type" Type="Str">VI</Property>
+				<Property Name="Source[12].itemID" Type="Ref">/My Computer/Post-Processors/Synth/NHMFL Synthesizer.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[12].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[12].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[12].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[12].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[12].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[12].type" Type="Str">VI</Property>
+				<Property Name="Source[13].itemID" Type="Ref">/My Computer/Recorders/Monitor/Channel Scanner.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[13].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[13].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[13].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[13].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[13].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[13].type" Type="Str">VI</Property>
+				<Property Name="Source[14].itemID" Type="Ref">/My Computer/Recorders/Monitor/Lock-in.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[14].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[14].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[14].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[14].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[14].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[14].type" Type="Str">VI</Property>
+				<Property Name="Source[15].itemID" Type="Ref">/My Computer/Recorders/Monitor/Sweeper.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[15].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[15].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[15].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[15].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[15].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[15].type" Type="Str">VI</Property>
+				<Property Name="Source[16].itemID" Type="Ref">/My Computer/Recorders/Monitor/Temperature Controller.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[16].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[16].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[16].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[16].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[16].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[16].type" Type="Str">VI</Property>
+				<Property Name="Source[17].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[17].itemID" Type="Ref">/My Computer/Recorders/Drivers/NI-Scope Driver/Ni-Scope Digitizer.lvclass/Find Ni-Scope digitizers.vi</Property>
+				<Property Name="Source[17].type" Type="Str">VI</Property>
+				<Property Name="Source[18].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[18].itemID" Type="Ref">/My Computer/Recorders/Drivers/DAQmx Driver/DAQmx Digitizer.lvclass/Find DAQmx Digitizers.vi</Property>
+				<Property Name="Source[18].type" Type="Str">VI</Property>
+				<Property Name="Source[19].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[19].itemID" Type="Ref">/My Computer/Post-Processors/Synth/Get NHMFL Synth Object.vi</Property>
+				<Property Name="Source[19].type" Type="Str">VI</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Pulse Recorder.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[2].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[2].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[2].type" Type="Str">VI</Property>
+				<Property Name="Source[20].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[20].itemID" Type="Ref">/My Computer/Launch LabActor.vi</Property>
+				<Property Name="Source[20].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[20].type" Type="Str">VI</Property>
+				<Property Name="Source[21].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[21].itemID" Type="Ref">/My Computer/LabActor/LabActor.cfg</Property>
+				<Property Name="Source[22].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[22].itemID" Type="Ref">/My Computer/Post-Processors/Resonance Detector/Get Resonance Detector Object.vi</Property>
+				<Property Name="Source[22].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[22].type" Type="Str">VI</Property>
+				<Property Name="Source[23].itemID" Type="Ref">/My Computer/Post-Processors/Resonance Detector/Resonance Detector.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[23].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[23].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[23].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[23].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[23].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[23].type" Type="Str">VI</Property>
+				<Property Name="Source[24].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[24].itemID" Type="Ref">/My Computer/LabActor/ResonanceSpectrometer.cfg</Property>
+				<Property Name="Source[24].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/XY Plot.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[3].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[3].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[3].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[3].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[3].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[3].type" Type="Str">VI</Property>
+				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/XY WFRM Plot.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[4].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[4].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[4].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[4].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[4].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[4].type" Type="Str">VI</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Pulse Controller.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[5].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[5].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[5].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[5].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[5].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[5].type" Type="Str">VI</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Sequence Controller.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[6].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[6].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[6].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[6].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[6].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[6].type" Type="Str">VI</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Sequence Element.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[7].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[7].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[7].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[7].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[7].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[7].type" Type="Str">VI</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/My Computer/LabActor/LabActor.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[8].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[8].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[8].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[8].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[8].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[8].type" Type="Str">VI</Property>
+				<Property Name="Source[9].itemID" Type="Ref">/My Computer/Post-Processors/Format Converter/Format Converter.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[9].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[9].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[9].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[9].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[9].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[9].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">25</Property>
+				<Property Name="TgtF_companyName" Type="Str">Los Alamos National Laboratory</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">LabActor</Property>
+				<Property Name="TgtF_internalName" Type="Str">LabActor</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2016 Los Alamos National Laboratory</Property>
+				<Property Name="TgtF_productName" Type="Str">LabActor</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{41755E39-85B0-4956-81B5-32FD4651FBEE}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">ResonanceSpectrometer.exe</Property>
+			</Item>
+			<Item Name="ResonanceSpectrometer Installer" Type="Installer">
+				<Property Name="Destination[0].name" Type="Str">ResonanceSpectrometer</Property>
+				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
+				<Property Name="Destination[0].tag" Type="Str">{4B7500B3-B3DA-484A-834D-5A7C75EDCB35}</Property>
+				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
+				<Property Name="DestinationCount" Type="Int">1</Property>
+				<Property Name="DistPart[0].flavorID" Type="Str">_deployment_</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{B8B0CB37-7307-4EBA-866E-A3180CF498DC}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI-VISA Runtime 17.1</Property>
+				<Property Name="DistPart[0].upgradeCode" Type="Str">{8627993A-3F66-483C-A562-0D3BA3F267B1}</Property>
+				<Property Name="DistPart[1].flavorID" Type="Str">DefaultFull</Property>
+				<Property Name="DistPart[1].productID" Type="Str">{68576FFB-A9E8-4A1F-B7CA-D15701F74944}</Property>
+				<Property Name="DistPart[1].productName" Type="Str">NI LabVIEW Runtime 2016 f2 (64-bit)</Property>
+				<Property Name="DistPart[1].SoftDep[0].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[0].productName" Type="Str">NI ActiveX Container (64-bit)</Property>
+				<Property Name="DistPart[1].SoftDep[0].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
+				<Property Name="DistPart[1].SoftDep[1].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[1].productName" Type="Str">NI System Web Server 16.0</Property>
+				<Property Name="DistPart[1].SoftDep[1].upgradeCode" Type="Str">{FCF64B73-B7D4-4971-8F11-24BAF7CC3E6C}</Property>
+				<Property Name="DistPart[1].SoftDep[10].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[10].productName" Type="Str">NI Deployment Framework 2017</Property>
+				<Property Name="DistPart[1].SoftDep[10].upgradeCode" Type="Str">{838942E4-B73C-492E-81A3-AA1E291FD0DC}</Property>
+				<Property Name="DistPart[1].SoftDep[2].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[2].productName" Type="Str">Math Kernel Libraries</Property>
+				<Property Name="DistPart[1].SoftDep[2].upgradeCode" Type="Str">{F34FFCA8-C4CB-47CC-8B81-C4E95E227355}</Property>
+				<Property Name="DistPart[1].SoftDep[3].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[3].productName" Type="Str">NI Logos 5.9</Property>
+				<Property Name="DistPart[1].SoftDep[3].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
+				<Property Name="DistPart[1].SoftDep[4].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[4].productName" Type="Str">NI TDM Streaming 17.0</Property>
+				<Property Name="DistPart[1].SoftDep[4].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
+				<Property Name="DistPart[1].SoftDep[5].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[5].productName" Type="Str">NI LabVIEW Real-Time NBFifo 2016</Property>
+				<Property Name="DistPart[1].SoftDep[5].upgradeCode" Type="Str">{718F68F2-14F0-4656-A29E-617F12A7343B}</Property>
+				<Property Name="DistPart[1].SoftDep[6].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[6].productName" Type="Str">NI VC2008MSMs</Property>
+				<Property Name="DistPart[1].SoftDep[6].upgradeCode" Type="Str">{FDA3F8BB-BAA9-45D7-8DC7-22E1F5C76315}</Property>
+				<Property Name="DistPart[1].SoftDep[7].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[7].productName" Type="Str">NI VC2010MSMs</Property>
+				<Property Name="DistPart[1].SoftDep[7].upgradeCode" Type="Str">{EFBA6F9E-F934-4BD7-AC51-60CCA480489C}</Property>
+				<Property Name="DistPart[1].SoftDep[8].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[8].productName" Type="Str">NI VC2015 Runtime</Property>
+				<Property Name="DistPart[1].SoftDep[8].upgradeCode" Type="Str">{D42E7BAE-6589-4570-B6A3-3E28889392E7}</Property>
+				<Property Name="DistPart[1].SoftDep[9].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[1].SoftDep[9].productName" Type="Str">NI mDNS Responder 17.0</Property>
+				<Property Name="DistPart[1].SoftDep[9].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
+				<Property Name="DistPart[1].SoftDepCount" Type="Int">11</Property>
+				<Property Name="DistPart[1].upgradeCode" Type="Str">{914C106C-AB3B-43B2-86BC-96DF146D03C3}</Property>
+				<Property Name="DistPartCount" Type="Int">2</Property>
+				<Property Name="INST_author" Type="Str">LANL</Property>
+				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
+				<Property Name="INST_buildLocation" Type="Path">../builds/ResonanceSpectrometer/ResonanceSpectrometer Installer</Property>
+				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
+				<Property Name="INST_buildSpecName" Type="Str">ResonanceSpectrometer Installer</Property>
+				<Property Name="INST_defaultDir" Type="Str">{4B7500B3-B3DA-484A-834D-5A7C75EDCB35}</Property>
+				<Property Name="INST_productName" Type="Str">ResonanceSpectrometer</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.1</Property>
+				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
+				<Property Name="InstSpecVersion" Type="Str">16008019</Property>
+				<Property Name="MSI_arpCompany" Type="Str">LANL</Property>
+				<Property Name="MSI_arpURL" Type="Str">http://www.lanl.com/</Property>
+				<Property Name="MSI_autoselectDrivers" Type="Bool">true</Property>
+				<Property Name="MSI_distID" Type="Str">{1305EF4A-F47A-4E4E-93FE-091BAD14CB4C}</Property>
+				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
+				<Property Name="MSI_osCheck" Type="Int">0</Property>
+				<Property Name="MSI_upgradeCode" Type="Str">{415B99A1-0A92-45FB-85A7-C2BA4B6904A3}</Property>
+				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
+				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
+				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
+				<Property Name="RegDestCount" Type="Int">1</Property>
+				<Property Name="Source[0].dest" Type="Str">{4B7500B3-B3DA-484A-834D-5A7C75EDCB35}</Property>
+				<Property Name="Source[0].File[0].dest" Type="Str">{4B7500B3-B3DA-484A-834D-5A7C75EDCB35}</Property>
+				<Property Name="Source[0].File[0].name" Type="Str">ResonanceSpectrometer.exe</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">ResonanceSpectrometer</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">ResonanceSpectrometer</Property>
+				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
+				<Property Name="Source[0].File[0].tag" Type="Str">{41755E39-85B0-4956-81B5-32FD4651FBEE}</Property>
+				<Property Name="Source[0].FileCount" Type="Int">1</Property>
+				<Property Name="Source[0].name" Type="Str">ResonanceSpectrometer</Property>
+				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/ResonanceSpectrometer</Property>
+				<Property Name="Source[0].type" Type="Str">EXE</Property>
+				<Property Name="SourceCount" Type="Int">1</Property>
 			</Item>
 		</Item>
 	</Item>

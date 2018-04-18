@@ -288,6 +288,10 @@
 					<Item Name="RP I-V.lvclass" Type="LVClass" URL="../Recorders/RP I-V/RP I-V.lvclass"/>
 					<Item Name="RP IV analysis.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP IV analysis.vi"/>
 				</Item>
+				<Item Name="RP delayed" Type="Folder">
+					<Item Name="RP Delayed.lvclass" Type="LVClass" URL="../Recorders/RP Delayed/RP Delayed.lvclass"/>
+					<Item Name="RP Delayed Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Delayed Configuration.ctl"/>
+				</Item>
 				<Item Name="Channel Scanner Configuration.ctl" Type="VI" URL="../Recorders/Channel Scanner/Channel Scanner Configuration.ctl"/>
 			</Item>
 			<Item Name="Find Visa Recorders.vi" Type="VI" URL="../Recorders/Find Visa Recorders.vi"/>

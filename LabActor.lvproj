@@ -266,6 +266,7 @@
 				</Item>
 				<Item Name="Spectrum Recorder" Type="Folder">
 					<Item Name="Spectrum Recorder too.lvclass" Type="LVClass" URL="../Spectrum Recorder too/Spectrum Recorder too.lvclass"/>
+					<Item Name="Internal Spectrum Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Red Pitaya Transceiver Driver/Internal Spectrum Configuration.ctl"/>
 				</Item>
 				<Item Name="Ruby Spectra" Type="Folder">
 					<Item Name="Ruby Spectra.lvclass" Type="LVClass" URL="../Recorders/Ruby Spectra/Ruby Spectra.lvclass"/>
@@ -1113,7 +1114,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">70</Property>
+				<Property Name="Bld_version.build" Type="Int">71</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/LabActor.exe</Property>

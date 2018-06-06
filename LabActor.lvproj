@@ -327,6 +327,7 @@
 		<Item Name="Launch LabActor.vi" Type="VI" URL="../Launch LabActor.vi"/>
 		<Item Name="Correct Background File.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Ocean Optics/Correct Background File.vi"/>
 		<Item Name="Test Permitions.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Test Permitions.vi"/>
+		<Item Name="Get Peaks Time.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Fit/Get Peaks Time.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niModInst Close Installed Devices Session.vi" Type="VI" URL="/&lt;instrlib&gt;/niModInst/niModInst Close Installed Devices Session.vi"/>
@@ -1122,6 +1123,7 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Store Metadata in TDMS.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/TDMS/Store Metadata in TDMS.vi"/>
+			<Item Name="Append  Monitored Measuremenst to Fit Result.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Fit/Append  Monitored Measuremenst to Fit Result.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">
@@ -1139,7 +1141,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">71</Property>
+				<Property Name="Bld_version.build" Type="Int">72</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/LabActor.exe</Property>

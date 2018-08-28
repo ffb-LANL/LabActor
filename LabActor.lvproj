@@ -343,6 +343,7 @@
 		<Item Name="Test Permitions.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Test Permitions.vi"/>
 		<Item Name="Get Peaks Time.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Fit/Get Peaks Time.vi"/>
 		<Item Name="Parse Fit.vi" Type="VI" URL="../Post-Processors/Line Detector/Parse Fit.vi"/>
+		<Item Name="TDMS Open Err Check.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/TDMS/TDMS Open Err Check.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niModInst Close Installed Devices Session.vi" Type="VI" URL="/&lt;instrlib&gt;/niModInst/niModInst Close Installed Devices Session.vi"/>

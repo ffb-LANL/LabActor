@@ -886,7 +886,6 @@
 			<Item Name="AF Debug.lvlib" Type="Library" URL="/&lt;resource&gt;/AFDebug/AF Debug.lvlib"/>
 			<Item Name="AH read data.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/AH/AH read data.vi"/>
 			<Item Name="Any file exists.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Any file exists.vi"/>
-			<Item Name="AppendPathSeparator.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/File LLB/AppendPathSeparator.vi"/>
 			<Item Name="Armed Response Msg.lvclass" Type="LVClass" URL="../Controllers/Pulse Controller Messages/Armed Response Msg/Armed Response Msg.lvclass"/>
 			<Item Name="Array Subset by Value.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Array Subset by Value.vi"/>
 			<Item Name="Array_dualslicer.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Array_dualslicer.vi"/>

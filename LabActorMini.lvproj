@@ -38,8 +38,6 @@
 				<Item Name="Process Object.lvclass" Type="LVClass" URL="../Process Object/Process Object.lvclass"/>
 				<Item Name="Pulse Controller.lvclass" Type="LVClass" URL="../Controllers/Pulse Controller/Pulse Controller.lvclass"/>
 				<Item Name="Pulse Recorder.lvclass" Type="LVClass" URL="../Pulse Recorders/Pulse Recorder/Pulse Recorder.lvclass"/>
-				<Item Name="Sequence Controller.lvclass" Type="LVClass" URL="../Controllers/Sequence Controller/Sequence Controller.lvclass"/>
-				<Item Name="Sequence Element.lvclass" Type="LVClass" URL="../Sequence Elements/Sequence Element/Sequence Element.lvclass"/>
 				<Item Name="Template Module.lvclass" Type="LVClass" URL="../Template Module/Template Module.lvclass"/>
 				<Item Name="Timer.lvclass" Type="LVClass" URL="../Measurements/Timer/Timer.lvclass"/>
 				<Item Name="Worker State.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Worker State.ctl"/>
@@ -212,6 +210,11 @@
 				<Item Name="Spectrum Recorder" Type="Folder">
 					<Item Name="Spectrum Recorder too.lvclass" Type="LVClass" URL="../Spectrum Recorder too/Spectrum Recorder too.lvclass"/>
 				</Item>
+				<Item Name="Sequencer" Type="Folder">
+					<Item Name="Sequence Element.lvclass" Type="LVClass" URL="../Sequence Elements/Sequence Element/Sequence Element.lvclass"/>
+					<Item Name="Sequence Controller.lvclass" Type="LVClass" URL="../Controllers/Sequence Controller/Sequence Controller.lvclass"/>
+					<Item Name="Simple Sequencer.lvclass" Type="LVClass" URL="../Controllers/Simple Sequencer/Simple Sequencer.lvclass"/>
+				</Item>
 				<Item Name="Channel Scanner.lvclass" Type="LVClass" URL="../Recorders/Channel Scanner/Channel Scanner.lvclass"/>
 				<Item Name="Keithley Recorder.lvclass" Type="LVClass" URL="../Recorders/Keithley/Keithley Recorder.lvclass"/>
 				<Item Name="Lock-in.lvclass" Type="LVClass" URL="../Recorders/Lock-in/Lock-in.lvclass"/>
@@ -241,6 +244,7 @@
 		<Item Name="Set Out IPS120.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Oxford/IPS120/Set Out IPS120.vi"/>
 		<Item Name="Set Output.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Controls/Set Output.ctl"/>
 		<Item Name="Sweep Action.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Controls/Sweep Action.ctl"/>
+		<Item Name="Simple Sequencer Configuration.ctl" Type="VI" URL="../Controllers/Simple Sequencer/Simple Sequencer Configuration.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array of VData to VArray__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array of VData to VArray__ogtk.vi"/>
@@ -940,14 +944,14 @@
 				<Property Name="Source[5].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[5].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[5].type" Type="Str">VI</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Sequence Controller.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Recorders/Monitor/Sequencer/Sequence Controller.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[6].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[6].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[6].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[6].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[6].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[6].type" Type="Str">VI</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Sequence Element.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/My Computer/Recorders/Monitor/Sequencer/Sequence Element.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[7].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[7].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[7].properties[1].type" Type="Str">Remove block diagram</Property>

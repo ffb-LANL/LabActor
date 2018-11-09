@@ -250,6 +250,10 @@
 		<Item Name="Set Output.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Controls/Set Output.ctl"/>
 		<Item Name="Sweep Action.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Controls/Sweep Action.ctl"/>
 		<Item Name="Test IPS120 comms.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Oxford/IPS120/Test IPS120 comms.vi"/>
+		<Item Name="IPS state.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Oxford/IPS120/IPS state.ctl"/>
+		<Item Name="IPS LOC-REM Status.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Controls/IPS LOC-REM Status.ctl"/>
+		<Item Name="IPS Switch Heater Status.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Controls/IPS Switch Heater Status.ctl"/>
+		<Item Name="IPS Mode.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Controls/IPS Mode.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array of VData to VArray__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array of VData to VArray__ogtk.vi"/>

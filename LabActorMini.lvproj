@@ -81,6 +81,10 @@
 					<Item Name="Set Sweep.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Results/Set Sweep/Set Sweep.lvclass"/>
 					<Item Name="Output Value.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Utilities/Output Value/Output Value.lvclass"/>
 				</Item>
+				<Item Name="Sequencer" Type="Folder">
+					<Item Name="Sequencer State Machine.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Sequence/Sequencer State Machine/Sequencer State Machine.lvclass"/>
+					<Item Name="Sequencer State.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Sequence/Sequencer State Machine/Sequencer State.ctl"/>
+				</Item>
 				<Item Name="BroadcastBroker.lvclass" Type="LVClass" URL="../BroadcastBroker/BroadcastBroker.lvclass"/>
 				<Item Name="Instrument Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Instrument Driver.lvclass"/>
 				<Item Name="Simple VISA Reader Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Simple VISA Reader/Simple VISA Reader Driver.lvclass"/>

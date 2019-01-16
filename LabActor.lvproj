@@ -166,6 +166,7 @@
 			<Item Name="LabActor.lvclass" Type="LVClass" URL="../LabActor/LabActor.lvclass"/>
 			<Item Name="LabActor.cfg" Type="Document" URL="../LabActor/LabActor.cfg"/>
 			<Item Name="ResonanceSpectrometer.cfg" Type="Document" URL="../LabActor/ResonanceSpectrometer.cfg"/>
+			<Item Name="LabActor.ini" Type="Document" URL="../LabActor/LabActor.ini"/>
 		</Item>
 		<Item Name="Post-Processors" Type="Folder">
 			<Item Name="Format Converter" Type="Folder">
@@ -342,14 +343,6 @@
 			<Item Name="Find Visa Recorders.vi" Type="VI" URL="../Recorders/Find Visa Recorders.vi"/>
 		</Item>
 		<Item Name="Launch LabActor.vi" Type="VI" URL="../Launch LabActor.vi"/>
-		<Item Name="Correct Background File.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Ocean Optics/Correct Background File.vi"/>
-		<Item Name="Test Permitions.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Test Permitions.vi"/>
-		<Item Name="Get Peaks Time.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Fit/Get Peaks Time.vi"/>
-		<Item Name="Parse Fit.vi" Type="VI" URL="../Post-Processors/Line Detector/Parse Fit.vi"/>
-		<Item Name="TDMS Open Err Check.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/TDMS/TDMS Open Err Check.vi"/>
-		<Item Name="Get Application Information.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Application/Get Application Information.vi"/>
-		<Item Name="Extended Clear Errors.vim" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Extended Clear Errors.vim"/>
-		<Item Name="Request type.ctl" Type="VI" URL="../Controllers/Process Controller/Request type.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niModInst Close Installed Devices Session.vi" Type="VI" URL="/&lt;instrlib&gt;/niModInst/niModInst Close Installed Devices Session.vi"/>
@@ -1207,6 +1200,11 @@
 			<Item Name="Sweep Action.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Controls/Sweep Action.ctl"/>
 			<Item Name="Set Output.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Controls/Set Output.ctl"/>
 			<Item Name="Set Out IPS120.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Oxford/IPS120/Set Out IPS120.vi"/>
+			<Item Name="Get Peaks Time.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Fit/Get Peaks Time.vi"/>
+			<Item Name="TDMS Open Err Check.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/TDMS/TDMS Open Err Check.vi"/>
+			<Item Name="Get Application Information.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Application/Get Application Information.vi"/>
+			<Item Name="Extended Clear Errors.vim" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Extended Clear Errors.vim"/>
+			<Item Name="Request type.ctl" Type="VI" URL="../Controllers/Process Controller/Request type.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">
@@ -1224,7 +1222,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">104</Property>
+				<Property Name="Bld_version.build" Type="Int">108</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/LabActor.exe</Property>
@@ -1233,7 +1231,7 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{44E5EC80-0C43-4783-8590-005F13811B8D}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{9BC5C75E-AEB7-410E-AE96-29C57AC43139}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Controllers/Monitor Controller.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[1].properties[0].type" Type="Str">Remove front panel</Property>

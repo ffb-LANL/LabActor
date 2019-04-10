@@ -160,7 +160,6 @@
 			<Item Name="Test" Type="Folder"/>
 		</Item>
 		<Item Name="Measure App" Type="Folder">
-			<Item Name="Launch Measure App.vi" Type="VI" URL="../Launch Measure App.vi"/>
 			<Item Name="Measure App.lvclass" Type="LVClass" URL="../Measure App/Measure App.lvclass"/>
 		</Item>
 		<Item Name="LabActor" Type="Folder">
@@ -173,6 +172,7 @@
 			<Item Name="LabActor.cfg" Type="Document" URL="../LabActor/LabActor.cfg"/>
 			<Item Name="ResonanceSpectrometer.cfg" Type="Document" URL="../LabActor/ResonanceSpectrometer.cfg"/>
 			<Item Name="LabActor.ini" Type="Document" URL="../LabActor/LabActor.ini"/>
+			<Item Name="ResonanceSpectrometer.ini" Type="Document" URL="../LabActor/ResonanceSpectrometer.ini"/>
 		</Item>
 		<Item Name="Post-Processors" Type="Folder">
 			<Item Name="Format Converter" Type="Folder">
@@ -281,6 +281,9 @@
 				<Item Name="Quantum Design" Type="Folder">
 					<Item Name="Quantum Design Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Quantum Design/Quantum Design Driver/Quantum Design Driver.lvclass"/>
 					<Item Name="Test Quantum Design.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Quantum Design/Test Quantum Design.vi"/>
+					<Item Name="Quantum Desing Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Quantum Design/Quantum Design Driver/Quantum Desing Configuration.ctl"/>
+					<Item Name="Quantum Desing Measurement.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Quantum Design/Quantum Design Driver/Quantum Desing Measurement.ctl"/>
+					<Item Name="QDInstrument.dll" Type="Document" URL="/&lt;instrlib&gt;/QDInstrument_LabView/QDInstrument.dll"/>
 				</Item>
 				<Item Name="Andeen-Hagerling Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/AH/Andeen-Hagerling Driver/Andeen-Hagerling Driver.lvclass"/>
 				<Item Name="Channel Scanner Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Channel Scanner Driver/Channel Scanner Driver.lvclass"/>
@@ -323,6 +326,10 @@
 					<Item Name="Find Red Pitaya Lock-ins.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Red Pitaya Lock-in Driver/Find Red Pitaya Lock-ins.vi"/>
 					<Item Name="RP Lock-in Test.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Red Pitaya Lock-in Driver/RP Lock-in Test.vi"/>
 				</Item>
+				<Item Name="Quantum Design" Type="Folder">
+					<Item Name="Quantum Design.lvclass" Type="LVClass" URL="../Recorders/Quantum Design/Quantum Design.lvclass"/>
+					<Item Name="Dynamic Load Quantum Design.vi" Type="VI" URL="../Recorders/Quantum Design/Dynamic Load Quantum Design.vi"/>
+				</Item>
 				<Item Name="Channel Scanner.lvclass" Type="LVClass" URL="../Recorders/Channel Scanner/Channel Scanner.lvclass"/>
 				<Item Name="Keithley Recorder.lvclass" Type="LVClass" URL="../Recorders/Keithley/Keithley Recorder.lvclass"/>
 				<Item Name="Sweeper.lvclass" Type="LVClass" URL="../Recorders/Sweeper/Sweeper.lvclass"/>
@@ -354,8 +361,6 @@
 			<Item Name="Find Visa Recorders.vi" Type="VI" URL="../Recorders/Find Visa Recorders.vi"/>
 		</Item>
 		<Item Name="Launch LabActor.vi" Type="VI" URL="../Launch LabActor.vi"/>
-		<Item Name="Rescale Configuration.ctl" Type="VI" URL="../Post-Processors/Rescale/Rescale Configuration.ctl"/>
-		<Item Name="Quantum Desing Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Quantum Design/Quantum Design Driver/Quantum Desing Configuration.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niModInst Close Installed Devices Session.vi" Type="VI" URL="/&lt;instrlib&gt;/niModInst/niModInst Close Installed Devices Session.vi"/>
@@ -420,8 +425,9 @@
 				<Item Name="niScope which trigger.ctl" Type="VI" URL="/&lt;instrlib&gt;/niScope/Controls/niScope which trigger.ctl"/>
 				<Item Name="QDInstrumentExceptionHandler.vi" Type="VI" URL="/&lt;instrlib&gt;/QDInstrument_LabView/QDInstrument.llb/QDInstrumentExceptionHandler.vi"/>
 				<Item Name="OpenQDInstrument.vi" Type="VI" URL="/&lt;instrlib&gt;/QDInstrument_LabView/QDInstrument.llb/OpenQDInstrument.vi"/>
-				<Item Name="QDInstrument.dll" Type="Document" URL="/&lt;instrlib&gt;/QDInstrument_LabView/QDInstrument.dll"/>
 				<Item Name="GetTemperature.vi" Type="VI" URL="/&lt;instrlib&gt;/QDInstrument_LabView/QDInstrument.llb/GetTemperature.vi"/>
+				<Item Name="GetField.vi" Type="VI" URL="/&lt;instrlib&gt;/QDInstrument_LabView/QDInstrument.llb/GetField.vi"/>
+				<Item Name="GetPosition.vi" Type="VI" URL="/&lt;instrlib&gt;/QDInstrument_LabView/QDInstrument.llb/GetPosition.vi"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array of VData to VArray__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array of VData to VArray__ogtk.vi"/>
@@ -1221,16 +1227,14 @@
 			<Item Name="Get Application Information.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Application/Get Application Information.vi"/>
 			<Item Name="Extended Clear Errors.vim" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Extended Clear Errors.vim"/>
 			<Item Name="Request type.ctl" Type="VI" URL="../Controllers/Process Controller/Request type.ctl"/>
-			<Item Name="null" Type="Document"/>
-			<Item Name="QDInstrument" Type="VI" URL="QDInstrument">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
+			<Item Name="Rescale Configuration.ctl" Type="VI" URL="../Post-Processors/Rescale/Rescale Configuration.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{DA966FBD-6802-46F5-9DA1-C9842FDB2FAF}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{7C33C95E-A11B-42EE-A867-17BA0C819FAD}</Property>
+				<Property Name="App_INI_itemID" Type="Ref">/My Computer/LabActor/LabActor.ini</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{D477B9AB-3B4F-418C-8B8B-E27B3A0A5F5E}</Property>
@@ -1242,7 +1246,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">109</Property>
+				<Property Name="Bld_version.build" Type="Int">112</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/LabActor.exe</Property>
@@ -1251,7 +1255,7 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{9BC5C75E-AEB7-410E-AE96-29C57AC43139}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{27A42017-263B-4C4A-8AE0-DC342BB04053}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Controllers/Monitor Controller.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[1].properties[0].type" Type="Str">Remove front panel</Property>
@@ -1356,6 +1360,13 @@
 				<Property Name="Source[26].itemID" Type="Ref">/My Computer/Recorders/Find Visa Recorders.vi</Property>
 				<Property Name="Source[26].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[26].type" Type="Str">VI</Property>
+				<Property Name="Source[27].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[27].itemID" Type="Ref">/My Computer/Recorders/Drivers/Quantum Design/QDInstrument.dll</Property>
+				<Property Name="Source[27].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[28].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[28].itemID" Type="Ref">/My Computer/Recorders/Monitor/Quantum Design/Quantum Design.lvclass/Find Quantum Design.vi</Property>
+				<Property Name="Source[28].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[28].type" Type="Str">VI</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Plots/XY Plot.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[3].properties[0].type" Type="Str">Remove front panel</Property>
@@ -1407,7 +1418,7 @@
 				<Property Name="Source[9].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[9].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[9].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">27</Property>
+				<Property Name="SourceCount" Type="Int">29</Property>
 				<Property Name="TgtF_companyName" Type="Str">Los Alamos National Laboratory</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">LabActor</Property>
 				<Property Name="TgtF_internalName" Type="Str">LabActor</Property>
@@ -1503,6 +1514,7 @@
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{59EC8791-FB9D-491F-8ACA-5699473FAD2D}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{58671019-6C2A-42A6-A816-F70C2F3FC168}</Property>
+				<Property Name="App_INI_itemID" Type="Ref">/My Computer/LabActor/ResonanceSpectrometer.ini</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{BE2EBF86-BE3A-4777-94F1-2610CA2962BC}</Property>
@@ -1514,7 +1526,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6D09FC58-9DB8-486B-961C-4F1C695F32F8}</Property>
-				<Property Name="Bld_version.build" Type="Int">70</Property>
+				<Property Name="Bld_version.build" Type="Int">74</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">ResonanceSpectrometer.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/ResonanceSpectrometer/ResonanceSpectrometer.exe</Property>
@@ -1523,7 +1535,7 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/ResonanceSpectrometer/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{657F3D0C-AFDC-4871-B4DF-0F8E6C482D4F}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{27A42017-263B-4C4A-8AE0-DC342BB04053}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Controllers/Monitor Controller.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[1].properties[0].type" Type="Str">Remove front panel</Property>
@@ -1615,6 +1627,13 @@
 				<Property Name="Source[24].itemID" Type="Ref">/My Computer/Post-Processors/Get Resonance Detector Object.vi</Property>
 				<Property Name="Source[24].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[24].type" Type="Str">VI</Property>
+				<Property Name="Source[25].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[25].itemID" Type="Ref">/My Computer/Recorders/Monitor/Quantum Design/Quantum Design.lvclass/Find Quantum Design.vi</Property>
+				<Property Name="Source[25].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[25].type" Type="Str">VI</Property>
+				<Property Name="Source[26].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[26].itemID" Type="Ref">/My Computer/Recorders/Drivers/Quantum Design/QDInstrument.dll</Property>
+				<Property Name="Source[26].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Plots/XY Plot.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[3].properties[0].type" Type="Str">Remove front panel</Property>
@@ -1666,7 +1685,7 @@
 				<Property Name="Source[9].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[9].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[9].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">25</Property>
+				<Property Name="SourceCount" Type="Int">27</Property>
 				<Property Name="TgtF_companyName" Type="Str">Los Alamos National Laboratory</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">LabActor</Property>
 				<Property Name="TgtF_internalName" Type="Str">LabActor</Property>
@@ -1738,7 +1757,7 @@
 				<Property Name="INST_buildSpecName" Type="Str">ResonanceSpectrometer Installer</Property>
 				<Property Name="INST_defaultDir" Type="Str">{4B7500B3-B3DA-484A-834D-5A7C75EDCB35}</Property>
 				<Property Name="INST_productName" Type="Str">ResonanceSpectrometer</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.5</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.7</Property>
 				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">18008012</Property>
 				<Property Name="MSI_arpCompany" Type="Str">LANL</Property>

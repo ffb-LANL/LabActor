@@ -1246,6 +1246,9 @@
 			<Item Name="VI Server Recorder.lvclass" Type="LVClass" URL="../Recorders/VI Server/VI Server Recorder.lvclass"/>
 			<Item Name="VI Server Configuration.ctl" Type="VI" URL="../Recorders/VI Server/VI Server Configuration.ctl"/>
 			<Item Name="Sequence Element.lvclass" Type="LVClass" URL="../Sequence Elements/Sequence Element/Sequence Element.lvclass"/>
+			<Item Name="Waveform Generator.lvclass" Type="LVClass" URL="../Recorders/Waveform Generator/Waveform Generator.lvclass"/>
+			<Item Name="DAQmx Synthesizer Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Synthesizer/DAQmx Synthesizer Configuration.ctl"/>
+			<Item Name="DAQmx Synthesizer.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Synthesizer/DAQmx Synthesizer.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">
@@ -1261,7 +1264,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">140</Property>
+				<Property Name="Bld_version.build" Type="Int">141</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">5</Property>
 				<Property Name="Bld_version.patch" Type="Int">1</Property>
@@ -1273,7 +1276,7 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/LabActor/LabActor.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{0AAF5224-8F68-4442-9A99-546AEF21F76E}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{DE551DCA-6FCF-4C06-A438-F0973002BAE0}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Controllers/Monitor Controller.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[1].properties[0].type" Type="Str">Remove front panel</Property>
@@ -1282,67 +1285,60 @@
 				<Property Name="Source[1].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[1].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="Source[10].itemID" Type="Ref">/My Computer/Post-Processors/Integrate/Integrate.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[10].itemID" Type="Ref">/My Computer/Post-Processors/Synth/NHMFL Synthesizer.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[10].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[10].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[10].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[10].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[10].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[10].type" Type="Str">VI</Property>
-				<Property Name="Source[11].itemID" Type="Ref">/My Computer/Post-Processors/Lockin Proc/Lockin Processor.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[11].itemID" Type="Ref">/My Computer/Recorders/Monitor/Channel Scanner.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[11].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[11].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[11].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[11].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[11].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[11].type" Type="Str">VI</Property>
-				<Property Name="Source[12].itemID" Type="Ref">/My Computer/Post-Processors/Synth/NHMFL Synthesizer.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[12].itemID" Type="Ref">/My Computer/Recorders/Monitor/Lock-in/Lock-in.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[12].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[12].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[12].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[12].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[12].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[12].type" Type="Str">VI</Property>
-				<Property Name="Source[13].itemID" Type="Ref">/My Computer/Recorders/Monitor/Channel Scanner.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[13].itemID" Type="Ref">/My Computer/Recorders/Monitor/Sweeper.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[13].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[13].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[13].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[13].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[13].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[13].type" Type="Str">VI</Property>
-				<Property Name="Source[14].itemID" Type="Ref">/My Computer/Recorders/Monitor/Lock-in/Lock-in.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[14].itemID" Type="Ref">/My Computer/Recorders/Monitor/Temperature Controller.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[14].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[14].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[14].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[14].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[14].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[14].type" Type="Str">VI</Property>
-				<Property Name="Source[15].itemID" Type="Ref">/My Computer/Recorders/Monitor/Sweeper.lvclass/Actor Core.vi</Property>
-				<Property Name="Source[15].properties[0].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[15].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[15].properties[1].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[15].properties[1].value" Type="Bool">true</Property>
-				<Property Name="Source[15].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[15].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[15].itemID" Type="Ref">/My Computer/Recorders/Drivers/NI-Scope Driver/Ni-Scope Digitizer.lvclass/Find Ni-Scope digitizers.vi</Property>
+				<Property Name="Source[15].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[15].type" Type="Str">VI</Property>
-				<Property Name="Source[16].itemID" Type="Ref">/My Computer/Recorders/Monitor/Temperature Controller.lvclass/Actor Core.vi</Property>
-				<Property Name="Source[16].properties[0].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[16].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[16].properties[1].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[16].properties[1].value" Type="Bool">true</Property>
-				<Property Name="Source[16].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[16].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[16].itemID" Type="Ref">/My Computer/Recorders/Drivers/DAQmx Driver/DAQmx Digitizer.lvclass/Find DAQmx Digitizers.vi</Property>
+				<Property Name="Source[16].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[16].type" Type="Str">VI</Property>
 				<Property Name="Source[17].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[17].itemID" Type="Ref">/My Computer/Recorders/Drivers/NI-Scope Driver/Ni-Scope Digitizer.lvclass/Find Ni-Scope digitizers.vi</Property>
+				<Property Name="Source[17].itemID" Type="Ref">/My Computer/Post-Processors/Synth/Get NHMFL Synth Object.vi</Property>
 				<Property Name="Source[17].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[17].type" Type="Str">VI</Property>
 				<Property Name="Source[18].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[18].itemID" Type="Ref">/My Computer/Recorders/Drivers/DAQmx Driver/DAQmx Digitizer.lvclass/Find DAQmx Digitizers.vi</Property>
-				<Property Name="Source[18].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[18].itemID" Type="Ref">/My Computer/Launch LabActor.vi</Property>
+				<Property Name="Source[18].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[18].type" Type="Str">VI</Property>
 				<Property Name="Source[19].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[19].itemID" Type="Ref">/My Computer/Post-Processors/Synth/Get NHMFL Synth Object.vi</Property>
+				<Property Name="Source[19].itemID" Type="Ref">/My Computer/LabActor/LabActor.cfg</Property>
 				<Property Name="Source[19].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[19].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Pulse Recorder.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
@@ -1352,46 +1348,46 @@
 				<Property Name="Source[2].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
 				<Property Name="Source[20].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[20].itemID" Type="Ref">/My Computer/Launch LabActor.vi</Property>
-				<Property Name="Source[20].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[20].itemID" Type="Ref">/My Computer/Recorders/Monitor/Ruby Spectra/Ruby Spectra.lvclass/Find Ruby.vi</Property>
+				<Property Name="Source[20].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[20].type" Type="Str">VI</Property>
 				<Property Name="Source[21].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[21].itemID" Type="Ref">/My Computer/LabActor/LabActor.cfg</Property>
+				<Property Name="Source[21].itemID" Type="Ref">/My Computer/Post-Processors/Get Resonance Detector Object.vi</Property>
 				<Property Name="Source[21].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[21].type" Type="Str">VI</Property>
 				<Property Name="Source[22].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[22].itemID" Type="Ref">/My Computer/Recorders/Monitor/Ruby Spectra/Ruby Spectra.lvclass/Find Ruby.vi</Property>
+				<Property Name="Source[22].itemID" Type="Ref">/My Computer/Recorders/Monitor/Lock-in/Find Red Pitaya Lock-ins.vi</Property>
 				<Property Name="Source[22].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[22].type" Type="Str">VI</Property>
 				<Property Name="Source[23].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[23].itemID" Type="Ref">/My Computer/Post-Processors/Get Resonance Detector Object.vi</Property>
+				<Property Name="Source[23].itemID" Type="Ref">/My Computer/Recorders/Monitor/Ruby Spectra/Dynamic Load Ruby.vi</Property>
 				<Property Name="Source[23].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[23].type" Type="Str">VI</Property>
 				<Property Name="Source[24].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[24].itemID" Type="Ref">/My Computer/Recorders/Monitor/Lock-in/Find Red Pitaya Lock-ins.vi</Property>
+				<Property Name="Source[24].itemID" Type="Ref">/My Computer/Recorders/Find Visa Recorders.vi</Property>
 				<Property Name="Source[24].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[24].type" Type="Str">VI</Property>
 				<Property Name="Source[25].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[25].itemID" Type="Ref">/My Computer/Recorders/Monitor/Ruby Spectra/Dynamic Load Ruby.vi</Property>
+				<Property Name="Source[25].itemID" Type="Ref">/My Computer/Recorders/Drivers/Quantum Design/QDInstrument.dll</Property>
 				<Property Name="Source[25].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[25].type" Type="Str">VI</Property>
 				<Property Name="Source[26].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[26].itemID" Type="Ref">/My Computer/Recorders/Find Visa Recorders.vi</Property>
+				<Property Name="Source[26].itemID" Type="Ref">/My Computer/Recorders/Monitor/Quantum Design/Quantum Design.lvclass/Find Quantum Design.vi</Property>
 				<Property Name="Source[26].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[26].type" Type="Str">VI</Property>
-				<Property Name="Source[27].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[27].itemID" Type="Ref">/My Computer/Recorders/Drivers/Quantum Design/QDInstrument.dll</Property>
-				<Property Name="Source[27].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[28].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[28].itemID" Type="Ref">/My Computer/Recorders/Monitor/Quantum Design/Quantum Design.lvclass/Find Quantum Design.vi</Property>
-				<Property Name="Source[28].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[27].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Low-level/Utilities/Get ring selector waveform.vi</Property>
+				<Property Name="Source[27].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[27].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[27].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[27].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[27].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[27].type" Type="Str">VI</Property>
+				<Property Name="Source[28].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Low-level/Utilities/Create plots - ring selector.vi</Property>
+				<Property Name="Source[28].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[28].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[28].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[28].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[28].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[28].type" Type="Str">VI</Property>
-				<Property Name="Source[29].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Low-level/Utilities/Get ring selector waveform.vi</Property>
-				<Property Name="Source[29].properties[0].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[29].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[29].properties[1].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[29].properties[1].value" Type="Bool">false</Property>
-				<Property Name="Source[29].propertiesCount" Type="Int">2</Property>
-				<Property Name="Source[29].type" Type="Str">VI</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Plots/XY Plot.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[3].properties[0].type" Type="Str">Remove front panel</Property>
@@ -1400,13 +1396,6 @@
 				<Property Name="Source[3].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[3].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[3].type" Type="Str">VI</Property>
-				<Property Name="Source[30].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Low-level/Utilities/Create plots - ring selector.vi</Property>
-				<Property Name="Source[30].properties[0].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[30].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[30].properties[1].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[30].properties[1].value" Type="Bool">false</Property>
-				<Property Name="Source[30].propertiesCount" Type="Int">2</Property>
-				<Property Name="Source[30].type" Type="Str">VI</Property>
 				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Plots/XY WFRM Plot.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[4].properties[0].type" Type="Str">Remove front panel</Property>
@@ -1422,35 +1411,35 @@
 				<Property Name="Source[5].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[5].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[5].type" Type="Str">VI</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Dependencies']/Items in Memory/Sequence Controller.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/LabActor/LabActor.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[6].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[6].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[6].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[6].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[6].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[6].type" Type="Str">VI</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Dependencies']/Sequence Element.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/My Computer/Post-Processors/Format Converter/Format Converter.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[7].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[7].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[7].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[7].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[7].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[7].type" Type="Str">VI</Property>
-				<Property Name="Source[8].itemID" Type="Ref">/My Computer/LabActor/LabActor.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/My Computer/Post-Processors/Integrate/Integrate.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[8].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[8].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[8].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[8].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[8].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[8].type" Type="Str">VI</Property>
-				<Property Name="Source[9].itemID" Type="Ref">/My Computer/Post-Processors/Format Converter/Format Converter.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[9].itemID" Type="Ref">/My Computer/Post-Processors/Lockin Proc/Lockin Processor.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[9].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[9].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[9].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[9].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[9].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[9].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">31</Property>
+				<Property Name="SourceCount" Type="Int">29</Property>
 				<Property Name="TgtF_companyName" Type="Str">Los Alamos National Laboratory</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">LabActor</Property>
 				<Property Name="TgtF_internalName" Type="Str">LabActor</Property>
@@ -1695,7 +1684,7 @@
 				<Property Name="Source[6].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[6].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[6].type" Type="Str">VI</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Dependencies']/Sequence Element.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[7].itemID" Type="Ref"></Property>
 				<Property Name="Source[7].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[7].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[7].properties[1].type" Type="Str">Remove block diagram</Property>

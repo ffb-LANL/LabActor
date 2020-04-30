@@ -218,6 +218,11 @@
 			<Item Name="Format Resonances" Type="Folder">
 				<Item Name="Format Resonances.lvclass" Type="LVClass" URL="../Post-Processors/Elastic Moduli/Format Resonances.lvclass"/>
 			</Item>
+			<Item Name="Batch Processor" Type="Folder">
+				<Item Name="Launch Batch Processor.vi" Type="VI" URL="../Controllers/Batch Processor/Launch Batch Processor.vi"/>
+				<Item Name="Batch Processor.lvclass" Type="LVClass" URL="../Controllers/Batch Processor/Batch Processor.lvclass"/>
+				<Item Name="Batch Processor.cfg" Type="Document" URL="../Controllers/Batch Processor/Batch Processor.cfg"/>
+			</Item>
 			<Item Name="Resonance Detector.lvclass" Type="LVClass" URL="../Post-Processors/Line Detector/Resonance Detector.lvclass"/>
 			<Item Name="Get Resonance Detector Object.vi" Type="VI" URL="../Post-Processors/Line Detector/Get Resonance Detector Object.vi"/>
 			<Item Name="Rescale.lvclass" Type="LVClass" URL="../Post-Processors/Rescale/Rescale.lvclass"/>
@@ -1249,6 +1254,8 @@
 			<Item Name="Waveform Generator.lvclass" Type="LVClass" URL="../Recorders/Waveform Generator/Waveform Generator.lvclass"/>
 			<Item Name="DAQmx Synthesizer Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Synthesizer/DAQmx Synthesizer Configuration.ctl"/>
 			<Item Name="DAQmx Synthesizer.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Synthesizer/DAQmx Synthesizer.lvclass"/>
+			<Item Name="List Folder Files Msg.lvclass" Type="LVClass" URL="../Controllers/Batch Processor Messages/List Folder Files Msg/List Folder Files Msg.lvclass"/>
+			<Item Name="Start Batch Process Msg.lvclass" Type="LVClass" URL="../Controllers/Batch Processor Messages/Start Batch Process Msg/Start Batch Process Msg.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">

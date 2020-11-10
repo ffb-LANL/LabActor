@@ -106,6 +106,10 @@
 						<Item Name="NXG TDMS channel re-scale selector entry.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/File/Controls/NXG TDMS channel re-scale selector entry.ctl"/>
 						<Item Name="Backup File.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Backup File.vi"/>
 					</Item>
+					<Item Name="Instruments" Type="Folder">
+						<Item Name="IdentifyAndReadInstr.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/IdentifyAndReadInstr.vi"/>
+						<Item Name="Populate Recorder List.vi" Type="VI" URL="../Recorders/Populate Recorder List.vi"/>
+					</Item>
 					<Item Name="Create Test Pattern.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Create Test Pattern.vi"/>
 					<Item Name="Drag to Tree Check.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/GUI/Drag to Tree Check.vi"/>
 					<Item Name="Find Syncronous Frequency.vi" Type="VI" URL="../../NHMFL_Core/Libraries/SoftwareLockin/Find Syncronous Frequency.vi"/>
@@ -1002,7 +1006,6 @@
 			<Item Name="Identify Cryo-Con.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Cryo-con/Identify Cryo-Con.vi"/>
 			<Item Name="Identify Neocera.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Neocera/Identify Neocera.vi"/>
 			<Item Name="Identify Oxford.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Oxford/Identify Oxford.vi"/>
-			<Item Name="IdentifyAndReadInstr.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/IdentifyAndReadInstr.vi"/>
 			<Item Name="IdentifyEG_G_Lockin.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/EG_G/IdentifyEG_G_Lockin.vi"/>
 			<Item Name="IdentifyHP5385A.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/HP/HP5385/IdentifyHP5385A.vi"/>
 			<Item Name="Increment mode.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Increment mode.ctl"/>
@@ -1065,7 +1068,6 @@
 			<Item Name="Plot Indexes.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Controls/Plot Indexes.ctl"/>
 			<Item Name="Plot types.ctl" Type="VI" URL="../Plots/Plot types.ctl"/>
 			<Item Name="Populate and conf ethernet bus.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Instrument/Populate and conf ethernet bus.vi"/>
-			<Item Name="Populate Recorder List.vi" Type="VI" URL="../Recorders/Populate Recorder List.vi"/>
 			<Item Name="Pulse Controller Configuration.ctl" Type="VI" URL="../Controllers/Pulse Controller/Pulse Controller Configuration.ctl"/>
 			<Item Name="Pulse indexies.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Waform generation/Pulse indexies.ctl"/>
 			<Item Name="Pupulate and conf serial bus.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Instrument/Pupulate and conf serial bus.vi"/>
@@ -1269,7 +1271,7 @@
 			<Item Name="Waveform Generator.lvclass" Type="LVClass" URL="../Recorders/Waveform Generator/Waveform Generator.lvclass"/>
 			<Item Name="DAQmx Synthesizer Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Synthesizer/DAQmx Synthesizer Configuration.ctl"/>
 			<Item Name="DAQmx Synthesizer.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Synthesizer/DAQmx Synthesizer.lvclass"/>
-			<Item Name="Create Pattern File Browse.vi" Type="VI" URL="../../../Users/l121767/Downloads/Multi Select/Create Pattern File Browse.vi"/>
+			<Item Name="Create Pattern File Browse.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Multi Select/Create Pattern File Browse.vi"/>
 			<Item Name="Read Fit from File.vi" Type="VI" URL="../../NHMFL_Core/Libraries/RUS/Read Fit from File.vi"/>
 			<Item Name="Fit Columns.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/RUS/Fit Columns.ctl"/>
 			<Item Name="Line Detector Crop Regions.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Crop Regions.vi"/>
@@ -1291,7 +1293,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">142</Property>
+				<Property Name="Bld_version.build" Type="Int">143</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">5</Property>
 				<Property Name="Bld_version.patch" Type="Int">1</Property>

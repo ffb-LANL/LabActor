@@ -1285,7 +1285,6 @@
 			<Item Name="Waveform Generator.lvclass" Type="LVClass" URL="../Recorders/Waveform Generator/Waveform Generator.lvclass"/>
 			<Item Name="DAQmx Synthesizer Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Synthesizer/DAQmx Synthesizer Configuration.ctl"/>
 			<Item Name="DAQmx Synthesizer.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Synthesizer/DAQmx Synthesizer.lvclass"/>
-			<Item Name="Create Pattern File Browse.vi" Type="VI" URL="../../../Users/l121767/Downloads/Multi Select/Create Pattern File Browse.vi"/>
 			<Item Name="Read Fit from File.vi" Type="VI" URL="../../NHMFL_Core/Libraries/RUS/Read Fit from File.vi"/>
 			<Item Name="Fit Columns.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/RUS/Fit Columns.ctl"/>
 			<Item Name="Line Detector Crop Regions.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Crop Regions.vi"/>
@@ -1302,6 +1301,7 @@
 			<Item Name="Strip String Ends.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Strip String Ends.vi"/>
 			<Item Name="Read Startup Configuration.vi" Type="VI" URL="../Controllers/Application Controller/Read Startup Configuration.vi"/>
 			<Item Name="Write Startup Configuration.vi" Type="VI" URL="../Controllers/Application Controller/Write Startup Configuration.vi"/>
+			<Item Name="Create Pattern File Browse.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Multi Select/Create Pattern File Browse.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">

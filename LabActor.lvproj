@@ -87,7 +87,13 @@
 					</Item>
 					<Item Name="Template Module.lvclass" Type="LVClass" URL="../Template Module/Template Module.lvclass"/>
 				</Item>
-				<Item Name="Instrument Actor.lvclass" Type="LVClass" URL="../Instrument Actor/Instrument Actor.lvclass"/>
+				<Item Name="Instrument" Type="Folder">
+					<Item Name="Messages" Type="Folder">
+						<Item Name="Set Output Msg.lvclass" Type="LVClass" URL="../Instrument Actor Messages/Set Output Msg/Set Output Msg.lvclass"/>
+						<Item Name="Send Message Msg.lvclass" Type="LVClass" URL="../Instrument Actor Messages/Send Message Msg/Send Message Msg.lvclass"/>
+					</Item>
+					<Item Name="Instrument Actor.lvclass" Type="LVClass" URL="../Instrument Actor/Instrument Actor.lvclass"/>
+				</Item>
 				<Item Name="Process Object.lvclass" Type="LVClass" URL="../Process Object/Process Object.lvclass"/>
 				<Item Name="Pulse Recorder.lvclass" Type="LVClass" URL="../Pulse Recorders/Pulse Recorder/Pulse Recorder.lvclass"/>
 				<Item Name="Timer.lvclass" Type="LVClass" URL="../Measurements/Timer/Timer.lvclass"/>
@@ -241,6 +247,10 @@
 				</Item>
 				<Item Name="Resonance Detector.lvclass" Type="LVClass" URL="../Post-Processors/Line Detector/Resonance Detector.lvclass"/>
 				<Item Name="Get Resonance Detector Object.vi" Type="VI" URL="../Post-Processors/Line Detector/Get Resonance Detector Object.vi"/>
+			</Item>
+			<Item Name="Log Record" Type="Folder">
+				<Item Name="Log Record.lvclass" Type="LVClass" URL="../Post-Processors/Log Record/Log Record.lvclass"/>
+				<Item Name="Log Record Configuration.ctl" Type="VI" URL="../Post-Processors/Log Record/Log Record Configuration.ctl"/>
 			</Item>
 			<Item Name="Rescale.lvclass" Type="LVClass" URL="../Post-Processors/Rescale/Rescale.lvclass"/>
 		</Item>
@@ -940,6 +950,13 @@
 				<Item Name="Report Error Msg.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/ActorFramework/Report Error Msg/Report Error Msg.lvclass"/>
 				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
 				<Item Name="Casting Utility For Actors.vim" Type="VI" URL="/&lt;vilib&gt;/ActorFramework/Actor/Casting Utility For Actors.vim"/>
+				<Item Name="LabVIEWHTTPClient.lvlib" Type="Library" URL="/&lt;vilib&gt;/httpClient/LabVIEWHTTPClient.lvlib"/>
+				<Item Name="JDP Utility.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/JDP Utility.lvlib"/>
+				<Item Name="JSONtext.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JSONtext/JSONtext.lvlib"/>
+				<Item Name="Path To Command Line String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Path To Command Line String.vi"/>
+				<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="/&lt;vilib&gt;/numeric/LVNumericRepresentation.ctl"/>
+				<Item Name="JDP Timestamp.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/Timestamp/JDP Timestamp.lvlib"/>
+				<Item Name="PathToUNIXPathString.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/CFURL.llb/PathToUNIXPathString.vi"/>
 			</Item>
 			<Item Name="Abbreviate TDMS Group Channel.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Abbreviate TDMS Group Channel.vi"/>
 			<Item Name="Acknowledge Post Process Msg.lvclass" Type="LVClass" URL="../Controllers/Process Controller Messages/Acknowledge Post Process Msg/Acknowledge Post Process Msg.lvclass"/>
@@ -1183,7 +1200,6 @@
 			<Item Name="Cryo-Con Get H.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Cryo-con/Cryo-Con Get H.vi"/>
 			<Item Name="Query numeric.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/GPIB/Query numeric.vi"/>
 			<Item Name="PID Controller Configuration.ctl" Type="VI" URL="../Recorders/PID Controller/PID Controller Configuration.ctl"/>
-			<Item Name="Set Output Msg.lvclass" Type="LVClass" URL="../Instrument Actor Messages/Set Output Msg/Set Output Msg.lvclass"/>
 			<Item Name="Resonance Detector Configuration.ctl" Type="VI" URL="../Post-Processors/Line Detector/Resonance Detector Configuration.ctl"/>
 			<Item Name="Resonance Detector Process.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Fit/Resonance Detector Process.vi"/>
 			<Item Name="Line Detector Read File.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Read File.vi"/>
@@ -1275,6 +1291,17 @@
 			<Item Name="Line Detector Crop Regions.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Crop Regions.vi"/>
 			<Item Name="Line Detector Create Regions.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Create Regions.vi"/>
 			<Item Name="Read Files from m-File.vi" Type="VI" URL="../../NHMFL_Core/Libraries/RUS/Read Files from m-File.vi"/>
+			<Item Name="OSF Append Wiki.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/OSF Append Wiki.vi"/>
+			<Item Name="Render TDMS Metatdata.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/TDMS/Render TDMS Metatdata.vi"/>
+			<Item Name="Parse File.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/Parse File.vi"/>
+			<Item Name="Get JSON Value.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Get JSON Value.vi"/>
+			<Item Name="OSF Read Wikis.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/OSF Read Wikis.vi"/>
+			<Item Name="OSF Read Projects.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/OSF Read Projects.vi"/>
+			<Item Name="OSF Auth Header.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/OSF Auth Header.vi"/>
+			<Item Name="OSF Upload File.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/OSF Upload File.vi"/>
+			<Item Name="Strip String Ends.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Strip String Ends.vi"/>
+			<Item Name="Read Startup Configuration.vi" Type="VI" URL="../Controllers/Application Controller/Read Startup Configuration.vi"/>
+			<Item Name="Write Startup Configuration.vi" Type="VI" URL="../Controllers/Application Controller/Write Startup Configuration.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">
@@ -1575,7 +1602,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6D09FC58-9DB8-486B-961C-4F1C695F32F8}</Property>
-				<Property Name="Bld_version.build" Type="Int">87</Property>
+				<Property Name="Bld_version.build" Type="Int">88</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">5</Property>
 				<Property Name="Destination[0].destName" Type="Str">ResonanceSpectrometer.exe</Property>

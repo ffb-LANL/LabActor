@@ -179,8 +179,6 @@
 				<Item Name="Write Pulse File Msg.lvclass" Type="LVClass" URL="../LabActor Messages/Write Pulse File Msg/Write Pulse File Msg.lvclass"/>
 			</Item>
 			<Item Name="LabActor.lvclass" Type="LVClass" URL="../LabActor/LabActor.lvclass"/>
-			<Item Name="LabActor.cfg" Type="Document" URL="../LabActor/LabActor.cfg"/>
-			<Item Name="ResonanceSpectrometer.cfg" Type="Document" URL="../LabActor/ResonanceSpectrometer.cfg"/>
 			<Item Name="LabActor.ini" Type="Document" URL="../LabActor/LabActor.ini"/>
 			<Item Name="ResonanceSpectrometer.ini" Type="Document" URL="../LabActor/ResonanceSpectrometer.ini"/>
 			<Item Name="LabActor.ico" Type="Document" URL="../LabActor.ico"/>
@@ -1299,8 +1297,6 @@
 			<Item Name="OSF Auth Header.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/OSF Auth Header.vi"/>
 			<Item Name="OSF Upload File.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/OSF Upload File.vi"/>
 			<Item Name="Strip String Ends.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Strip String Ends.vi"/>
-			<Item Name="Read Startup Configuration.vi" Type="VI" URL="../Controllers/Application Controller/Read Startup Configuration.vi"/>
-			<Item Name="Write Startup Configuration.vi" Type="VI" URL="../Controllers/Application Controller/Write Startup Configuration.vi"/>
 			<Item Name="Create Pattern File Browse.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Multi Select/Create Pattern File Browse.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
@@ -1391,7 +1387,7 @@
 				<Property Name="Source[18].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[18].type" Type="Str">VI</Property>
 				<Property Name="Source[19].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[19].itemID" Type="Ref">/My Computer/LabActor/LabActor.cfg</Property>
+				<Property Name="Source[19].itemID" Type="Ref"></Property>
 				<Property Name="Source[19].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Pulse Recorder.lvclass/Actor Core.vi</Property>
@@ -1692,9 +1688,9 @@
 				<Property Name="Source[20].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[20].type" Type="Str">VI</Property>
 				<Property Name="Source[21].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[21].itemID" Type="Ref">/My Computer/LabActor/LabActor.cfg</Property>
+				<Property Name="Source[21].itemID" Type="Ref"></Property>
 				<Property Name="Source[22].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[22].itemID" Type="Ref">/My Computer/LabActor/ResonanceSpectrometer.cfg</Property>
+				<Property Name="Source[22].itemID" Type="Ref"></Property>
 				<Property Name="Source[22].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[23].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[23].itemID" Type="Ref">/My Computer/Post-Processors/Resonance Detector/Resonance Detector.lvclass</Property>
@@ -2003,7 +1999,7 @@
 				<Property Name="Source[18].itemID" Type="Ref">/My Computer/Launch LabActor.vi</Property>
 				<Property Name="Source[18].type" Type="Str">VI</Property>
 				<Property Name="Source[19].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[19].itemID" Type="Ref">/My Computer/LabActor/LabActor.cfg</Property>
+				<Property Name="Source[19].itemID" Type="Ref"></Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Pulse Recorder.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
@@ -2013,7 +2009,7 @@
 				<Property Name="Source[2].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
 				<Property Name="Source[20].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[20].itemID" Type="Ref">/My Computer/LabActor/ResonanceSpectrometer.cfg</Property>
+				<Property Name="Source[20].itemID" Type="Ref"></Property>
 				<Property Name="Source[21].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[21].itemID" Type="Ref">/My Computer/Post-Processors/Resonance Detector/Resonance Detector.lvclass</Property>
 				<Property Name="Source[21].sourceInclusion" Type="Str">Include</Property>

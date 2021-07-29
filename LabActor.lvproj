@@ -406,6 +406,7 @@
 			<Item Name="Find Visa Recorders.vi" Type="VI" URL="../Recorders/Find Visa Recorders.vi"/>
 		</Item>
 		<Item Name="Launch LabActor.vi" Type="VI" URL="../Launch LabActor.vi"/>
+		<Item Name="Sampling clock.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Controls/Sampling clock.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niModInst Close Installed Devices Session.vi" Type="VI" URL="/&lt;instrlib&gt;/niModInst/niModInst Close Installed Devices Session.vi"/>
@@ -1328,7 +1329,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">143</Property>
+				<Property Name="Bld_version.build" Type="Int">144</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">5</Property>
 				<Property Name="Bld_version.patch" Type="Int">4</Property>

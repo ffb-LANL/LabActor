@@ -251,6 +251,8 @@
 			<Item Name="Log Record" Type="Folder">
 				<Item Name="Log Record.lvclass" Type="LVClass" URL="../Post-Processors/Log Record/Log Record.lvclass"/>
 				<Item Name="Log Record Configuration.ctl" Type="VI" URL="../Post-Processors/Log Record/Log Record Configuration.ctl"/>
+				<Item Name="Dynamic Load Log Record.vi" Type="VI" URL="../Post-Processors/Log Record/Dynamic Load Log Record.vi"/>
+				<Item Name="Find Log Record.vi" Type="VI" URL="../Post-Processors/Log Record/Find Log Record.vi"/>
 			</Item>
 			<Item Name="Rescale.lvclass" Type="LVClass" URL="../Post-Processors/Rescale/Rescale.lvclass"/>
 		</Item>
@@ -408,7 +410,6 @@
 			<Item Name="Find Visa Recorders.vi" Type="VI" URL="../Recorders/Find Visa Recorders.vi"/>
 		</Item>
 		<Item Name="Launch LabActor.vi" Type="VI" URL="../Launch LabActor.vi"/>
-		<Item Name="Sampling clock.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Controls/Sampling clock.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niModInst Close Installed Devices Session.vi" Type="VI" URL="/&lt;instrlib&gt;/niModInst/niModInst Close Installed Devices Session.vi"/>
@@ -1314,7 +1315,9 @@
 			<Item Name="Strip String Ends.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Strip String Ends.vi"/>
 			<Item Name="Create Pattern File Browse.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Multi Select/Create Pattern File Browse.vi"/>
 			<Item Name="Bullet Markdown.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/Bullet Markdown.vi"/>
-			<Item Name="Dynamic Load Log Record.vi" Type="VI" URL="../Post-Processors/Log Record/Dynamic Load Log Record.vi"/>
+			<Item Name="Experiment info.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/Experiment info.ctl"/>
+			<Item Name="MagX Get Info.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Get Info.vi"/>
+			<Item Name="Sampling clock.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Controls/Sampling clock.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">

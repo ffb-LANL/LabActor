@@ -307,6 +307,7 @@
 						<Item Name="RP I-V Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Rep Pitaya I-V driver/RP I-V Driver.lvclass"/>
 						<Item Name="RP EEPROM Calibration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP EEPROM Calibration.ctl"/>
 						<Item Name="RP I-V Test Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Rep Pitaya I-V driver/RP I-V Test Driver/RP I-V Test Driver.lvclass"/>
+						<Item Name="Red Pitaya Modulated Digitizer.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Red Pitaya/Red Pitaya Modulated Digitizer/Red Pitaya Modulated Digitizer.lvclass"/>
 					</Item>
 					<Item Name="Pulse Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Pulse Driver/Pulse Driver.lvclass"/>
 					<Item Name="Pusle Driver Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Pulse Driver/Pusle Driver Configuration.ctl"/>
@@ -409,8 +410,8 @@
 					<Item Name="RP IV analysis.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP IV analysis.vi"/>
 				</Item>
 				<Item Name="RP delayed" Type="Folder">
-					<Item Name="RP Delayed.lvclass" Type="LVClass" URL="../Recorders/RP Delayed/RP Delayed.lvclass"/>
-					<Item Name="RP Delayed Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Delayed Configuration.ctl"/>
+					<Item Name="RP Modulated.lvclass" Type="LVClass" URL="../Recorders/RP Delayed/RP Modulated.lvclass"/>
+					<Item Name="RP Modulated Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Modulated Configuration.ctl"/>
 				</Item>
 				<Item Name="RP Level" Type="Folder">
 					<Item Name="RP Level.lvclass" Type="LVClass" URL="../Recorders/RP Level/RP Level.lvclass"/>
@@ -1316,6 +1317,7 @@
 			<Item Name="MagX Events to Listbox.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Events to Listbox.vi"/>
 			<Item Name="MagX List.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX List.vi"/>
 			<Item Name="MagX Put File.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Put File.vi"/>
+			<Item Name="Modulation.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Red Pitaya Modulated Digitizer/Modulation.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">
@@ -1332,7 +1334,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">149</Property>
+				<Property Name="Bld_version.build" Type="Int">150</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">5</Property>
 				<Property Name="Bld_version.patch" Type="Int">4</Property>

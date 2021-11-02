@@ -256,6 +256,7 @@
 					<Item Name="Start Sync Msg.lvclass" Type="LVClass" URL="../Post-Processors/Log Record Messages/Start Sync Msg/Start Sync Msg.lvclass"/>
 					<Item Name="Set Metadata Msg.lvclass" Type="LVClass" URL="../Post-Processors/Log Record Messages/Set Metadata Msg/Set Metadata Msg.lvclass"/>
 					<Item Name="Get OSF Status Msg.lvclass" Type="LVClass" URL="../Post-Processors/Log Record Messages/Get OSF Status Msg/Get OSF Status Msg.lvclass"/>
+					<Item Name="OSF Sync Command Msg.lvclass" Type="LVClass" URL="../Post-Processors/Log Record Messages/OSF Sync Command Msg/OSF Sync Command Msg.lvclass"/>
 				</Item>
 				<Item Name="Log Record.lvclass" Type="LVClass" URL="../Post-Processors/Log Record/Log Record.lvclass"/>
 				<Item Name="Log Record Configuration.ctl" Type="VI" URL="../Post-Processors/Log Record/Log Record Configuration.ctl"/>
@@ -1318,6 +1319,7 @@
 			<Item Name="MagX List.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX List.vi"/>
 			<Item Name="MagX Put File.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Put File.vi"/>
 			<Item Name="Modulation.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Red Pitaya Modulated Digitizer/Modulation.ctl"/>
+			<Item Name="MagX Get Status.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Get Status.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">

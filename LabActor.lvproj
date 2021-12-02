@@ -16,7 +16,7 @@
 			<Item Name="Client" Type="Folder">
 				<Item Name="Comms Client.vi" Type="VI" URL="../Comms/Client/Comms Client.vi"/>
 			</Item>
-			<Item Name="Messades" Type="Folder">
+			<Item Name="Messages" Type="Folder">
 				<Item Name="Client Message Msg.lvclass" Type="LVClass" URL="../Comms/Communications Messages/Client Message Msg/Client Message Msg.lvclass"/>
 				<Item Name="Init Comms Msg.lvclass" Type="LVClass" URL="../Comms/Communications Messages/Init Comms Msg/Init Comms Msg.lvclass"/>
 				<Item Name="Monitor Command Msg.lvclass" Type="LVClass" URL="../Controllers/Application Controller Messages/Monitor Command Msg/Monitor Command Msg.lvclass"/>
@@ -136,6 +136,7 @@
 					<Item Name="Extend Array.vim" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Extend Array.vim"/>
 					<Item Name="Get ring selector waveform.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Get ring selector waveform.vi"/>
 					<Item Name="Create plots - ring selector.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Create plots - ring selector.vi"/>
+					<Item Name="Variant to String.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Variant to String.vi"/>
 					<Item Name="Format Error Message.vi" Type="VI" URL="../Error Log/Format Error Message.vi"/>
 				</Item>
 				<Item Name="Results" Type="Folder">
@@ -258,11 +259,18 @@
 					<Item Name="Get OSF Status Msg.lvclass" Type="LVClass" URL="../Post-Processors/Log Record Messages/Get OSF Status Msg/Get OSF Status Msg.lvclass"/>
 					<Item Name="OSF Sync Command Msg.lvclass" Type="LVClass" URL="../Post-Processors/Log Record Messages/OSF Sync Command Msg/OSF Sync Command Msg.lvclass"/>
 				</Item>
+				<Item Name="MagX" Type="Folder">
+					<Item Name="MagX Start OSF Sync.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Start OSF Sync.vi"/>
+					<Item Name="MagX Get Status.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Get Status.vi"/>
+					<Item Name="MagX List.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX List.vi"/>
+					<Item Name="MagX Get Info.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Get Info.vi"/>
+					<Item Name="MagX Logoff.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Logoff.vi"/>
+				</Item>
 				<Item Name="Log Record.lvclass" Type="LVClass" URL="../Post-Processors/Log Record/Log Record.lvclass"/>
 				<Item Name="Log Record Configuration.ctl" Type="VI" URL="../Post-Processors/Log Record/Log Record Configuration.ctl"/>
 				<Item Name="Dynamic Load Log Record.vi" Type="VI" URL="../Post-Processors/Log Record/Dynamic Load Log Record.vi"/>
 				<Item Name="Find Log Record.vi" Type="VI" URL="../Post-Processors/Log Record/Find Log Record.vi"/>
-				<Item Name="MagX Start OSF Sync.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Start OSF Sync.vi"/>
+				<Item Name="Log Record State.ctl" Type="VI" URL="../Post-Processors/Log Record/Log Record State.ctl"/>
 			</Item>
 			<Item Name="Rescale.lvclass" Type="LVClass" URL="../Post-Processors/Rescale/Rescale.lvclass"/>
 		</Item>
@@ -422,7 +430,7 @@
 			<Item Name="Find Visa Recorders.vi" Type="VI" URL="../Recorders/Find Visa Recorders.vi"/>
 		</Item>
 		<Item Name="Launch LabActor.vi" Type="VI" URL="../Launch LabActor.vi"/>
-		<Item Name="Variant to String.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Variant to String.vi"/>
+		<Item Name="London.vi" Type="VI" URL="//dcstorage.lanl.gov/121767/My Documents/Projects/Eremets/Mesner/v2/London.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niModInst Close Installed Devices Session.vi" Type="VI" URL="/&lt;instrlib&gt;/niModInst/niModInst Close Installed Devices Session.vi"/>
@@ -835,7 +843,6 @@
 				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
-				<Item Name="Number of Waveform Samples.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Number of Waveform Samples.vi"/>
 				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
 				<Item Name="panelResize_tdms.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/panelResize_tdms.vi"/>
 				<Item Name="panelstate.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/panelstate.ctl"/>
@@ -977,6 +984,7 @@
 				<Item Name="PathToUNIXPathString.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/CFURL.llb/PathToUNIXPathString.vi"/>
 				<Item Name="JSONtext LVClass Serializer.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/JDP Science/JSONtext/LVClass Serializer/JSONtext LVClass Serializer.lvclass"/>
 				<Item Name="Base64 Support.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JSONtext/Base64/Base64 Support.lvlib"/>
+				<Item Name="Waveform Scale and Offset.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Waveform Scale and Offset.vi"/>
 			</Item>
 			<Item Name="Abbreviate TDMS Group Channel.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Abbreviate TDMS Group Channel.vi"/>
 			<Item Name="Acknowledge Post Process Msg.lvclass" Type="LVClass" URL="../Controllers/Process Controller Messages/Acknowledge Post Process Msg/Acknowledge Post Process Msg.lvclass"/>
@@ -1312,14 +1320,13 @@
 			<Item Name="Create Pattern File Browse.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Multi Select/Create Pattern File Browse.vi"/>
 			<Item Name="Bullet Markdown.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/Bullet Markdown.vi"/>
 			<Item Name="Experiment info.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/Experiment info.ctl"/>
-			<Item Name="MagX Get Info.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Get Info.vi"/>
 			<Item Name="Sampling clock.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Controls/Sampling clock.ctl"/>
 			<Item Name="MagX Format Date.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Format Date.vi"/>
 			<Item Name="MagX Events to Listbox.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Events to Listbox.vi"/>
-			<Item Name="MagX List.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX List.vi"/>
 			<Item Name="MagX Put File.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Put File.vi"/>
 			<Item Name="Modulation.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Red Pitaya Modulated Digitizer/Modulation.ctl"/>
-			<Item Name="MagX Get Status.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Get Status.vi"/>
+			<Item Name="Tektronix Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Tektronix/Tektronix Driver/Tektronix Driver.lvclass"/>
+			<Item Name="Tektronix Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Tektronix/Tektronix Driver/Tektronix Configuration.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">

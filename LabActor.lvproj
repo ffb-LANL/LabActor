@@ -84,6 +84,7 @@
 						<Item Name="Time to subscribe Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Time to subscribe Msg/Time to subscribe Msg.lvclass"/>
 						<Item Name="Attach to Sub-pannel Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Attach to Sub-pannel Msg/Attach to Sub-pannel Msg.lvclass"/>
 						<Item Name="Subscribe Request Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Subscribe Request Msg/Subscribe Request Msg.lvclass"/>
+						<Item Name="Restore Configuration Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Restore Configuration Msg/Restore Configuration Msg.lvclass"/>
 					</Item>
 					<Item Name="Template Module.lvclass" Type="LVClass" URL="../Template Module/Template Module.lvclass"/>
 				</Item>
@@ -454,6 +455,10 @@
 				</Item>
 				<Item Name="RP Level" Type="Folder">
 					<Item Name="RP Level.lvclass" Type="LVClass" URL="../Recorders/RP Level/RP Level.lvclass"/>
+				</Item>
+				<Item Name="Lockin Digitizer" Type="Folder">
+					<Item Name="Lockin Digitizer.lvclass" Type="LVClass" URL="../Pulse Recorders/Lockin Digitizer/Lockin Digitizer.lvclass"/>
+					<Item Name="Lockin Digitizer Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Lockin Digitizer Driver/Lockin Digitizer Configuration.ctl"/>
 				</Item>
 				<Item Name="Channel Scanner Configuration.ctl" Type="VI" URL="../Recorders/Channel Scanner/Channel Scanner Configuration.ctl"/>
 			</Item>
@@ -1388,7 +1393,6 @@
 			<Item Name="Replace dt.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Replace dt.vi"/>
 			<Item Name="Replot Msg.lvclass" Type="LVClass" URL="../Plots/Plot Messages/Replot Msg/Replot Msg.lvclass"/>
 			<Item Name="Resonance Detector Create sp_dat.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Fit/Resonance Detector Create sp_dat.vi"/>
-			<Item Name="Restore Configuration Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Restore Configuration Msg/Restore Configuration Msg.lvclass"/>
 			<Item Name="Ring plots update.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Ring plots update.vi"/>
 			<Item Name="Rotate Lockin Phase.vi" Type="VI" URL="../../NHMFL_Core/Libraries/SoftwareLockin/Rotate Lockin Phase.vi"/>
 			<Item Name="RP block write.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP block write.vi"/>

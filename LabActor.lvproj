@@ -368,6 +368,9 @@
 					<Item Name="DAQmx Lockin Driver" Type="Folder">
 						<Item Name="DAQmx Lockin Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Lockin Driver/DAQmx Lockin Driver.lvclass"/>
 					</Item>
+					<Item Name="DAQmx Lockin Digitizer Driver" Type="Folder">
+						<Item Name="DAQmx Lockin Digitizer Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Lockin Digitizer Driver/DAQmx Lockin Digitizer Driver.lvclass"/>
+					</Item>
 					<Item Name="DAQmx Synthesizer.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Synthesizer/DAQmx Synthesizer.lvclass"/>
 					<Item Name="Test Lockin Digitizer.vi" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/Test Lockin Digitizer.vi"/>
 				</Item>

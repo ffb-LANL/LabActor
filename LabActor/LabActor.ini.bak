@@ -1,0 +1,46 @@
+[LabActor]
+server.app.propertiesEnabled=True
+server.tcp.serviceName="My Computer/VI Server"
+server.vi.propertiesEnabled=True
+WebServer.TcpAccess="c+*"
+WebServer.ViAccess="+*"
+DebugServerEnabled=False
+DebugServerWaitOnLaunch=False
+DefaultDataFileLocation="C:\Data"
+tmpdir=C:\Data\tmp
+
+;Possible module names: "NONE", "NI-DAQmx", "NI-Scope", "Red Pitaya Digitizer", "GaGe", "VISA Device", "Red Pitaya Lockin", "Monitor Controller", "Pulse Controller", "Integrate Pulse", "Lockin Processor", "File converter", "NHMFL Synthesizer", "Micron Hyperion", "Spectrum Recorder", "Resonance Detector", "TCP Communications", "Format Resonances", "Ruby Spectra", "PID Controller", "Quantum Design"
+
+[Startup Configuration]
+Load Modules.<size(s)> = "14"
+Load Modules 0 = "Monitor Controller"
+Load Modules 1 = "Pulse Controller"
+Load Modules 2 = "Red Pitaya Digitizer"
+Load Modules 3 = "Red Pitaya Lockin"
+Load Modules 4 = "Lockin Processor"
+Load Modules 5 = "Spectrum Recorder"
+Load Modules 6 = "Log Record"
+Load Modules 7 = "NI-DAQmx"
+Load Modules 8 = "Resonance Detector"
+Load Modules 9 = "VISA Device"
+Load Modules 10 = "Integrate Pulse"
+Load Modules 11 = "File converter"
+Load Modules 12 = "NI-Scope"
+Load Modules 13 = "NHMFL Synthesizer"
+Full window = "TRUE"
+External Modules Loaders.<size(s)> = "0"
+External Modules Loaders 0 = "..\..\ZILabActor\Load ZI Modules.vi"
+
+
+[Log Record.Log Record]
+Configuration.OSF node  ID = ""
+Configuration.Upload to OSF = "FALSE"
+Configuration.Append to lab book = "FALSE"
+Configuration.Conection timeout = "60.000000"
+Configuration.Station = "Cell_3"
+Configuration.Log server = "magx.lanl.gov"
+Configuration.Filing modules.<size(s)> = "4"
+Configuration.Filing modules 0 = "Monitor Controller"
+Configuration.Filing modules 1 = "Pulse Controller"
+Configuration.Filing modules 2 = "LabActor"
+Configuration.Filing modules 3 = "Format Converter"

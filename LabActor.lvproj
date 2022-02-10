@@ -56,6 +56,8 @@
 					</Item>
 					<Item Name="Messages" Type="Folder">
 						<Item Name="Open TDMS Properties Msg.lvclass" Type="LVClass" URL="../Controllers/Application Controller Messages/Open TDMS Properties Msg/Open TDMS Properties Msg.lvclass"/>
+						<Item Name="Start Measurements Msg.lvclass" Type="LVClass" URL="../Controllers/Process Controller Messages/Start Measurements Msg/Start Measurements Msg.lvclass"/>
+						<Item Name="Stop Measurements Msg.lvclass" Type="LVClass" URL="../Controllers/Process Controller Messages/Stop Measurements Msg/Stop Measurements Msg.lvclass"/>
 					</Item>
 					<Item Name="Pulse Controller.lvclass" Type="LVClass" URL="../Controllers/Pulse Controller/Pulse Controller.lvclass"/>
 					<Item Name="Monitor Controller.lvclass" Type="LVClass" URL="../Controllers/Monitor Controller/Monitor Controller.lvclass"/>
@@ -71,9 +73,11 @@
 						<Item Name="Initialize Work Msg.lvclass" Type="LVClass" URL="../Worker Messages/Initialize Work Msg/Initialize Work Msg.lvclass"/>
 						<Item Name="Pause Work Msg.lvclass" Type="LVClass" URL="../Worker Messages/Pause Work Msg/Pause Work Msg.lvclass"/>
 						<Item Name="Stop Work Msg.lvclass" Type="LVClass" URL="../Worker Messages/Stop Work Msg/Stop Work Msg.lvclass"/>
+						<Item Name="Background Loop Msg.lvclass" Type="LVClass" URL="../Worker Messages/Background Loop Msg/Background Loop Msg.lvclass"/>
 					</Item>
 					<Item Name="Worker State.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Worker State.ctl"/>
 					<Item Name="Worker.lvclass" Type="LVClass" URL="../Worker/Worker.lvclass"/>
+					<Item Name="Background Loop Action.ctl" Type="VI" URL="../Worker/Background Loop Action.ctl"/>
 				</Item>
 				<Item Name="Termplate Module" Type="Folder">
 					<Item Name="Messages" Type="Folder">
@@ -175,6 +179,7 @@
 				<Item Name="Write Files Msg.lvclass" Type="LVClass" URL="../Plots/Plot Messages/Write Files Msg/Write Files Msg.lvclass"/>
 				<Item Name="Log Error Msg.lvclass" Type="LVClass" URL="../Error Log Messages/Log Error Msg/Log Error Msg.lvclass"/>
 				<Item Name="Add Metadata Msg.lvclass" Type="LVClass" URL="../Worker Messages/Add Metadata Msg/Add Metadata Msg.lvclass"/>
+				<Item Name="Write tdms stream Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Write tdms stream Msg/Write tdms stream Msg.lvclass"/>
 			</Item>
 			<Item Name="Test" Type="Folder"/>
 		</Item>
@@ -316,6 +321,7 @@
 					</Item>
 					<Item Name="Pulse Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Pulse Driver/Pulse Driver.lvclass"/>
 					<Item Name="Pusle Driver Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Pulse Driver/Pusle Driver Configuration.ctl"/>
+					<Item Name="Lockin Digitizer Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Pulse Driver/Lockin Digitizer Driver/Lockin Digitizer Driver.lvclass"/>
 				</Item>
 				<Item Name="Spectrum Driver" Type="Folder">
 					<Item Name="Red Pitaya Transceiver Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Red Pitaya Transceiver Driver/Red Pitaya Transceiver Driver.lvclass"/>
@@ -363,16 +369,20 @@
 						<Item Name="DAQmx Digitizer.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Digitizer/DAQmx Digitizer.lvclass"/>
 						<Item Name="Dynamic Load DAQmx.vi" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Digitizer/Dynamic Load DAQmx.vi"/>
 						<Item Name="Test DAQmx Digitizer.vi" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Digitizer/Test DAQmx Digitizer.vi"/>
-						<Item Name="Geenrate Test Pattern.vi" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/Geenrate Test Pattern.vi"/>
 					</Item>
 					<Item Name="DAQmx Lockin Driver" Type="Folder">
 						<Item Name="DAQmx Lockin Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Lockin Driver/DAQmx Lockin Driver.lvclass"/>
 					</Item>
 					<Item Name="DAQmx Lockin Digitizer Driver" Type="Folder">
+						<Item Name="LP Filter.vi" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Lockin Digitizer Driver/LP Filter.vi"/>
+						<Item Name="Lockin Digitizer Signal Recovery.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Lockin Digitizer Driver/Lockin Digitizer Signal Recovery.vi"/>
 						<Item Name="DAQmx Lockin Digitizer Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Lockin Digitizer Driver/DAQmx Lockin Digitizer Driver.lvclass"/>
+						<Item Name="Test Lockin Digitizer Driver.vi" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/Test Lockin Digitizer Driver.vi"/>
 					</Item>
 					<Item Name="DAQmx Synthesizer.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Synthesizer/DAQmx Synthesizer.lvclass"/>
 					<Item Name="Test Lockin Digitizer.vi" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/Test Lockin Digitizer.vi"/>
+					<Item Name="Generate Test Pattern.vi" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/Generate Test Pattern.vi"/>
+					<Item Name="Find DAQmx Digitizers.vi" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Digitizer/Find DAQmx Digitizers.vi"/>
 				</Item>
 				<Item Name="Andeen-Hagerling Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/AH/Andeen-Hagerling Driver/Andeen-Hagerling Driver.lvclass"/>
 				<Item Name="Channel Scanner Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Channel Scanner Driver/Channel Scanner Driver.lvclass"/>
@@ -444,6 +454,7 @@
 			<Item Name="Pulse Recorders" Type="Folder">
 				<Item Name="Magnet Strain" Type="Folder">
 					<Item Name="Strain Digitizer.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Strain Digitizer/Strain Digitizer.lvclass"/>
+					<Item Name="Actor Framework.lvlib" Type="Library" URL="/&lt;vilib&gt;/ActorFramework/Actor Framework.lvlib"/>
 				</Item>
 				<Item Name="RP I-V" Type="Folder">
 					<Item Name="Magnet-RP alignment.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Magnet-RP alignment.vi"/>
@@ -460,6 +471,9 @@
 					<Item Name="RP Level.lvclass" Type="LVClass" URL="../Recorders/RP Level/RP Level.lvclass"/>
 				</Item>
 				<Item Name="Lockin Digitizer" Type="Folder">
+					<Item Name="Messages" Type="Folder">
+						<Item Name="Lock-in Command Msg.lvclass" Type="LVClass" URL="../Pulse Recorders/Lockin Digitizer Messages/Lock-in Command Msg/Lock-in Command Msg.lvclass"/>
+					</Item>
 					<Item Name="Lockin Digitizer.lvclass" Type="LVClass" URL="../Pulse Recorders/Lockin Digitizer/Lockin Digitizer.lvclass"/>
 					<Item Name="Lockin Digitizer Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Lockin Digitizer Driver/Lockin Digitizer Configuration.ctl"/>
 				</Item>
@@ -614,7 +628,6 @@
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
-				<Item Name="Actor Framework.lvlib" Type="Library" URL="/&lt;vilib&gt;/ActorFramework/Actor Framework.lvlib"/>
 				<Item Name="Append Waveforms.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Append Waveforms.vi"/>
 				<Item Name="AsciiToInt.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/AsciiToInt.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -705,7 +718,6 @@
 				<Item Name="DAQmx Create Channel (TEDS-AI-Torque-Bridge).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (TEDS-AI-Torque-Bridge).vi"/>
 				<Item Name="DAQmx Create Channel (TEDS-AI-Voltage-Basic).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (TEDS-AI-Voltage-Basic).vi"/>
 				<Item Name="DAQmx Create Channel (TEDS-AI-Voltage-Custom with Excitation).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (TEDS-AI-Voltage-Custom with Excitation).vi"/>
-				<Item Name="DAQmx Create Virtual Channel.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Virtual Channel.vi"/>
 				<Item Name="DAQmx Export Signal (Most Signals).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/events/hardwareSignals.llb/DAQmx Export Signal (Most Signals).vi"/>
 				<Item Name="DAQmx Export Signal.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/events/hardwareSignals.llb/DAQmx Export Signal.vi"/>
 				<Item Name="DAQmx Fill In Error Info.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/DAQmx Fill In Error Info.vi"/>
@@ -1255,6 +1267,10 @@
 				<Item Name="Less.vim" Type="VI" URL="/&lt;vilib&gt;/Comparison/Less.vim"/>
 				<Item Name="Sort 1D Array Core.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Helpers/Sort 1D Array Core.vim"/>
 				<Item Name="Sort 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Sort 1D Array.vim"/>
+				<Item Name="DAQmx Configure Input Buffer.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/buffer.llb/DAQmx Configure Input Buffer.vi"/>
+				<Item Name="DAQmx Configure Output Buffer.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/buffer.llb/DAQmx Configure Output Buffer.vi"/>
+				<Item Name="DAQmx Create Virtual Channel.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Virtual Channel.vi"/>
+				<Item Name="datatype.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/importsl/GetValueByPointer/datatype.ctl"/>
 			</Item>
 			<Item Name="Abbreviate TDMS Group Channel.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Abbreviate TDMS Group Channel.vi"/>
 			<Item Name="Acknowledge Post Process Msg.lvclass" Type="LVClass" URL="../Controllers/Process Controller Messages/Acknowledge Post Process Msg/Acknowledge Post Process Msg.lvclass"/>
@@ -1432,8 +1448,6 @@
 			<Item Name="Smooth Background DBL.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Fit/Smooth Background DBL.vi"/>
 			<Item Name="Smooth Background WFRM DBL.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Fit/Smooth Background WFRM DBL.vi"/>
 			<Item Name="Smooth Background.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Fit/Smooth Background.vi"/>
-			<Item Name="Start Measurements Msg.lvclass" Type="LVClass" URL="../Controllers/Process Controller Messages/Start Measurements Msg/Start Measurements Msg.lvclass"/>
-			<Item Name="Stop Measurements Msg.lvclass" Type="LVClass" URL="../Controllers/Process Controller Messages/Stop Measurements Msg/Stop Measurements Msg.lvclass"/>
 			<Item Name="Store Value in TDMS.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/TDMS/Store Value in TDMS.vi"/>
 			<Item Name="Store XY Msg.lvclass" Type="LVClass" URL="../Utilities/Cursor Digitizer Messages/Store XY Msg/Store XY Msg.lvclass"/>
 			<Item Name="Stream Compress Splitter.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Stream Compress Splitter.vi"/>
@@ -1465,7 +1479,6 @@
 			<Item Name="Workers by Function Response Msg.lvclass" Type="LVClass" URL="../Sequence Elements/Sequence Element Messages/Workers by Function Response Msg/Workers by Function Response Msg.lvclass"/>
 			<Item Name="Wrfm Info to Scales.vi" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/Wrfm Info to Scales.vi"/>
 			<Item Name="Write object configuration.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/OO config/Write object configuration.vi"/>
-			<Item Name="Write tdms stream Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Write tdms stream Msg/Write tdms stream Msg.lvclass"/>
 			<Item Name="Menu object array.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Queued Listbox/Menu object array.ctl"/>
 			<Item Name="Menu object.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Queued Listbox/Menu object.ctl"/>
 			<Item Name="Match string in array.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Match string in array.vi"/>
@@ -1627,7 +1640,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">160</Property>
+				<Property Name="Bld_version.build" Type="Int">163</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">5</Property>
 				<Property Name="Bld_version.patch" Type="Int">4</Property>
@@ -1688,7 +1701,7 @@
 				<Property Name="Source[15].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[15].type" Type="Str">VI</Property>
 				<Property Name="Source[16].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[16].itemID" Type="Ref">/My Computer/Recorders/Drivers/DAQmx/DAQmx Driver/DAQmx Digitizer.lvclass/Find DAQmx Digitizers.vi</Property>
+				<Property Name="Source[16].itemID" Type="Ref">/My Computer/Recorders/Drivers/DAQmx/Find DAQmx Digitizers.vi</Property>
 				<Property Name="Source[16].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[16].type" Type="Str">VI</Property>
 				<Property Name="Source[17].destinationIndex" Type="Int">0</Property>
@@ -1971,7 +1984,7 @@
 				<Property Name="Source[15].itemID" Type="Ref">/My Computer/Recorders/Drivers/NI-Scope Driver/Ni-Scope Digitizer.lvclass/Find Ni-Scope digitizers.vi</Property>
 				<Property Name="Source[15].type" Type="Str">VI</Property>
 				<Property Name="Source[16].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[16].itemID" Type="Ref">/My Computer/Recorders/Drivers/DAQmx/DAQmx Driver/DAQmx Digitizer.lvclass/Find DAQmx Digitizers.vi</Property>
+				<Property Name="Source[16].itemID" Type="Ref">/My Computer/Recorders/Drivers/DAQmx/Find DAQmx Digitizers.vi</Property>
 				<Property Name="Source[16].type" Type="Str">VI</Property>
 				<Property Name="Source[17].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[17].itemID" Type="Ref">/My Computer/Post-Processors/Synth/Get NHMFL Synth Object.vi</Property>
@@ -2283,7 +2296,7 @@
 				<Property Name="Source[15].itemID" Type="Ref">/My Computer/Recorders/Drivers/NI-Scope Driver/Ni-Scope Digitizer.lvclass/Find Ni-Scope digitizers.vi</Property>
 				<Property Name="Source[15].type" Type="Str">VI</Property>
 				<Property Name="Source[16].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[16].itemID" Type="Ref">/My Computer/Recorders/Drivers/DAQmx/DAQmx Driver/DAQmx Digitizer.lvclass/Find DAQmx Digitizers.vi</Property>
+				<Property Name="Source[16].itemID" Type="Ref">/My Computer/Recorders/Drivers/DAQmx/Find DAQmx Digitizers.vi</Property>
 				<Property Name="Source[16].type" Type="Str">VI</Property>
 				<Property Name="Source[17].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[17].itemID" Type="Ref">/My Computer/Post-Processors/Synth/Get NHMFL Synth Object.vi</Property>
@@ -2382,6 +2395,51 @@
 				<Property Name="TgtF_productName" Type="Str">Batch Processor</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{10C8ABCD-2A8E-47A0-BA24-4161696E904F}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">Batch Processor.exe</Property>
+			</Item>
+			<Item Name="Test Lockin-Digitizer" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{7BC16412-8F11-4951-A3F1-1AEDE91DF29A}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{E0967B1A-D797-46D5-A61C-4C25B88FFDBE}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">0</Property>
+				<Property Name="App_winsec.description" Type="Str">http://www.LANL.com</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{CCC70AF7-6021-4F91-809A-B4D9A6672FC1}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Test Lockin-Digitizer</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{C33E364D-C343-4D70-BB6A-2C8C1FDF003A}</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Test Lockin-Digitizer.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Test Lockin-Digitizer.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{72A6DF9E-CC00-4F6C-912C-073DA0BCFE3C}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Recorders/Drivers/DAQmx/Test Lockin Digitizer.vi</Property>
+				<Property Name="Source[1].properties[0].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[1].propertiesCount" Type="Int">1</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">LANL</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Test Lockin-Digitizer</Property>
+				<Property Name="TgtF_internalName" Type="Str">Test Lockin-Digitizer</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2022 LANL</Property>
+				<Property Name="TgtF_productName" Type="Str">Test Lockin-Digitizer</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{5365229D-1291-46B4-AED1-B1770A16A774}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Test Lockin-Digitizer.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 		</Item>
 	</Item>

@@ -48,16 +48,19 @@
 				</Item>
 				<Item Name="Controllers" Type="Folder">
 					<Item Name="Process Controller" Type="Folder">
-						<Item Name="Messages" Type="Folder">
-							<Item Name="Result Response Msg.lvclass" Type="LVClass" URL="../Controllers/Process Controller Messages/Result Response Msg/Result Response Msg.lvclass"/>
-							<Item Name="Init Response Msg.lvclass" Type="LVClass" URL="../Controllers/Process Controller Messages/Init Response Msg/Init Response Msg.lvclass"/>
-						</Item>
 						<Item Name="Process Controller.lvclass" Type="LVClass" URL="../Controllers/Process Controller/Process Controller.lvclass"/>
 					</Item>
 					<Item Name="Messages" Type="Folder">
 						<Item Name="Open TDMS Properties Msg.lvclass" Type="LVClass" URL="../Controllers/Application Controller Messages/Open TDMS Properties Msg/Open TDMS Properties Msg.lvclass"/>
 						<Item Name="Start Measurements Msg.lvclass" Type="LVClass" URL="../Controllers/Process Controller Messages/Start Measurements Msg/Start Measurements Msg.lvclass"/>
 						<Item Name="Stop Measurements Msg.lvclass" Type="LVClass" URL="../Controllers/Process Controller Messages/Stop Measurements Msg/Stop Measurements Msg.lvclass"/>
+						<Item Name="Arm Command Msg.lvclass" Type="LVClass" URL="../Controllers/Pulse Controller Messages/Arm Command Msg/Arm Command Msg.lvclass"/>
+					</Item>
+					<Item Name="Interfaces" Type="Folder">
+						<Item Name="Messages" Type="Folder">
+							<Item Name="New Pulse Acquired Msg.lvclass" Type="LVClass" URL="../Controllers/Interfaces/Application Messages/New Pulse Acquired Msg/New Pulse Acquired Msg.lvclass"/>
+						</Item>
+						<Item Name="Application.lvclass" Type="LVClass" URL="../Controllers/Interfaces/Application/Application.lvclass"/>
 					</Item>
 					<Item Name="Pulse Controller.lvclass" Type="LVClass" URL="../Controllers/Pulse Controller/Pulse Controller.lvclass"/>
 					<Item Name="Monitor Controller.lvclass" Type="LVClass" URL="../Controllers/Monitor Controller/Monitor Controller.lvclass"/>
@@ -67,27 +70,28 @@
 				</Item>
 				<Item Name="Worker" Type="Folder">
 					<Item Name="Messages" Type="Folder">
-						<Item Name="Un-Pause Work Msg.lvclass" Type="LVClass" URL="../Worker Messages/Un-Pause Work Msg/Un-Pause Work Msg.lvclass"/>
+						<Item Name="Un-Pause Work Msg.lvclass" Type="LVClass" URL="../Worker/Worker Messages/Un-Pause Work Msg/Un-Pause Work Msg.lvclass"/>
 						<Item Name="Trigger Msg.lvclass" Type="LVClass" URL="../Worker Messages/Trigger Msg/Trigger Msg.lvclass"/>
-						<Item Name="Perform Work Msg.lvclass" Type="LVClass" URL="../Worker Messages/Perform Work Msg/Perform Work Msg.lvclass"/>
-						<Item Name="Initialize Work Msg.lvclass" Type="LVClass" URL="../Worker Messages/Initialize Work Msg/Initialize Work Msg.lvclass"/>
-						<Item Name="Pause Work Msg.lvclass" Type="LVClass" URL="../Worker Messages/Pause Work Msg/Pause Work Msg.lvclass"/>
+						<Item Name="Perform Work Msg.lvclass" Type="LVClass" URL="../Worker/Worker Messages/Perform Work Msg/Perform Work Msg.lvclass"/>
+						<Item Name="Initialize Work Msg.lvclass" Type="LVClass" URL="../Worker/Worker Messages/Initialize Work Msg/Initialize Work Msg.lvclass"/>
+						<Item Name="Pause Work Msg.lvclass" Type="LVClass" URL="../Worker/Worker Messages/Pause Work Msg/Pause Work Msg.lvclass"/>
 						<Item Name="Stop Work Msg.lvclass" Type="LVClass" URL="../Worker Messages/Stop Work Msg/Stop Work Msg.lvclass"/>
 						<Item Name="Background Loop Msg.lvclass" Type="LVClass" URL="../Worker Messages/Background Loop Msg/Background Loop Msg.lvclass"/>
+						<Item Name="Wait for Result Msg.lvclass" Type="LVClass" URL="../Pulse Recorders/Pulse Recorder Messages/Wait for Data Msg/Wait for Result Msg.lvclass"/>
+					</Item>
+					<Item Name="Interface" Type="Folder">
+						<Item Name="Worker.lvclass" Type="LVClass" URL="../Worker/Woker Interface/Worker.lvclass"/>
 					</Item>
 					<Item Name="Worker State.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Worker State.ctl"/>
-					<Item Name="Worker.lvclass" Type="LVClass" URL="../Worker/Worker.lvclass"/>
 					<Item Name="Background Loop Action.ctl" Type="VI" URL="../Worker/Background Loop Action.ctl"/>
+					<Item Name="Worker Actor.lvclass" Type="LVClass" URL="../Worker/Worker Actor/Worker Actor.lvclass"/>
 				</Item>
 				<Item Name="Termplate Module" Type="Folder">
 					<Item Name="Messages" Type="Folder">
 						<Item Name="Message Nested Object Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Message Nested Object Msg/Message Nested Object Msg.lvclass"/>
 						<Item Name="Write FP Control Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Write FP Control Msg/Write FP Control Msg.lvclass"/>
 						<Item Name="Stop Object Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Stop Object Msg/Stop Object Msg.lvclass"/>
-						<Item Name="Unubscribe Request Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Unubscribe Request Msg/Unubscribe Request Msg.lvclass"/>
-						<Item Name="Time to subscribe Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Time to subscribe Msg/Time to subscribe Msg.lvclass"/>
 						<Item Name="Attach to Sub-pannel Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Attach to Sub-pannel Msg/Attach to Sub-pannel Msg.lvclass"/>
-						<Item Name="Subscribe Request Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Subscribe Request Msg/Subscribe Request Msg.lvclass"/>
 						<Item Name="Restore Configuration Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Restore Configuration Msg/Restore Configuration Msg.lvclass"/>
 					</Item>
 					<Item Name="Template Module.lvclass" Type="LVClass" URL="../Template Module/Template Module.lvclass"/>
@@ -101,7 +105,7 @@
 					<Item Name="Instrument Actor.lvclass" Type="LVClass" URL="../Instrument Actor/Instrument Actor.lvclass"/>
 				</Item>
 				<Item Name="Process Object.lvclass" Type="LVClass" URL="../Process Object/Process Object.lvclass"/>
-				<Item Name="Pulse Recorder.lvclass" Type="LVClass" URL="../Pulse Recorders/Pulse Recorder/Pulse Recorder.lvclass"/>
+				<Item Name="Pulse Recorder Actor.lvclass" Type="LVClass" URL="../Pulse Recorders/Pulse Recorder Actor/Pulse Recorder Actor.lvclass"/>
 				<Item Name="Timer.lvclass" Type="LVClass" URL="../Measurements/Timer/Timer.lvclass"/>
 				<Item Name="Error Log.lvclass" Type="LVClass" URL="../Error Log/Error Log.lvclass"/>
 			</Item>
@@ -178,10 +182,26 @@
 				<Item Name="Write File history depth Msg.lvclass" Type="LVClass" URL="../Plots/Plot Messages/Write Keep # of preceding files Msg/Write File history depth Msg.lvclass"/>
 				<Item Name="Write Files Msg.lvclass" Type="LVClass" URL="../Plots/Plot Messages/Write Files Msg/Write Files Msg.lvclass"/>
 				<Item Name="Log Error Msg.lvclass" Type="LVClass" URL="../Error Log Messages/Log Error Msg/Log Error Msg.lvclass"/>
-				<Item Name="Add Metadata Msg.lvclass" Type="LVClass" URL="../Worker Messages/Add Metadata Msg/Add Metadata Msg.lvclass"/>
+				<Item Name="Add Metadata Msg.lvclass" Type="LVClass" URL="../Worker/Worker Messages/Add Metadata Msg/Add Metadata Msg.lvclass"/>
 				<Item Name="Write tdms stream Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Write tdms stream Msg/Write tdms stream Msg.lvclass"/>
 			</Item>
 			<Item Name="Test" Type="Folder"/>
+			<Item Name="Publish-Subscribe" Type="Folder">
+				<Item Name="Interfaces" Type="Folder">
+					<Item Name="Publisher.lvclass" Type="LVClass" URL="../Publish-Subscribe/Interfaces/Publisher/Publisher.lvclass"/>
+					<Item Name="Information.lvclass" Type="LVClass" URL="../Publish-Subscribe/Interfaces/Information/Information.lvclass"/>
+					<Item Name="Subscriber.lvclass" Type="LVClass" URL="../Publish-Subscribe/Interfaces/Subscriber/Subscriber.lvclass"/>
+				</Item>
+				<Item Name="Messages" Type="Folder">
+					<Item Name="Unsubscribe Msg.lvclass" Type="LVClass" URL="../Publish-Subscribe/Interfaces/Publisher Messages/Unsubscribe Msg/Unsubscribe Msg.lvclass"/>
+					<Item Name="Information Msg.lvclass" Type="LVClass" URL="../Publish-Subscribe/Interfaces/Subscriber Messages/Information Msg/Information Msg.lvclass"/>
+					<Item Name="Subscribe Msg.lvclass" Type="LVClass" URL="../Publish-Subscribe/Interfaces/Publisher Messages/Subscribe Msg/Subscribe Msg.lvclass"/>
+					<Item Name="Unsubscribe from Context Msg.lvclass" Type="LVClass" URL="../Publish-Subscribe/Interfaces/Publisher Messages/Unsubscribe from Context Msg/Unsubscribe from Context Msg.lvclass"/>
+					<Item Name="Unsubscribe from Topic Msg.lvclass" Type="LVClass" URL="../Publish-Subscribe/Interfaces/Publisher Messages/Unsubscribe from Topic Msg/Unsubscribe from Topic Msg.lvclass"/>
+				</Item>
+				<Item Name="Publisher Actor.lvclass" Type="LVClass" URL="../Publish-Subscribe/Publisher Actor/Publisher Actor.lvclass"/>
+				<Item Name="Context.ctl" Type="VI" URL="../Publish-Subscribe/Context.ctl"/>
+			</Item>
 		</Item>
 		<Item Name="LabActor" Type="Folder">
 			<Item Name="Messages" Type="Folder">
@@ -450,6 +470,7 @@
 				<Item Name="NI-Scope Lock-in.lvclass" Type="LVClass" URL="../Recorders/NI-Scope Lock-in/NI-Scope Lock-in.lvclass"/>
 				<Item Name="Spectrometer.lvclass" Type="LVClass" URL="../Recorders/Spectrometer/Spectrometer.lvclass"/>
 				<Item Name="PID Controller.lvclass" Type="LVClass" URL="../Recorders/PID Controller/PID Controller.lvclass"/>
+				<Item Name="Continuous Recorder Actor.lvclass" Type="LVClass" URL="../Recorders/Continuous Recorder Actor/Continuous Recorder Actor.lvclass"/>
 			</Item>
 			<Item Name="Pulse Recorders" Type="Folder">
 				<Item Name="Magnet Strain" Type="Folder">
@@ -478,6 +499,16 @@
 					<Item Name="Lockin Digitizer Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Lockin Digitizer Driver/Lockin Digitizer Configuration.ctl"/>
 				</Item>
 				<Item Name="Channel Scanner Configuration.ctl" Type="VI" URL="../Recorders/Channel Scanner/Channel Scanner Configuration.ctl"/>
+			</Item>
+			<Item Name="Interfaces" Type="Folder">
+				<Item Name="Messages" Type="Folder">
+					<Item Name="Measure Msg.lvclass" Type="LVClass" URL="../Recorders/Interfaces/Continuous Recorder Messages/Measure Msg/Measure Msg.lvclass"/>
+					<Item Name="Arm Msg.lvclass" Type="LVClass" URL="../Pulse Recorders/Interfaces/Pulse Recorder Messages/Arm Msg/Arm Msg.lvclass"/>
+					<Item Name="Wait for Pulse Acquired Msg.lvclass" Type="LVClass" URL="../Pulse Recorders/Interfaces/Pulse Recorder Messages/Wait for Pulse Acquired Msg/Wait for Pulse Acquired Msg.lvclass"/>
+					<Item Name="Disarm Msg.lvclass" Type="LVClass" URL="../Pulse Recorders/Interfaces/Pulse Recorder Messages/Disarm Msg/Disarm Msg.lvclass"/>
+				</Item>
+				<Item Name="Continuous Recorder.lvclass" Type="LVClass" URL="../Recorders/Interfaces/Continuous Recorder/Continuous Recorder.lvclass"/>
+				<Item Name="Pulse Recorder.lvclass" Type="LVClass" URL="../Pulse Recorders/Interfaces/Pulse Recorder/Pulse Recorder.lvclass"/>
 			</Item>
 			<Item Name="Find Visa Recorders.vi" Type="VI" URL="../Recorders/Find Visa Recorders.vi"/>
 		</Item>
@@ -1271,6 +1302,9 @@
 				<Item Name="DAQmx Configure Output Buffer.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/buffer.llb/DAQmx Configure Output Buffer.vi"/>
 				<Item Name="DAQmx Create Virtual Channel.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Virtual Channel.vi"/>
 				<Item Name="datatype.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/importsl/GetValueByPointer/datatype.ctl"/>
+				<Item Name="LVMapReplaceAction.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVMapReplaceAction.ctl"/>
+				<Item Name="Registration Map.lvlib" Type="Library" URL="/&lt;vilib&gt;/registration map/Registration Map.lvlib"/>
+				<Item Name="Set Union.vim" Type="VI" URL="/&lt;vilib&gt;/set operations/Set Union.vim"/>
 			</Item>
 			<Item Name="Abbreviate TDMS Group Channel.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Abbreviate TDMS Group Channel.vi"/>
 			<Item Name="Acknowledge Post Process Msg.lvclass" Type="LVClass" URL="../Controllers/Process Controller Messages/Acknowledge Post Process Msg/Acknowledge Post Process Msg.lvclass"/>
@@ -1279,11 +1313,9 @@
 			<Item Name="AF Debug.lvlib" Type="Library" URL="/&lt;resource&gt;/AFDebug/AF Debug.lvlib"/>
 			<Item Name="AH read data.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/AH/AH read data.vi"/>
 			<Item Name="Any file exists.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Any file exists.vi"/>
-			<Item Name="Armed Response Msg.lvclass" Type="LVClass" URL="../Controllers/Pulse Controller Messages/Armed Response Msg/Armed Response Msg.lvclass"/>
 			<Item Name="Array Subset by Value.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Array Subset by Value.vi"/>
 			<Item Name="Array_dualslicer.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Array_dualslicer.vi"/>
 			<Item Name="AvrgDecimate.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Waveform/AvrgDecimate.vi"/>
-			<Item Name="Broadcast Response Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Broadcast Response Msg/Broadcast Response Msg.lvclass"/>
 			<Item Name="Calculate Padding Buffer Size.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Fit/Calculate Padding Buffer Size.vi"/>
 			<Item Name="ChangeFileExtention.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/File LLB/ChangeFileExtention.vi"/>
 			<Item Name="CheckFileExist.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/File LLB/CheckFileExist.vi"/>
@@ -1473,7 +1505,6 @@
 			<Item Name="Variant to Meta Data.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/OO config/Variant to Meta Data.vi"/>
 			<Item Name="VISA  Send Receive.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/GPIB/VISA  Send Receive.vi"/>
 			<Item Name="Visa set timeot and termination.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/VISA Instrument/Visa set timeot and termination.vi"/>
-			<Item Name="Wait for Result Msg.lvclass" Type="LVClass" URL="../Pulse Recorders/Pulse Recorder Messages/Wait for Data Msg/Wait for Result Msg.lvclass"/>
 			<Item Name="Wait miliseconds.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Wait miliseconds.vi"/>
 			<Item Name="Waveform parameters.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Waform generation/Waveform parameters.ctl"/>
 			<Item Name="Workers by Function Response Msg.lvclass" Type="LVClass" URL="../Sequence Elements/Sequence Element Messages/Workers by Function Response Msg/Workers by Function Response Msg.lvclass"/>
@@ -1624,6 +1655,10 @@
 			<Item Name="lvimptsl.dll" Type="Document" URL="lvimptsl.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Background Loop Action.ctl" Type="VI" URL="../Worker/Worker Actor/Background Loop Action.ctl"/>
+			<Item Name="Background Loop Msg.lvclass" Type="LVClass" URL="../Worker/Worker Messages/Background Loop Msg/Background Loop Msg.lvclass"/>
+			<Item Name="Stop Work Msg.lvclass" Type="LVClass" URL="../Worker/Worker Messages/Stop Work Msg/Stop Work Msg.lvclass"/>
+			<Item Name="Trigger Msg.lvclass" Type="LVClass" URL="../Worker/Worker Messages/Trigger Msg/Trigger Msg.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">
@@ -1640,10 +1675,9 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">163</Property>
+				<Property Name="Bld_version.build" Type="Int">168</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Bld_version.minor" Type="Int">5</Property>
-				<Property Name="Bld_version.patch" Type="Int">4</Property>
+				<Property Name="Bld_version.minor" Type="Int">6</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/LabActor.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
@@ -1652,7 +1686,7 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/LabActor/LabActor.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{95925469-3442-44EB-8A14-4F3F4D277955}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{8A55E429-BA8E-4C06-8BF9-1512F3455280}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Controllers/Monitor Controller.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[1].properties[0].type" Type="Str">Remove front panel</Property>
@@ -1717,7 +1751,7 @@
 				<Property Name="Source[19].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[19].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Pulse Recorder.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Pulse Recorder Actor.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -1998,7 +2032,7 @@
 				<Property Name="Source[19].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[19].type" Type="Str">Library</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Pulse Recorder.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Pulse Recorder Actor.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -2307,7 +2341,7 @@
 				<Property Name="Source[19].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[19].itemID" Type="Ref"></Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Pulse Recorder.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Pulse Recorder Actor.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>

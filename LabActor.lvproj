@@ -104,7 +104,6 @@
 					<Item Name="Instrument Actor.lvclass" Type="LVClass" URL="../Instrument Actor/Instrument Actor.lvclass"/>
 				</Item>
 				<Item Name="Process Object.lvclass" Type="LVClass" URL="../Process Object/Process Object.lvclass"/>
-				<Item Name="Pulse Recorder Actor.lvclass" Type="LVClass" URL="../Pulse Recorders/Pulse Recorder Actor/Pulse Recorder Actor.lvclass"/>
 				<Item Name="Timer.lvclass" Type="LVClass" URL="../Measurements/Timer/Timer.lvclass"/>
 				<Item Name="Error Log.lvclass" Type="LVClass" URL="../Error Log/Error Log.lvclass"/>
 			</Item>
@@ -498,6 +497,7 @@
 					<Item Name="Lockin Digitizer Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Lockin Digitizer Driver/Lockin Digitizer Configuration.ctl"/>
 				</Item>
 				<Item Name="Channel Scanner Configuration.ctl" Type="VI" URL="../Recorders/Channel Scanner/Channel Scanner Configuration.ctl"/>
+				<Item Name="Pulse Recorder Actor.lvclass" Type="LVClass" URL="../Pulse Recorders/Pulse Recorder Actor/Pulse Recorder Actor.lvclass"/>
 			</Item>
 			<Item Name="Interfaces" Type="Folder">
 				<Item Name="Messages" Type="Folder">
@@ -1609,7 +1609,6 @@
 			<Item Name="TDMS Open Err Check.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/TDMS/TDMS Open Err Check.vi"/>
 			<Item Name="Get Application Information.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Application/Get Application Information.vi"/>
 			<Item Name="Extended Clear Errors.vim" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Extended Clear Errors.vim"/>
-			<Item Name="Request type.ctl" Type="VI" URL="../Controllers/Process Controller/Request type.ctl"/>
 			<Item Name="Rescale Configuration.ctl" Type="VI" URL="../Post-Processors/Rescale/Rescale Configuration.ctl"/>
 			<Item Name="Filter VISA COM.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Instrument/Filter VISA COM.vi"/>
 			<Item Name="Arduino Temperature Controller Set T.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Arduino Temperature Controller/Arduino Temperature Controller Set T.vi"/>
@@ -1658,6 +1657,7 @@
 			<Item Name="Background Loop Action.ctl" Type="VI" URL="../Worker/Worker Actor/Background Loop Action.ctl"/>
 			<Item Name="Background Loop Msg.lvclass" Type="LVClass" URL="../Worker/Worker Messages/Background Loop Msg/Background Loop Msg.lvclass"/>
 			<Item Name="Trigger Msg.lvclass" Type="LVClass" URL="../Worker/Worker Messages/Trigger Msg/Trigger Msg.lvclass"/>
+			<Item Name="Request type.ctl" Type="VI" URL="../Controllers/Process Controller/Request type.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">
@@ -1674,7 +1674,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">168</Property>
+				<Property Name="Bld_version.build" Type="Int">173</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">6</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>
@@ -1750,7 +1750,7 @@
 				<Property Name="Source[19].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[19].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Pulse Recorder Actor.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Recorders/Pulse Recorders/Pulse Recorder Actor.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -2031,7 +2031,7 @@
 				<Property Name="Source[19].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[19].type" Type="Str">Library</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Pulse Recorder Actor.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Recorders/Pulse Recorders/Pulse Recorder Actor.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -2340,7 +2340,7 @@
 				<Property Name="Source[19].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[19].itemID" Type="Ref"></Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Pulse Recorder Actor.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Recorders/Pulse Recorders/Pulse Recorder Actor.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>

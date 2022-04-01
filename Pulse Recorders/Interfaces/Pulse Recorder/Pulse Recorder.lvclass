@@ -17,7 +17,7 @@
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1350574592</Property>
 	</Item>
 	<Item Name="Disarm.vi" Type="VI" URL="../Disarm.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'&gt;!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$:!=!!?!!!9&amp;F"V&lt;(.F)&amp;*F9W^S:'6S,GRW9WRB=X-!!"*1&gt;7RT:3"3:7.P=G2F=C"P&gt;81!!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!:!$RW!%V"Q!!!!%15G6R&gt;76T&gt;#"U?8"F,G.U&lt;!",1"9!"""1=G^D:8.T)'.P&lt;8"M:82F$&amp;6T:8)A9W^N&lt;7&amp;O:!R"&gt;82P,8*F=X2B=H1&amp;28*S&lt;X)!!!R3:8&amp;V:8.U)(2Z='5!!"*!-0````]*5G6R&gt;76T&gt;'6S!$2!=!!?!!!9&amp;F"V&lt;(.F)&amp;*F9W^S:'6S,GRW9WRB=X-!!"&amp;1&gt;7RT:3"3:7.P=G2F=C"J&lt;A"5!0!!$!!$!!1!"!!&amp;!!1!"!!%!!1!"A!(!!A!#1)!!(A!!!U)!!!!!!!!!!!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!#!!!!!A!!!))!!!!E!!!!!!"!!I!!!!!</Property>
@@ -26,7 +26,7 @@
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1350574592</Property>
 	</Item>
 	<Item Name="Get Pulse State.vi" Type="VI" URL="../Get Pulse State.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;$!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!%E!B$&amp;*F=X6M&gt;#"S:7&amp;E?1!!#E!B"5&amp;S&lt;76E!$:!=!!?!!!9&amp;F"V&lt;(.F)&amp;*F9W^S:'6S,GRW9WRB=X-!!"*1&gt;7RT:3"3:7.P=G2F=C"P&gt;81!!!1!!!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!$2!=!!?!!!9&amp;F"V&lt;(.F)&amp;*F9W^S:'6S,GRW9WRB=X-!!"&amp;1&gt;7RT:3"3:7.P=G2F=C"J&lt;A"5!0!!$!!$!!1!"1!'!!=!"Q!(!!=!#!!(!!=!#1)!!(A!!!U)!!!*!!!!#1!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!E!!!!!!"!!I!!!!!</Property>

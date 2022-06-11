@@ -397,7 +397,7 @@
 					</Item>
 					<Item Name="DAQmx Lockin Digitizer Driver" Type="Folder">
 						<Item Name="LP Filter.vi" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Lockin Digitizer Driver/LP Filter.vi"/>
-						<Item Name="Lockin Digitizer Signal Recovery.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Lockin Digitizer Driver/Lockin Digitizer Signal Recovery.vi"/>
+						<Item Name="Lockin Digitizer Signal Recovery.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Pulse Driver/Lockin Digitizer Driver/Lockin Digitizer Signal Recovery.vi"/>
 						<Item Name="DAQmx Lockin Digitizer Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Lockin Digitizer Driver/DAQmx Lockin Digitizer Driver.lvclass"/>
 						<Item Name="Test Lockin Digitizer Driver.vi" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/Test Lockin Digitizer Driver.vi"/>
 					</Item>
@@ -497,7 +497,7 @@
 						<Item Name="Lock-in Command Msg.lvclass" Type="LVClass" URL="../Pulse Recorders/Lockin Digitizer Messages/Lock-in Command Msg/Lock-in Command Msg.lvclass"/>
 					</Item>
 					<Item Name="Lockin Digitizer.lvclass" Type="LVClass" URL="../Pulse Recorders/Lockin Digitizer/Lockin Digitizer.lvclass"/>
-					<Item Name="Lockin Digitizer Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Lockin Digitizer Driver/Lockin Digitizer Configuration.ctl"/>
+					<Item Name="Lockin Digitizer Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Pulse Driver/Lockin Digitizer Driver/Lockin Digitizer Configuration.ctl"/>
 					<Item Name="L-D Command Context.ctl" Type="VI" URL="../Pulse Recorders/Lockin Digitizer/L-D Command Context.ctl"/>
 				</Item>
 				<Item Name="Channel Scanner Configuration.ctl" Type="VI" URL="../Recorders/Channel Scanner/Channel Scanner Configuration.ctl"/>

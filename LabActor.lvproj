@@ -83,7 +83,6 @@
 						<Item Name="Worker.lvclass" Type="LVClass" URL="../Worker/Woker Interface/Worker.lvclass"/>
 					</Item>
 					<Item Name="Worker State.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Worker State.ctl"/>
-					<Item Name="Background Loop Action.ctl" Type="VI" URL="../Worker/Background Loop Action.ctl"/>
 					<Item Name="Worker Actor.lvclass" Type="LVClass" URL="../Worker/Worker Actor/Worker Actor.lvclass"/>
 				</Item>
 				<Item Name="Termplate Module" Type="Folder">

@@ -13,6 +13,16 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Dependencies" Type="Folder">
+			<Item Name="Results" Type="Folder">
+				<Item Name="Acquired Result.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Results/Acquired Result/Acquired Result.lvclass"/>
+				<Item Name="Start Stream Result.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Results/Start Stream Result/Start Stream Result.lvclass"/>
+				<Item Name="Set Sweep.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Results/Set Sweep/Set Sweep.lvclass"/>
+				<Item Name="Output Value.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Utilities/Output Value/Output Value.lvclass"/>
+				<Item Name="Response Synchronizer.lvclass" Type="LVClass" URL="../Measurements/Response Synchronizer/Response Synchronizer.lvclass"/>
+				<Item Name="Iterator.lvclass" Type="LVClass" URL="../Recorders/Iterator/Iterator.lvclass"/>
+				<Item Name="Combined Result.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Results/Combined Result/Combined Result.lvclass"/>
+				<Item Name="Fit Result.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Results/Fit Result/Fit Result.lvclass"/>
+			</Item>
 			<Item Name="Actors" Type="Folder">
 				<Item Name="Application" Type="Folder">
 					<Item Name="Application Controller.lvclass" Type="LVClass" URL="../Controllers/Application Controller/Application Controller.lvclass"/>
@@ -62,16 +72,6 @@
 					<Item Name="Extend Array.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Extend Array.vi"/>
 					<Item Name="PID Control.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Temperature Controller/PID Control.vi"/>
 					<Item Name="PID Control.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Temperature Controller/PID Control/PID Control.lvclass"/>
-				</Item>
-				<Item Name="Results" Type="Folder">
-					<Item Name="Acquired Result.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Results/Acquired Result/Acquired Result.lvclass"/>
-					<Item Name="Start Stream Result.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Results/Start Stream Result/Start Stream Result.lvclass"/>
-					<Item Name="Set Sweep.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Results/Set Sweep/Set Sweep.lvclass"/>
-					<Item Name="Output Value.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Utilities/Output Value/Output Value.lvclass"/>
-					<Item Name="Response Synchronizer.lvclass" Type="LVClass" URL="../Measurements/Response Synchronizer/Response Synchronizer.lvclass"/>
-					<Item Name="Iterator.lvclass" Type="LVClass" URL="../Recorders/Iterator/Iterator.lvclass"/>
-					<Item Name="Combined Result.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Results/Combined Result/Combined Result.lvclass"/>
-					<Item Name="Fit Result.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Results/Fit Result/Fit Result.lvclass"/>
 				</Item>
 				<Item Name="Instrument Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Instrument Driver.lvclass"/>
 				<Item Name="Simple VISA Reader Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Simple VISA Reader/Simple VISA Reader Driver.lvclass"/>
@@ -228,6 +228,7 @@
 			<Item Name="Publisher Actor.lvclass" Type="LVClass" URL="../Publish-Subscribe/Publisher Actor/Publisher Actor.lvclass"/>
 		</Item>
 		<Item Name="Launch LabActor.vi" Type="VI" URL="../Launch LabActor.vi"/>
+		<Item Name="CreateSocket.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/DataSocket/CreateSocket.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array of VData to VCluster__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array of VData to VCluster__ogtk.vi"/>

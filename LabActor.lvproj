@@ -72,7 +72,6 @@
 				<Item Name="Worker" Type="Folder">
 					<Item Name="Messages" Type="Folder">
 						<Item Name="Un-Pause Work Msg.lvclass" Type="LVClass" URL="../Worker/Worker Messages/Un-Pause Work Msg/Un-Pause Work Msg.lvclass"/>
-						<Item Name="Perform Work Msg.lvclass" Type="LVClass" URL="../Worker/Worker Messages/Perform Work Msg/Perform Work Msg.lvclass"/>
 						<Item Name="Initialize Work Msg.lvclass" Type="LVClass" URL="../Worker/Worker Messages/Initialize Work Msg/Initialize Work Msg.lvclass"/>
 						<Item Name="Pause Work Msg.lvclass" Type="LVClass" URL="../Worker/Worker Messages/Pause Work Msg/Pause Work Msg.lvclass"/>
 						<Item Name="Wait for Result Msg.lvclass" Type="LVClass" URL="../Pulse Recorders/Pulse Recorder Messages/Wait for Data Msg/Wait for Result Msg.lvclass"/>
@@ -149,7 +148,7 @@
 				</Item>
 				<Item Name="Results" Type="Folder">
 					<Item Name="Response Synchronizer" Type="Folder">
-						<Item Name="Response Synchronizer.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Results/Response Synchronizer/Response Synchronizer.lvclass"/>
+						<Item Name="Response Synchronizer.lvclass" Type="LVClass" URL="../Measurements/Response Synchronizer/Response Synchronizer.lvclass"/>
 					</Item>
 					<Item Name="Acquired Result.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Results/Acquired Result/Acquired Result.lvclass"/>
 					<Item Name="Start Stream Result.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Results/Start Stream Result/Start Stream Result.lvclass"/>
@@ -422,6 +421,7 @@
 				<Item Name="SRS Lockin Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/SRS/SRS Lockin Driver/SRS Lockin Driver.lvclass"/>
 				<Item Name="Sweeper Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Sweeper Driver/Sweeper Driver.lvclass"/>
 				<Item Name="Spectrometer Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Spectrometer Driver/Spectrometer Driver.lvclass"/>
+				<Item Name="IdentifyAndReadInstr.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/IdentifyAndReadInstr.vi"/>
 			</Item>
 			<Item Name="Monitor" Type="Folder">
 				<Item Name="Micron Optics" Type="Folder">
@@ -476,6 +476,7 @@
 				<Item Name="Spectrometer.lvclass" Type="LVClass" URL="../Recorders/Spectrometer/Spectrometer.lvclass"/>
 				<Item Name="PID Controller.lvclass" Type="LVClass" URL="../Recorders/PID Controller/PID Controller.lvclass"/>
 				<Item Name="Continuous Recorder Actor.lvclass" Type="LVClass" URL="../Recorders/Continuous Recorder Actor/Continuous Recorder Actor.lvclass"/>
+				<Item Name="Combined Measurement.lvclass" Type="LVClass" URL="../Recorders/Combined Measurement/Combined Measurement.lvclass"/>
 			</Item>
 			<Item Name="Pulse Recorders" Type="Folder">
 				<Item Name="Magnet Strain" Type="Folder">
@@ -519,6 +520,7 @@
 			<Item Name="Find Visa Recorders.vi" Type="VI" URL="../Recorders/Find Visa Recorders.vi"/>
 		</Item>
 		<Item Name="Launch LabActor.vi" Type="VI" URL="../Launch LabActor.vi"/>
+		<Item Name="Notch Filter Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Filter/Notch Filter Configuration.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niModInst Close Installed Devices Session.vi" Type="VI" URL="/&lt;instrlib&gt;/niModInst/niModInst Close Installed Devices Session.vi"/>
@@ -1377,7 +1379,6 @@
 			<Item Name="I-V to Waveform parameters.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Waform generation/I-V to Waveform parameters.vi"/>
 			<Item Name="Identify Neocera.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Neocera/Identify Neocera.vi"/>
 			<Item Name="Identify Oxford.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Oxford/Identify Oxford.vi"/>
-			<Item Name="IdentifyAndReadInstr.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/IdentifyAndReadInstr.vi"/>
 			<Item Name="IdentifyEG_G_Lockin.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/EG_G/IdentifyEG_G_Lockin.vi"/>
 			<Item Name="IdentifyHP5385A.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/HP/HP5385/IdentifyHP5385A.vi"/>
 			<Item Name="Increment mode.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Increment mode.ctl"/>
@@ -1407,7 +1408,6 @@
 			<Item Name="MakeDataFileNames.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/File LLB/MakeDataFileNames.vi"/>
 			<Item Name="MakePath.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/File LLB/MakePath.vi"/>
 			<Item Name="MaxMinDecimate.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Waveform/MaxMinDecimate.vi"/>
-			<Item Name="Measure DC offset.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Waveform/Measure DC offset.vi"/>
 			<Item Name="Mercury Open.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Oxford/NHMFL Mercury/Mercury Open.vi"/>
 			<Item Name="Mercury Query.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Oxford/NHMFL Mercury/Mercury Query.vi"/>
 			<Item Name="Merge Arrays.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Merge Arrays.vi"/>
@@ -1483,7 +1483,6 @@
 			<Item Name="Save defaults Msg.lvclass" Type="LVClass" URL="../Plots/XY Plot Messages/Save defaults Msg/Save defaults Msg.lvclass"/>
 			<Item Name="Save keep old plots Msg.lvclass" Type="LVClass" URL="../Plots/XY Plot Messages/Save keep old plots Msg/Save keep old plots Msg.lvclass"/>
 			<Item Name="Select multiplexer LR700.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/LR-700/Select multiplexer LR700.vi"/>
-			<Item Name="Send Receive.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/GPIB/Send Receive.vi"/>
 			<Item Name="Sequence Element Configuration.ctl" Type="VI" URL="../Sequence Elements/Sequence Element/Sequence Element Configuration.ctl"/>
 			<Item Name="Set LakeShore 340 Set Point.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/LakeShore/LakeShore340/Set LakeShore 340 Set Point.vi"/>
 			<Item Name="SimpleGetPeaks.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Micron Optics/hyperion library source/SimpleGetPeaks.vi"/>
@@ -1674,7 +1673,6 @@
 			<Item Name="Record Channels.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Controls/Record Channels.ctl"/>
 			<Item Name="Help Msg.lvclass" Type="LVClass" URL="../Controllers/Application Controller Messages/Help Msg/Help Msg.lvclass"/>
 			<Item Name="Is DataSocket.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/DataSocket/Is DataSocket.vi"/>
-			<Item Name="Response Synchronizer.lvclass" Type="LVClass" URL="../Measurements/Response Synchronizer/Response Synchronizer.lvclass"/>
 			<Item Name="How Many Steps.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/How Many Steps.vi"/>
 			<Item Name="Dynamic Load Labjack.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/LabJack/Dynamic Load Labjack.vi"/>
 			<Item Name="Get LakeShore 370 Resistance and Quadrature.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/LakeShore/LakeShore370/Get LakeShore 370 Resistance and Quadrature.vi"/>
@@ -1685,7 +1683,6 @@
 			<Item Name="CS580 Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/SRS/CS580 Driver/CS580 Driver.lvclass"/>
 			<Item Name="Stepper.lvclass" Type="LVClass" URL="../Recorders/Stepper/Stepper.lvclass"/>
 			<Item Name="Stepper Config.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Controls/Stepper Config.ctl"/>
-			<Item Name="Combined Measurement.lvclass" Type="LVClass" URL="../Recorders/Combined Measurement/Combined Measurement.lvclass"/>
 			<Item Name="Combined Result.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Results/Combined Result/Combined Result.lvclass"/>
 			<Item Name="Keithley 622x2182 Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Keithley/Keithley 6220-6221/Keithley 622x driver/Keithley 622x2182 Driver.lvclass"/>
 			<Item Name="Keithley 622x Set DCon.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Keithley/Keithley 6220-6221/Keithley 622x Set DCon.vi"/>
@@ -1694,6 +1691,10 @@
 			<Item Name="Keithley 622x Set Sweep.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Keithley/Keithley 6220-6221/Keithley 622x Set Sweep.vi"/>
 			<Item Name="Indentify Prema.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Prema/Indentify Prema.vi"/>
 			<Item Name="Keithley Is Voltmeter Attached.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Keithley/Keithley 6220-6221/Keithley Is Voltmeter Attached.vi"/>
+			<Item Name="Keithley 622x Get Settings.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Keithley/Keithley 6220-6221/Keithley 622x Get Settings.vi"/>
+			<Item Name="Keithley 622x Get NV Settings.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Keithley/Keithley 6220-6221/Keithley 622x Get NV Settings.vi"/>
+			<Item Name="Measure DC offset in TDMS.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Waveform/Measure DC offset in TDMS.vi"/>
+			<Item Name="VISA Recover.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/GPIB/VISA Recover.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">
@@ -1710,7 +1711,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">189</Property>
+				<Property Name="Bld_version.build" Type="Int">190</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">6</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>

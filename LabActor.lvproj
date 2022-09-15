@@ -521,6 +521,7 @@
 		</Item>
 		<Item Name="Launch LabActor.vi" Type="VI" URL="../Launch LabActor.vi"/>
 		<Item Name="Notch Filter Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Filter/Notch Filter Configuration.ctl"/>
+		<Item Name="Sycronous Clock Frequency.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Lockin Digitizer Driver/Sycronous Clock Frequency.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niModInst Close Installed Devices Session.vi" Type="VI" URL="/&lt;instrlib&gt;/niModInst/niModInst Close Installed Devices Session.vi"/>
@@ -1711,7 +1712,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">190</Property>
+				<Property Name="Bld_version.build" Type="Int">195</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">6</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>

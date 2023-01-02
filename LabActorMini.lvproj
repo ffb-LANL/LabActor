@@ -178,6 +178,7 @@
 					<Item Name="Keithley 622x2182 Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Keithley/Keithley 6220-6221/Keithley 622x driver/Keithley 622x2182 Driver.lvclass"/>
 					<Item Name="Test 622-182.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Keithley/Keithley 6220-6221/Keithley 622x driver/Test 622-182.vi"/>
 					<Item Name="Conductance.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Conductance.vi"/>
+					<Item Name="Keithley 622x Get Settings.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Keithley/Keithley 6220-6221/Keithley 622x Get Settings.vi"/>
 					<Item Name="How Many Steps.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/How Many Steps.vi"/>
 				</Item>
 				<Item Name="Andeen-Hagerling Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/AH/Andeen-Hagerling Driver/Andeen-Hagerling Driver.lvclass"/>
@@ -215,6 +216,8 @@
 				<Item Name="NI-Scope Lock-in.lvclass" Type="LVClass" URL="../Recorders/NI-Scope Lock-in/NI-Scope Lock-in.lvclass"/>
 				<Item Name="PID Controller.lvclass" Type="LVClass" URL="../Recorders/PID Controller/PID Controller.lvclass"/>
 				<Item Name="DataSocket Client.lvclass" Type="LVClass" URL="../Recorders/DataSocket Client/DataSocket Client.lvclass"/>
+				<Item Name="CreateSocket.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/DataSocket/CreateSocket.vi"/>
+				<Item Name="DataSocket Configuration.ctl" Type="VI" URL="../Recorders/DataSocket Client/DataSocket Configuration.ctl"/>
 			</Item>
 			<Item Name="Pulse Recorders" Type="Folder">
 				<Item Name="RP I-V" Type="Folder">
@@ -232,9 +235,6 @@
 			<Item Name="Publisher Actor.lvclass" Type="LVClass" URL="../Publish-Subscribe/Publisher Actor/Publisher Actor.lvclass"/>
 		</Item>
 		<Item Name="Launch LabActor.vi" Type="VI" URL="../Launch LabActor.vi"/>
-		<Item Name="CreateSocket.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/DataSocket/CreateSocket.vi"/>
-		<Item Name="Keithley 622x Get Settings.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Keithley/Keithley 6220-6221/Keithley 622x Get Settings.vi"/>
-		<Item Name="DataSocket Configuration.ctl" Type="VI" URL="../Recorders/DataSocket Client/DataSocket Configuration.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array of VData to VCluster__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array of VData to VCluster__ogtk.vi"/>
@@ -1273,7 +1273,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">73</Property>
+				<Property Name="Bld_version.build" Type="Int">74</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">6</Property>
 				<Property Name="Bld_version.patch" Type="Int">2</Property>

@@ -296,7 +296,7 @@
 					<Item Name="MagX Sort Info.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Sort Info.vi"/>
 				</Item>
 				<Item Name="Example" Type="Folder">
-					<Item Name="MagLab Hub Client .vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagLab Hub Client .vi"/>
+					<Item Name="MagLab Hub Client.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagLab Hub Client.vi"/>
 				</Item>
 				<Item Name="Log Record.lvclass" Type="LVClass" URL="../Post-Processors/Log Record/Log Record.lvclass"/>
 				<Item Name="Log Record Configuration.ctl" Type="VI" URL="../Post-Processors/Log Record/Log Record Configuration.ctl"/>

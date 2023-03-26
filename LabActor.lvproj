@@ -1704,6 +1704,8 @@
 			<Item Name="Keithley 622x Set Delta.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Keithley/Keithley 6220-6221/Keithley 622x Set Delta.vi"/>
 			<Item Name="DataSocket Client.lvclass" Type="LVClass" URL="../Recorders/DataSocket Client/DataSocket Client.lvclass"/>
 			<Item Name="DataSocket Configuration.ctl" Type="VI" URL="../Recorders/DataSocket Client/DataSocket Configuration.ctl"/>
+			<Item Name="Create Full Frequency Steps Array.vi" Type="VI" URL="../Spectrum Recorder too/Create Full Frequency Steps Array.vi"/>
+			<Item Name="Filter Instruments.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Instrument/Filter Instruments.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">
@@ -1720,7 +1722,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">201</Property>
+				<Property Name="Bld_version.build" Type="Int">204</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">6</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>

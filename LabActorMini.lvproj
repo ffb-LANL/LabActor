@@ -1254,6 +1254,8 @@
 			<Item Name="Measure DC offset in TDMS.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Waveform/Measure DC offset in TDMS.vi"/>
 			<Item Name="Rotate Lockin Phase.vim" Type="VI" URL="../../NHMFL_Core/Libraries/SoftwareLockin/Rotate Lockin Phase.vim"/>
 			<Item Name="Keithley 622x Set Delta.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Keithley/Keithley 6220-6221/Keithley 622x Set Delta.vi"/>
+			<Item Name="Create Full Frequency Steps Array.vi" Type="VI" URL="../Spectrum Recorder too/Create Full Frequency Steps Array.vi"/>
+			<Item Name="Filter Instruments.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Instrument/Filter Instruments.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">
@@ -1273,7 +1275,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">76</Property>
+				<Property Name="Bld_version.build" Type="Int">77</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">6</Property>
 				<Property Name="Bld_version.patch" Type="Int">2</Property>

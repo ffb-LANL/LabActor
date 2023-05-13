@@ -428,6 +428,7 @@
 				<Item Name="Sweeper Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Sweeper Driver/Sweeper Driver.lvclass"/>
 				<Item Name="Spectrometer Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Spectrometer Driver/Spectrometer Driver.lvclass"/>
 				<Item Name="IdentifyAndReadInstr.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/IdentifyAndReadInstr.vi"/>
+				<Item Name="Keithley 622x2182 Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Keithley/Keithley 6220-6221/Keithley 622x driver/Keithley 622x2182 Driver.lvclass"/>
 			</Item>
 			<Item Name="Monitor" Type="Folder">
 				<Item Name="Micron Optics" Type="Folder">
@@ -483,6 +484,7 @@
 				<Item Name="PID Controller.lvclass" Type="LVClass" URL="../Recorders/PID Controller/PID Controller.lvclass"/>
 				<Item Name="Continuous Recorder Actor.lvclass" Type="LVClass" URL="../Recorders/Continuous Recorder Actor/Continuous Recorder Actor.lvclass"/>
 				<Item Name="Combined Measurement.lvclass" Type="LVClass" URL="../Recorders/Combined Measurement/Combined Measurement.lvclass"/>
+				<Item Name="Stepper.lvclass" Type="LVClass" URL="../Recorders/Stepper/Stepper.lvclass"/>
 			</Item>
 			<Item Name="Pulse Recorders" Type="Folder">
 				<Item Name="Magnet Strain" Type="Folder">
@@ -1685,10 +1687,8 @@
 			<Item Name="Prema Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Prema/Prema Driver.lvclass"/>
 			<Item Name="Prema Get Volts.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Prema/Prema Get Volts.vi"/>
 			<Item Name="CS580 Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/SRS/CS580 Driver/CS580 Driver.lvclass"/>
-			<Item Name="Stepper.lvclass" Type="LVClass" URL="../Recorders/Stepper/Stepper.lvclass"/>
 			<Item Name="Stepper Config.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Controls/Stepper Config.ctl"/>
 			<Item Name="Combined Result.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Results/Combined Result/Combined Result.lvclass"/>
-			<Item Name="Keithley 622x2182 Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Keithley/Keithley 6220-6221/Keithley 622x driver/Keithley 622x2182 Driver.lvclass"/>
 			<Item Name="Keithley 622x Set DCon.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Keithley/Keithley 6220-6221/Keithley 622x Set DCon.vi"/>
 			<Item Name="Sleep.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Keithley/Keithley 6220-6221/Keithley 622x driver/Sleep.vi"/>
 			<Item Name="Keithley 622x Set Pulse Delta.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Keithley/Keithley 6220-6221/Keithley 622x Set Pulse Delta.vi"/>
@@ -1722,7 +1722,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">205</Property>
+				<Property Name="Bld_version.build" Type="Int">206</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">6</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>

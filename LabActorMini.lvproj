@@ -180,6 +180,7 @@
 					<Item Name="Conductance.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Conductance.vi"/>
 					<Item Name="Keithley 622x Get Settings.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Keithley/Keithley 6220-6221/Keithley 622x Get Settings.vi"/>
 					<Item Name="How Many Steps.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/How Many Steps.vi"/>
+					<Item Name="Keithley 622x Error.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Keithley/Keithley 6220-6221/Keithley 622x Error.vi"/>
 				</Item>
 				<Item Name="Andeen-Hagerling Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/AH/Andeen-Hagerling Driver/Andeen-Hagerling Driver.lvclass"/>
 				<Item Name="Channel Scanner Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Instrument Driver/Channel Scanner Driver/Channel Scanner Driver.lvclass"/>

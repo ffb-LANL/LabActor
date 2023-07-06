@@ -18,3 +18,4 @@ Resonance Detector: NI Advanced Signal Processing Toolkit
 Ruby Spectra: Ocean Optics 2000 4000  
 Log Record: JSONtext  
 Format Converter: Live HDF5  
+LabJack: LabJack LabVIEW_LJUD

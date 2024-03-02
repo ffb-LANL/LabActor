@@ -346,6 +346,7 @@
 						<Item Name="Red Pitaya Test.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Test/Red Pitaya Test.vi"/>
 						<Item Name="Red Pitaya Manager.vi" Type="VI" URL="../Recorders/Red Pitaya Manager/Red Pitaya Manager.vi"/>
 						<Item Name="Test I-V Pattern.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Rep Pitaya I-V driver/Test I-V Pattern.vi"/>
+						<Item Name="RP calculate subset CMA.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP calculate subset CMA.vi"/>
 					</Item>
 					<Item Name="Pulse Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Pulse Driver/Pulse Driver.lvclass"/>
 					<Item Name="Pusle Driver Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Pulse Driver/Pusle Driver Configuration.ctl"/>
@@ -412,7 +413,6 @@
 					<Item Name="DAQmx Synth Digitizer" Type="Folder"/>
 					<Item Name="DAQmx Synthesizer.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Synthesizer/DAQmx Synthesizer.lvclass"/>
 					<Item Name="Test Lockin Digitizer.vi" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/Test Lockin Digitizer.vi"/>
-					<Item Name="Generate Test Pattern.vi" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/Generate Test Pattern.vi"/>
 					<Item Name="Find DAQmx Digitizers.vi" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Digitizer/Find DAQmx Digitizers.vi"/>
 					<Item Name="DAQmx Synthesizer Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/DAQmx Synthesizer/DAQmx Synthesizer Configuration.ctl"/>
 				</Item>
@@ -535,7 +535,10 @@
 			</Item>
 			<Item Name="Find Visa Recorders.vi" Type="VI" URL="../Recorders/Find Visa Recorders.vi"/>
 		</Item>
+		<Item Name="Generate Test Pattern.vi" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/Generate Test Pattern.vi"/>
 		<Item Name="Launch LabActor.vi" Type="VI" URL="../Launch LabActor.vi"/>
+		<Item Name="Position Check.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Position Check.vi"/>
+		<Item Name="RP calculate subset PD.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP calculate subset PD.vi"/>
 		<Item Name="Package Dependencies" Type="IIO Ladder Diagram">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 		</Item>

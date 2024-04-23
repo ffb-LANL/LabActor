@@ -539,6 +539,9 @@
 		<Item Name="Launch LabActor.vi" Type="VI" URL="../Launch LabActor.vi"/>
 		<Item Name="Position Check.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Position Check.vi"/>
 		<Item Name="RP calculate subset PD.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP calculate subset PD.vi"/>
+		<Item Name="RAM stream check.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RAM stream check.vi"/>
+		<Item Name="4ch visualization.vi" Type="VI" URL="/U/My Documents/LabVIEW Projects/4ch visualization.vi"/>
+		<Item Name="Select Inteleaved Channels.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Select Inteleaved Channels.vi"/>
 		<Item Name="Package Dependencies" Type="IIO Ladder Diagram">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 		</Item>
@@ -1517,7 +1520,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">231</Property>
+				<Property Name="Bld_version.build" Type="Int">233</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">6</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>

@@ -518,6 +518,7 @@
 					<Item Name="Lockin Digitizer.lvclass" Type="LVClass" URL="../Pulse Recorders/Lockin Digitizer/Lockin Digitizer.lvclass"/>
 					<Item Name="Lockin Digitizer Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Pulse Driver/Lockin Digitizer Driver/Lockin Digitizer Configuration.ctl"/>
 					<Item Name="L-D Command Context.ctl" Type="VI" URL="../Pulse Recorders/Lockin Digitizer/L-D Command Context.ctl"/>
+					<Item Name="Output Channel Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Lockin Digitizer Driver/Output Channel Configuration.ctl"/>
 				</Item>
 				<Item Name="Waform Generator" Type="Folder"/>
 				<Item Name="Channel Scanner Configuration.ctl" Type="VI" URL="../Recorders/Channel Scanner/Channel Scanner Configuration.ctl"/>

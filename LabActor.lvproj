@@ -290,6 +290,7 @@
 					<Item Name="Get OSF Status Msg.lvclass" Type="LVClass" URL="../Post-Processors/Log Record Messages/Get OSF Status Msg/Get OSF Status Msg.lvclass"/>
 					<Item Name="OSF Sync Command Msg.lvclass" Type="LVClass" URL="../Post-Processors/Log Record Messages/OSF Sync Command Msg/OSF Sync Command Msg.lvclass"/>
 					<Item Name="Write Add-on storage Msg.lvclass" Type="LVClass" URL="../Post-Processors/Log Record Messages/Write Add-on storage Msg/Write Add-on storage Msg.lvclass"/>
+					<Item Name="Set Instruments Msg.lvclass" Type="LVClass" URL="../Post-Processors/Log Record Messages/Set Instruments Msg/Set Instruments Msg.lvclass"/>
 				</Item>
 				<Item Name="MagX" Type="Folder">
 					<Item Name="MagX Start OSF Sync.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Start OSF Sync.vi"/>
@@ -302,6 +303,9 @@
 				<Item Name="Example" Type="Folder">
 					<Item Name="MagLab Hub Client.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagLab Hub Client.vi"/>
 				</Item>
+				<Item Name="Stand alone" Type="Folder">
+					<Item Name="MagLab OSF Sync .vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagLab OSF Sync .vi"/>
+				</Item>
 				<Item Name="Log Record.lvclass" Type="LVClass" URL="../Post-Processors/Log Record/Log Record.lvclass"/>
 				<Item Name="Log Record Configuration.ctl" Type="VI" URL="../Post-Processors/Log Record/Log Record Configuration.ctl"/>
 				<Item Name="Dynamic Load Log Record.vi" Type="VI" URL="../Post-Processors/Log Record/Dynamic Load Log Record.vi"/>
@@ -310,6 +314,7 @@
 				<Item Name="Add-on Storage.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/Add-on Storage.ctl"/>
 				<Item Name="MagX Get Probe Info.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Get Probe Info.vi"/>
 				<Item Name="MagX Probe List.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Probe List.vi"/>
+				<Item Name="Instrument info.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/Instrument info.ctl"/>
 			</Item>
 			<Item Name="Rescale.lvclass" Type="LVClass" URL="../Post-Processors/Rescale/Rescale.lvclass"/>
 		</Item>
@@ -1144,6 +1149,7 @@
 				<Item Name="DAQmx Read (Power Wfm 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Power Wfm 1Chan NSamp).vi"/>
 				<Item Name="DAQmx Read (Power 1D Wfm NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Power 1D Wfm NChan 1Samp).vi"/>
 				<Item Name="DAQmx Read (Power 1D Wfm NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Power 1D Wfm NChan NSamp).vi"/>
+				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
 			</Item>
 			<Item Name="Abbreviate TDMS Group Channel.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Abbreviate TDMS Group Channel.vi"/>
 			<Item Name="Acknowledge Post Process Msg.lvclass" Type="LVClass" URL="../Controllers/Process Controller Messages/Acknowledge Post Process Msg/Acknowledge Post Process Msg.lvclass"/>
@@ -1518,8 +1524,32 @@
 			<Item Name="_LaunchHelpUrl.vi" Type="VI" URL="/&lt;helpdir&gt;/_LaunchHelpUrl.vi"/>
 			<Item Name="Get LakeShore 336 Configuration.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/LakeShore/LakeShore 336/Get LakeShore 336 Configuration.vi"/>
 			<Item Name="Get LakeShore 336 Mode.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/LakeShore/LakeShore 336/Get LakeShore 336 Mode.vi"/>
-			<Item Name="Probe info.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/Probe info.ctl"/>
 			<Item Name="MagX Probes to Listbox.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Probes to Listbox.vi"/>
+			<Item Name="System.Windows.Forms" Type="Document" URL="System.Windows.Forms">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="Extract iCalendar String.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/iCalendar/Extract iCalendar String.ctl"/>
+			<Item Name="UPortal Load Callback.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/User Portal/UPortal Load Callback.vi"/>
+			<Item Name="mscorlib" Type="VI" URL="mscorlib">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="UPortal List Items.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/User Portal/UPortal List Items.vi"/>
+			<Item Name="UPortal Open URL.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/User Portal/UPortal Open URL.vi"/>
+			<Item Name="UPortal Wait on Load.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/User Portal/UPortal Wait on Load.vi"/>
+			<Item Name="UPortal Login.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/User Portal/UPortal Login.vi"/>
+			<Item Name="OSF Create Projects.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/OSF Create Projects.vi"/>
+			<Item Name="OSF Auth Header.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/OSF Auth Header.vi"/>
+			<Item Name="Parse Proposal.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/Parse Proposal.vi"/>
+			<Item Name="Parse OSF Project.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/Parse OSF Project.vi"/>
+			<Item Name="Get JSON Value.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Get JSON Value.vi"/>
+			<Item Name="Strip String Ends.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Strip String Ends.vi"/>
+			<Item Name="OSF Create Component.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/OSF Create Component.vi"/>
+			<Item Name="OSF Format Exp Wiki.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/OSF Format Exp Wiki.vi"/>
+			<Item Name="OSF Create Wiki.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/OSF Create Wiki.vi"/>
+			<Item Name="UPortal Load Calendar.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/User Portal/UPortal Load Calendar.vi"/>
+			<Item Name="Parse iCalendar.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/iCalendar/Parse iCalendar.vi"/>
+			<Item Name="Extract time from string.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/iCalendar/Extract time from string.vi"/>
+			<Item Name="Events to Listbox.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/User Portal/Events to Listbox.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">
@@ -1536,7 +1566,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">237</Property>
+				<Property Name="Bld_version.build" Type="Int">240</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">6</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>

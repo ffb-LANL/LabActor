@@ -24,17 +24,17 @@ w\:* {behavior:url(#default#VML);}
  <o:DocumentProperties>
   <o:Author>Balakirev, Fedor Fedorovich</o:Author>
   <o:LastAuthor>Balakirev, Fedor Fedorovich</o:LastAuthor>
-  <o:Revision>5</o:Revision>
-  <o:TotalTime>18</o:TotalTime>
+  <o:Revision>7</o:Revision>
+  <o:TotalTime>25</o:TotalTime>
   <o:Created>2022-08-16T17:31:00Z</o:Created>
-  <o:LastSaved>2022-08-16T22:10:00Z</o:LastSaved>
+  <o:LastSaved>2024-06-20T21:22:00Z</o:LastSaved>
   <o:Pages>3</o:Pages>
-  <o:Words>505</o:Words>
-  <o:Characters>2884</o:Characters>
+  <o:Words>495</o:Words>
+  <o:Characters>2824</o:Characters>
   <o:Company>LANL DCS-CSD</o:Company>
-  <o:Lines>24</o:Lines>
+  <o:Lines>23</o:Lines>
   <o:Paragraphs>6</o:Paragraphs>
-  <o:CharactersWithSpaces>3383</o:CharactersWithSpaces>
+  <o:CharactersWithSpaces>3313</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -47,9 +47,6 @@ href="Lockin%20Digitizer_files/colorschememapping.xml">
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Print</w:View>
-  <w:Zoom>160</w:Zoom>
-  <w:SpellingState>Clean</w:SpellingState>
-  <w:GrammarState>Clean</w:GrammarState>
   <w:TrackMoves>false</w:TrackMoves>
   <w:TrackFormatting/>
   <w:ValidateAgainstSchemas/>
@@ -741,15 +738,14 @@ p.msonormal0, li.msonormal0, div.msonormal0
 	font-family:"Times New Roman",serif;
 	mso-fareast-font-family:"Times New Roman";
 	mso-fareast-theme-font:minor-fareast;}
-span.GramE
-	{mso-style-name:"";
-	mso-gram-e:yes;}
 .MsoChpDefault
 	{mso-style-type:export-only;
 	mso-default-props:yes;
 	font-size:10.0pt;
 	mso-ansi-font-size:10.0pt;
-	mso-bidi-font-size:10.0pt;}
+	mso-bidi-font-size:10.0pt;
+	mso-font-kerning:0pt;
+	mso-ligatures:none;}
 @page WordSection1
 	{size:8.5in 11.0in;
 	margin:1.0in 1.0in 1.0in 1.0in;
@@ -793,9 +789,9 @@ div.WordSection1
 <h2><span style='mso-fareast-font-family:"Times New Roman"'>Basic Digitizer +
 Lock-in Connection to NI-DAQmx<o:p></o:p></span></h2>
 
-<h2><span style='mso-fareast-font-family:"Times New Roman";mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
- id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
- path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+<h2><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
  <v:stroke joinstyle="miter"/>
  <v:formulas>
   <v:f eqn="if lineDrawn pixelLineWidth 0"/>
@@ -813,29 +809,31 @@ Lock-in Connection to NI-DAQmx<o:p></o:p></span></h2>
  </v:formulas>
  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
  <o:lock v:ext="edit" aspectratio="t"/>
-</v:shapetype><v:shape id="Picture_x0020_27" o:spid="_x0000_i1043" type="#_x0000_t75"
- style='width:420.75pt;height:233.25pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="Lockin%20Digitizer_files/image003.jpg" o:title=""/>
-</v:shape><![endif]--><![if !vml]><img width=561 height=311
-src="Lockin%20Digitizer_files/image001.jpg" v:shapes="Picture_x0020_27"><![endif]></span><span
+</v:shapetype><v:shape id="_x0000_i1043" type="#_x0000_t75" style='width:468pt;
+ height:237pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Lockin%20Digitizer_files/image001.jpg" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=624 height=316
+src="Lockin%20Digitizer_files/image003.jpg" v:shapes="_x0000_i1043"><![endif]></span><span
 style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h2>
 
 <h2><span style='mso-fareast-font-family:"Times New Roman"'>Lock-in Digitizer
 Module<o:p></o:p></span></h2>
 
-<p>Digitizer records pulsed waveforms on external trigger signal. Digitizer is configured
-via <b>Digitizer config</b> part of the <b>Configuration</b> cluster. Optional
-Lock-in synthesis and detection is configured via <b>Lock-in config</b> part of
-the cluster. </p>
+<p>Digitizer records pulsed waveforms on external trigger signal. Digitizer is
+configured via <b>Pulse <span style='mso-spacerun:yes'> </span>config</b> part
+of the <b>Configuration</b> cluster. Optional Lock-in synthesis and detection
+is configured via <b>Lock-in config</b> part of the cluster. </p>
 
 <p>Digitizer is armed by the main module Arm button. If <b>Armed</b> light is
-bright green, it is ready for the trigger. After pulse is triggered, <span
-class=GramE><b>Armed</b></span> goes dark. After pulse is recorded, <span
-class=GramE><b>Done</b></span> turns bright red.</p>
+bright green, it is ready for the trigger. After pulse is triggered, <b>Armed</b>
+goes dark. After pulse is recorded, <b>Done</b> turns bright red.</p>
 
-<p><span style='mso-no-proof:yes'><img width=554 height=481 id="_x0000_i1042"
-src="Lockin_Digitizer_lvclass_Actor_Corep.png"
-alt="Lockin Digitizer.lvclass:Actor Core.vi"></span></p>
+<p><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_1"
+ o:spid="_x0000_i1042" type="#_x0000_t75" style='width:420pt;height:447.75pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Lockin%20Digitizer_files/image005.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=560 height=597
+src="Lockin%20Digitizer_files/image005.png" v:shapes="Picture_x0020_1"><![endif]></span></p>
 
 <table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
@@ -918,8 +916,7 @@ alt="Lockin Digitizer.lvclass:Actor Core.vi"></span></p>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Ranges:
   </span></b><span style='mso-fareast-font-family:"Times New Roman"'>Input
-  voltage ranges for each channel<b><span style='mso-spacerun:yes'>  </span><span
-  style='mso-spacerun:yes'> </span><span style='mso-spacerun:yes'> </span></b><o:p></o:p></span></p>
+  voltage ranges for each channel<b><span style='mso-spacerun:yes'>    </span></b><o:p></o:p></span></p>
   </td>
  </tr>
 </table>
@@ -966,7 +963,7 @@ alt="Lockin Digitizer.lvclass:Actor Core.vi"></span></p>
 
 <table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
  margin-left:.5in;mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
   <p><span style='mso-no-proof:yes'><img width=32 height=16 id="_x0000_i1034"
   src=cbool.png alt=cbool></span></p>
@@ -974,6 +971,16 @@ alt="Lockin Digitizer.lvclass:Actor Core.vi"></span></p>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>External
   clock</span></b><span style='mso-fareast-font-family:"Times New Roman"'> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p><span style='mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Output
+  channel:</span></b><span style='mso-fareast-font-family:"Times New Roman"'> </span>Lock-in
+  output channel number<b><span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></b></p>
   </td>
  </tr>
 </table>
@@ -992,9 +999,10 @@ alt="Lockin Digitizer.lvclass:Actor Core.vi"></span></p>
   src=c1ddbl.png alt=c1ddbl></span></p>
   </td>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Frequencies:</span></b><span
-  style='mso-fareast-font-family:"Times New Roman"'> </span>Lock-in output
-  frequencies for each channel<span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Output
+  frequency:</span></b><span style='mso-fareast-font-family:"Times New Roman"'>
+  </span>Lock-in output frequencies for selected channel<span style='mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
   </td>
  </tr>
 </table>
@@ -1010,10 +1018,10 @@ alt="Lockin Digitizer.lvclass:Actor Core.vi"></span></p>
   src=cdbl.png alt=cdbl></span></p>
   </td>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Time
-  constant:</span></b><span style='mso-fareast-font-family:"Times New Roman"'> </span>Lock-in
-  <i><span style='color:#C00000'>MONITOR MODE</span></i><span style='color:
-  #C00000'> </span>filter time constant</p>
+  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Monitor
+  time constant:</span></b><span style='mso-fareast-font-family:"Times New Roman"'>
+  </span>Lock-in <i><span style='color:#C00000'>MONITOR MODE</span></i><span
+  style='color:#C00000'> </span>filter time constant</p>
   </td>
  </tr>
 </table>
@@ -1030,8 +1038,8 @@ alt="Lockin Digitizer.lvclass:Actor Core.vi"></span></p>
   </td>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Output
-  amplitudes:</span></b><span style='mso-fareast-font-family:"Times New Roman"'>
-  </span>Lock-in output amplitudes for each channel</p>
+  amplitude:</span></b><span style='mso-fareast-font-family:"Times New Roman"'>
+  </span>Lock-in output amplitudes for selected channel</p>
   </td>
  </tr>
 </table>
@@ -1049,9 +1057,10 @@ alt="Lockin Digitizer.lvclass:Actor Core.vi"></span></p>
   <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Input
   channels:</span></b><span style='mso-fareast-font-family:"Times New Roman"'> </span>List
-  lock-in channels: &quot;0,1&quot; or &quot;3,2,1,0&quot;, or range &quot;0–7&quot;
-  or &quot;0:7&quot;. <i><span style='color:#C00000'>Must be sub-set of <b>Active
-  channels</b></span></i><span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+  lock-in channels: &quot;0,1&quot; or &quot;3,2,1,0&quot;, or range
+  &quot;0–7&quot; or &quot;0:7&quot;. <i><span style='color:#C00000'>Must be
+  sub-set of <b>Active channels</b></span></i><span style='mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p>
   </td>
  </tr>
 </table>

@@ -326,6 +326,7 @@
 				<Item Name="Micron" Type="Folder">
 					<Item Name="Micron sm" Type="Folder">
 						<Item Name="Micron sm Digitizer.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Strain Digitizer/Micron sm Digitizer.lvclass"/>
+						<Item Name="Test Microm sm.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Strain/Test Microm sm.vi"/>
 					</Item>
 					<Item Name="Examples" Type="Folder">
 						<Item Name="Micron Optics sm130 Acquire Continuous Spectrum.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Strain/Micron Optics sm130/Examples/Micron Optics sm130 Acquire Continuous Spectrum.vi"/>
@@ -1567,8 +1568,6 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Is Micron sm130.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Strain/Is Micron sm130.vi"/>
-			<Item Name="Read VISA resource name.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Strain Digitizer/Read VISA resource name.vi"/>
-			<Item Name="Write VISA resource name.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Strain Digitizer/Write VISA resource name.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">

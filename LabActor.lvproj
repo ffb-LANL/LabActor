@@ -326,20 +326,19 @@
 				<Item Name="Micron" Type="Folder">
 					<Item Name="Micron sm" Type="Folder">
 						<Item Name="Micron sm Digitizer.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Micron Optics/Micron sm Digitizer/Micron sm Digitizer.lvclass"/>
-						<Item Name="Test Microm sm.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Strain/Test Microm sm.vi"/>
+						<Item Name="Test Microm sm.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Micron Optics/Micron sm Digitizer/Test Microm sm.vi"/>
 					</Item>
 					<Item Name="Examples" Type="Folder">
-						<Item Name="Micron Optics sm130 Acquire Continuous Spectrum.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Strain/Micron Optics sm130/Examples/Micron Optics sm130 Acquire Continuous Spectrum.vi"/>
+						<Item Name="Micron Optics sm130 Acquire Continuous Spectrum.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Micron Optics/Micron Optics sm130/Examples/Micron Optics sm130 Acquire Continuous Spectrum.vi"/>
 						<Item Name="Micron Optics sm130 Convert Sensor Wavelength.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Strain/Micron Optics sm130/Examples/Micron Optics sm130 Convert Sensor Wavelength.vi"/>
 						<Item Name="Micron Optics sm130 Log Peak Wavelength.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Strain/Micron Optics sm130/Examples/Micron Optics sm130 Log Peak Wavelength.vi"/>
 						<Item Name="Micron Optics sm130 Streaming Peak Wavelength.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Strain/Micron Optics sm130/Examples/Micron Optics sm130 Streaming Peak Wavelength.vi"/>
-						<Item Name="Micron Optics sm130 Triggered Acquisition.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Strain/Micron Optics sm130/Examples/Micron Optics sm130 Triggered Acquisition.vi"/>
+						<Item Name="Micron Optics sm130 Triggered Acquisition.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Micron Optics/Micron Optics sm130/Examples/Micron Optics sm130 Triggered Acquisition.vi"/>
 					</Item>
 					<Item Name="h.Library.lvlib" Type="Library" URL="../../NHMFL_Core/Libraries/Instruments/Micron Optics/hyperion library source/h.Library.lvlib"/>
 					<Item Name="Micron Hyperion Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Micron Optics/Micron Hyperion Driver/Micron Hyperion Driver.lvclass"/>
 					<Item Name="Micron Optics Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Micron Optics/Micron Optics Driver/Micron Optics Driver.lvclass"/>
 					<Item Name="SimpleStreamingExample.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Micron Optics/hyperion library source/SimpleExamples/SimpleStreamingExample.vi"/>
-					<Item Name="Find Micron Digitizers.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Micron Optics/Find Micron Digitizers.vi"/>
 					<Item Name="Micron Optics sm130.lvlib" Type="Library" URL="../../NHMFL_Core/Libraries/Instruments/Micron Optics/Micron Optics sm130/Micron Optics sm130.lvlib"/>
 				</Item>
 				<Item Name="NI-Scope Driver" Type="Folder">

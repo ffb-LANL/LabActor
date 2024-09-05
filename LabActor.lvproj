@@ -326,7 +326,7 @@
 				<Item Name="Micron" Type="Folder">
 					<Item Name="Micron sm" Type="Folder">
 						<Item Name="Micron sm Digitizer.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Micron Optics/Micron sm Digitizer/Micron sm Digitizer.lvclass"/>
-						<Item Name="Test Microm sm.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Micron Optics/Micron sm Digitizer/Test Microm sm.vi"/>
+						<Item Name="Test Micron sm.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Micron Optics/Micron sm Digitizer/Test Micron sm.vi"/>
 					</Item>
 					<Item Name="Examples" Type="Folder">
 						<Item Name="Micron Optics sm130 Acquire Continuous Spectrum.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Micron Optics/Micron Optics sm130/Examples/Micron Optics sm130 Acquire Continuous Spectrum.vi"/>

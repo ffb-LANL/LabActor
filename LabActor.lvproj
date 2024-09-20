@@ -126,6 +126,9 @@
 						<Item Name="TCP-IP Write-Read.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/TCP-IP/TCP-IP Write-Read.vi"/>
 						<Item Name="TCP Send Recieve.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/TCP-IP/TCP Send Recieve.vi"/>
 					</Item>
+					<Item Name="Instrumentation" Type="Folder">
+						<Item Name="Clear Read Buffer.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/TCP-IP/Clear Read Buffer.vi"/>
+					</Item>
 					<Item Name="Create Test Pattern.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Create Test Pattern.vi"/>
 					<Item Name="Drag to Tree Check.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/GUI/Drag to Tree Check.vi"/>
 					<Item Name="Find Syncronous Frequency.vi" Type="VI" URL="../../NHMFL_Core/Libraries/SoftwareLockin/Find Syncronous Frequency.vi"/>
@@ -164,8 +167,6 @@
 				</Item>
 				<Item Name="BroadcastBroker.lvclass" Type="LVClass" URL="../BroadcastBroker/BroadcastBroker.lvclass"/>
 				<Item Name="Simple VISA Reader Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Simple VISA Reader/Simple VISA Reader Driver.lvclass"/>
-				<Item Name="Lock-in Detector.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/SoftwareLockin/Lock-in Detector/Lock-in Detector.lvclass"/>
-				<Item Name="Software Lock-in.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/SoftwareLockin/Software Lock-in/Software Lock-in.lvclass"/>
 				<Item Name="VISA Instrument.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/VISA Instrument/VISA Instrument.lvclass"/>
 				<Item Name="Fit Result.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Results/Fit Result/Fit Result.lvclass"/>
 				<Item Name="Sequence.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Sequence/Sequence.ctl"/>
@@ -234,6 +235,11 @@
 			<Item Name="Lockin Proc" Type="Folder">
 				<Item Name="Messages" Type="Folder">
 					<Item Name="Update Plot Msg.lvclass" Type="LVClass" URL="../Post-Processors/Lockin Processor Messages/Update Plot Msg/Update Plot Msg.lvclass"/>
+				</Item>
+				<Item Name="Utilities" Type="Folder">
+					<Item Name="Lockin Proccess.vi" Type="VI" URL="../../NHMFL_Core/Libraries/SoftwareLockin/Lockin Proccess.vi"/>
+					<Item Name="Software Lock-in.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/SoftwareLockin/Software Lock-in/Software Lock-in.lvclass"/>
+					<Item Name="Lock-in Detector.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/SoftwareLockin/Lock-in Detector/Lock-in Detector.lvclass"/>
 				</Item>
 				<Item Name="Frequency Dividers.vi" Type="VI" URL="../Post-Processors/Lockin Processor/Frequency Dividers.vi"/>
 				<Item Name="Lockin Processor Configuration.ctl" Type="VI" URL="../Post-Processors/Lockin Processor/Lockin Processor Configuration.ctl"/>
@@ -378,7 +384,6 @@
 						<Item Name="RP I-V Test Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Rep Pitaya I-V driver/RP I-V Test Driver/RP I-V Test Driver.lvclass"/>
 						<Item Name="Red Pitaya Modulated Digitizer.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Red Pitaya/Red Pitaya Modulated Digitizer/Red Pitaya Modulated Digitizer.lvclass"/>
 						<Item Name="Red Pitaya Test.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Test/Red Pitaya Test.vi"/>
-						<Item Name="Red Pitaya Manager.vi" Type="VI" URL="../Recorders/Red Pitaya Manager/Red Pitaya Manager.vi"/>
 						<Item Name="Test I-V Pattern.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Rep Pitaya I-V driver/Test I-V Pattern.vi"/>
 						<Item Name="RP calculate subset CMA.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP calculate subset CMA.vi"/>
 						<Item Name="RP Config Offsets.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Config Offsets.ctl"/>
@@ -574,10 +579,12 @@
 				<Item Name="Pulse Recorder.lvclass" Type="LVClass" URL="../Pulse Recorders/Interfaces/Pulse Recorder/Pulse Recorder.lvclass"/>
 			</Item>
 		</Item>
-		<Item Name="Generate Test Pattern.vi" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/Generate Test Pattern.vi"/>
+		<Item Name="Applications" Type="Folder">
+			<Item Name="Fix Lockin Parameters.vi" Type="VI" URL="../Post-Processors/Lockin Processor/Fix Lockin Parameters.vi"/>
+			<Item Name="Generate Test Pattern.vi" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/Generate Test Pattern.vi"/>
+			<Item Name="Red Pitaya Manager.vi" Type="VI" URL="../../NHMFL_Core/Applications/Utilities/Red Pitaya Manager.vi"/>
+		</Item>
 		<Item Name="Launch LabActor.vi" Type="VI" URL="../Launch LabActor.vi"/>
-		<Item Name="Fix Lockin Parameters.vi" Type="VI" URL="../Post-Processors/Lockin Processor/Fix Lockin Parameters.vi"/>
-		<Item Name="Clear Read Buffer.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/TCP-IP/Clear Read Buffer.vi"/>
 		<Item Name="Package Dependencies" Type="IIO Ladder Diagram">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 		</Item>
@@ -1167,6 +1174,11 @@
 				<Item Name="DAQmx Read (Power 1D Wfm NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Power 1D Wfm NChan 1Samp).vi"/>
 				<Item Name="DAQmx Read (Power 1D Wfm NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Power 1D Wfm NChan NSamp).vi"/>
 				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
+				<Item Name="PL DNS Client.lvlib" Type="Library" URL="/&lt;vilib&gt;/plasmapper/PL DNS Client/PL DNS Client.lvlib"/>
+				<Item Name="UDP Multicast Read-Write Open.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/UDP Multicast Read-Write Open.vi"/>
+				<Item Name="UDP Multicast Write-Only Open.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/UDP Multicast Write-Only Open.vi"/>
+				<Item Name="UDP Multicast Read-Only Open.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/UDP Multicast Read-Only Open.vi"/>
+				<Item Name="UDP Multicast Open.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/UDP Multicast Open.vi"/>
 			</Item>
 			<Item Name="Abbreviate TDMS Group Channel.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Abbreviate TDMS Group Channel.vi"/>
 			<Item Name="Acknowledge Post Process Msg.lvclass" Type="LVClass" URL="../Controllers/Process Controller Messages/Acknowledge Post Process Msg/Acknowledge Post Process Msg.lvclass"/>
@@ -1246,7 +1258,6 @@
 			<Item Name="Line Detector Create rusin_dat.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Fit/Line Detector Create rusin_dat.vi"/>
 			<Item Name="Locate edges.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Locate edges.vi"/>
 			<Item Name="Lockin Parameters.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/SoftwareLockin/Lockin Parameters.ctl"/>
-			<Item Name="Lockin Proccess.vi" Type="VI" URL="../../NHMFL_Core/Libraries/SoftwareLockin/Lockin Proccess.vi"/>
 			<Item Name="Low Pass Filter.vi" Type="VI" URL="../../NHMFL_Core/Libraries/SoftwareLockin/Low Pass Filter.vi"/>
 			<Item Name="LR 700 convert responce.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/LR-700/LR 700 convert responce.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
@@ -2409,7 +2420,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{34C65282-647B-47DF-8F88-A62E26D4263C}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Fix Lockin Parameters.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Applications/Fix Lockin Parameters.vi</Property>
 				<Property Name="Source[1].properties[0].type" Type="Str">Run when opened</Property>
 				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[1].propertiesCount" Type="Int">1</Property>

@@ -1592,9 +1592,9 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">246</Property>
+				<Property Name="Bld_version.build" Type="Int">247</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Bld_version.minor" Type="Int">6</Property>
+				<Property Name="Bld_version.minor" Type="Int">7</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/LabActor.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
@@ -1603,7 +1603,7 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/LabActor/LabActor.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{5C6EEAA7-30A5-4EF3-B62F-32E393E5286E}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{27BE499F-0713-4142-92FF-DBC2AE0124EB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Controllers/Monitor Controller.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[1].properties[0].type" Type="Str">Remove front panel</Property>

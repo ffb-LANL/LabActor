@@ -153,6 +153,7 @@
 					<Item Name="Create plots - ring selector.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Create plots - ring selector.vi"/>
 					<Item Name="Variant to String.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Variant to String.vi"/>
 					<Item Name="Format Error Message.vi" Type="VI" URL="../Error Log/Format Error Message.vi"/>
+					<Item Name="Running Average.vim" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Filter/Running Average.vim"/>
 				</Item>
 				<Item Name="Results" Type="Folder">
 					<Item Name="Response Synchronizer" Type="Folder">
@@ -1592,7 +1593,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">247</Property>
+				<Property Name="Bld_version.build" Type="Int">250</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">7</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>

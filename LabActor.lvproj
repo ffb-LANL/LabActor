@@ -359,6 +359,8 @@
 					<Item Name="RP" Type="Folder">
 						<Property Name="NI.SortType" Type="Int">3</Property>
 						<Item Name="Low-level" Type="Folder">
+							<Item Name="RP Filter 4ch.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Filter 4ch.ctl"/>
+							<Item Name="RP Calibration 4ch.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Calibration 4ch.ctl"/>
 							<Item Name="Position Check.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Position Check.vi"/>
 							<Item Name="RAM stream check.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RAM stream check.vi"/>
 							<Item Name="RP calculate subset PD.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP calculate subset PD.vi"/>
@@ -373,6 +375,8 @@
 							<Item Name="Select Inteleaved Channels.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Utilities/Select Inteleaved Channels.vi"/>
 							<Item Name="RP hub write.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP hub write.vi"/>
 							<Item Name="RP hub read.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP hub read.vi"/>
+							<Item Name="RP Channel Calibration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Channel Calibration.ctl"/>
+							<Item Name="RP Calibration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Calibration.ctl"/>
 						</Item>
 						<Item Name="Find Red Pitaya Digitizers.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Red Pitaya Digitizer/Find Red Pitaya Digitizers.vi"/>
 						<Item Name="Red Pitaya Digitizer.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Red Pitaya/Red Pitaya Digitizer/Red Pitaya Digitizer.lvclass"/>
@@ -586,10 +590,10 @@
 			<Item Name="Red Pitaya Manager.vi" Type="VI" URL="../../NHMFL_Core/Applications/Utilities/Red Pitaya Manager.vi"/>
 		</Item>
 		<Item Name="Launch LabActor.vi" Type="VI" URL="../Launch LabActor.vi"/>
+		<Item Name="Sqrt2.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/SoftwareLockin/Sqrt2.ctl"/>
 		<Item Name="Package Dependencies" Type="IIO Ladder Diagram">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 		</Item>
-		<Item Name="Sqrt2.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/SoftwareLockin/Sqrt2.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niModInst Close Installed Devices Session.vi" Type="VI" URL="/&lt;instrlib&gt;/niModInst/niModInst Close Installed Devices Session.vi"/>
@@ -1543,6 +1547,8 @@
 			<Item Name="Read Trigger Type.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Micron Optics/Micron Optics sm130/Public/Data/Read Trigger Type.vi"/>
 			<Item Name="Resampler.lvclass" Type="LVClass" URL="../Post-Processors/Resampler/Resampler.lvclass"/>
 			<Item Name="Resampler Configuration.ctl" Type="VI" URL="../Post-Processors/Resampler/Resampler Configuration.ctl"/>
+			<Item Name="RP Channel Filter.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Channel Filter.ctl"/>
+			<Item Name="RP Calibration 2ch.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Calibration 2ch.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">

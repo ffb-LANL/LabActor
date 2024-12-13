@@ -248,6 +248,7 @@
 				<Item Name="Read Lockin Parameters.vi" Type="VI" URL="../../NHMFL_Core/Libraries/SoftwareLockin/Read Lockin Parameters.vi"/>
 				<Item Name="Test Lockin Proc.vi" Type="VI" URL="../Post-Processors/Lockin Processor/Test Lockin Proc.vi"/>
 				<Item Name="Rotate Lockin Phase.vim" Type="VI" URL="../../NHMFL_Core/Libraries/SoftwareLockin/Rotate Lockin Phase.vim"/>
+				<Item Name="Sqrt2.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/SoftwareLockin/Sqrt2.ctl"/>
 			</Item>
 			<Item Name="Synth" Type="Folder">
 				<Item Name="Low level" Type="Folder">
@@ -377,6 +378,8 @@
 							<Item Name="RP hub read.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP hub read.vi"/>
 							<Item Name="RP Channel Calibration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Channel Calibration.ctl"/>
 							<Item Name="RP Calibration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Calibration.ctl"/>
+							<Item Name="Filter_test.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Test/Filter_test.vi"/>
+							<Item Name="Red Pitaya Test.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Test/Red Pitaya Test.vi"/>
 						</Item>
 						<Item Name="Find Red Pitaya Digitizers.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Red Pitaya Digitizer/Find Red Pitaya Digitizers.vi"/>
 						<Item Name="Red Pitaya Digitizer.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Red Pitaya/Red Pitaya Digitizer/Red Pitaya Digitizer.lvclass"/>
@@ -388,7 +391,6 @@
 						<Item Name="RP EEPROM Calibration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP EEPROM Calibration.ctl"/>
 						<Item Name="RP I-V Test Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Rep Pitaya I-V driver/RP I-V Test Driver/RP I-V Test Driver.lvclass"/>
 						<Item Name="Red Pitaya Modulated Digitizer.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Red Pitaya/Red Pitaya Modulated Digitizer/Red Pitaya Modulated Digitizer.lvclass"/>
-						<Item Name="Red Pitaya Test.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Test/Red Pitaya Test.vi"/>
 						<Item Name="Test I-V Pattern.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Core/Rep Pitaya I-V driver/Test I-V Pattern.vi"/>
 						<Item Name="RP calculate subset CMA.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP calculate subset CMA.vi"/>
 						<Item Name="RP Config Offsets.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Config Offsets.ctl"/>
@@ -590,7 +592,6 @@
 			<Item Name="Red Pitaya Manager.vi" Type="VI" URL="../../NHMFL_Core/Applications/Utilities/Red Pitaya Manager.vi"/>
 		</Item>
 		<Item Name="Launch LabActor.vi" Type="VI" URL="../Launch LabActor.vi"/>
-		<Item Name="Sqrt2.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/SoftwareLockin/Sqrt2.ctl"/>
 		<Item Name="Package Dependencies" Type="IIO Ladder Diagram">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 		</Item>
@@ -1139,15 +1140,15 @@
 				<Item Name="DAQmx Read (Power 1D Wfm NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Power 1D Wfm NChan 1Samp).vi"/>
 				<Item Name="DAQmx Read (Power 1D Wfm NChan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Power 1D Wfm NChan NSamp).vi"/>
 				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
-				<Item Name="PL DNS Client.lvlib" Type="Library" URL="/&lt;vilib&gt;/plasmapper/PL DNS Client/PL DNS Client.lvlib"/>
-				<Item Name="UDP Multicast Read-Write Open.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/UDP Multicast Read-Write Open.vi"/>
-				<Item Name="UDP Multicast Write-Only Open.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/UDP Multicast Write-Only Open.vi"/>
-				<Item Name="UDP Multicast Read-Only Open.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/UDP Multicast Read-Only Open.vi"/>
-				<Item Name="UDP Multicast Open.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/UDP Multicast Open.vi"/>
 				<Item Name="Get LV Class Default Value By Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Default Value By Name.vi"/>
 				<Item Name="LV70DateRecToTimeStamp.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/LV70DateRecToTimeStamp.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="Qualified Name Array To Single String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Qualified Name Array To Single String.vi"/>
+				<Item Name="Set Cursor (Icon Pict).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor (Icon Pict).vi"/>
+				<Item Name="Set Cursor (Cursor ID).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor (Cursor ID).vi"/>
+				<Item Name="Set Cursor.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor.vi"/>
+				<Item Name="Set Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Busy.vi"/>
+				<Item Name="Unset Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Unset Busy.vi"/>
 			</Item>
 			<Item Name="Abbreviate TDMS Group Channel.vi" Type="VI" URL="../../NHMFL_Core/Libraries/File/Abbreviate TDMS Group Channel.vi"/>
 			<Item Name="Acknowledge Post Process Msg.lvclass" Type="LVClass" URL="../Controllers/Process Controller Messages/Acknowledge Post Process Msg/Acknowledge Post Process Msg.lvclass"/>
@@ -1549,9 +1550,7 @@
 			<Item Name="Resampler Configuration.ctl" Type="VI" URL="../Post-Processors/Resampler/Resampler Configuration.ctl"/>
 			<Item Name="RP Channel Filter.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Channel Filter.ctl"/>
 			<Item Name="RP Calibration 2ch.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Calibration 2ch.ctl"/>
-			<Item Name="Read RP EEPROM Calibration.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Core/RP Communicator/Read RP EEPROM Calibration.vi"/>
 			<Item Name="RP Scale v2.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Scale v2.vi"/>
-			<Item Name="Write RP EEPROM Calibration.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Core/RP Communicator/Write RP EEPROM Calibration.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">
@@ -1568,7 +1567,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">250</Property>
+				<Property Name="Bld_version.build" Type="Int">252</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">7</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>
@@ -2384,7 +2383,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{0E8DB89F-A96E-442C-91C1-A55241F9B9C4}</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Fix Lockin Parameters.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Fix Lockin Parameters.exe</Property>

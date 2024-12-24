@@ -395,6 +395,7 @@
 						<Item Name="RP calculate subset CMA.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP calculate subset CMA.vi"/>
 						<Item Name="RP Config Offsets.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Config Offsets.ctl"/>
 						<Item Name="Map RP Modules.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Red Pitaya Digitizer/Map RP Modules.vi"/>
+						<Item Name="Test Scaling.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Test/Test Scaling.vi"/>
 					</Item>
 					<Item Name="DAQmx" Type="Folder">
 						<Item Name="DAQmx Driver" Type="Folder">

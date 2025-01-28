@@ -327,6 +327,10 @@
 				<Item Name="MagX Probe List.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Probe List.vi"/>
 				<Item Name="Instrument info.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/Instrument info.ctl"/>
 			</Item>
+			<Item Name="Strain Logger" Type="Folder">
+				<Item Name="Strain Logger.lvclass" Type="LVClass" URL="../Post-Processors/Strain Logger/Strain Logger.lvclass"/>
+				<Item Name="Test strain logger.vi" Type="VI" URL="../Post-Processors/Strain Logger/Test strain logger.vi"/>
+			</Item>
 			<Item Name="Rescale.lvclass" Type="LVClass" URL="../Post-Processors/Rescale/Rescale.lvclass"/>
 		</Item>
 		<Item Name="Recorders" Type="Folder">
@@ -593,6 +597,7 @@
 			<Item Name="Red Pitaya Manager.vi" Type="VI" URL="../../NHMFL_Core/Applications/Utilities/Red Pitaya Manager.vi"/>
 		</Item>
 		<Item Name="Launch LabActor.vi" Type="VI" URL="../Launch LabActor.vi"/>
+		<Item Name="RP Logic Specs.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Logic Specs.vi"/>
 		<Item Name="Package Dependencies" Type="IIO Ladder Diagram">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 		</Item>
@@ -1552,7 +1557,6 @@
 			<Item Name="RP Channel Filter.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Channel Filter.ctl"/>
 			<Item Name="RP Calibration 2ch.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Calibration 2ch.ctl"/>
 			<Item Name="RP Scale v2.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Scale v2.vi"/>
-			<Item Name="Lockin Digitizer Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Lockin Digitizer Driver/Lockin Digitizer Configuration.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">
@@ -1569,7 +1573,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">255</Property>
+				<Property Name="Bld_version.build" Type="Int">257</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">7</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>
@@ -2628,7 +2632,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6E392660-3E1E-490E-A8AB-43F935DCD293}</Property>
-				<Property Name="Bld_version.build" Type="Int">6</Property>
+				<Property Name="Bld_version.build" Type="Int">8</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">RPManager.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/RPManager.exe</Property>
@@ -2637,7 +2641,7 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{D3E7E1CD-E476-4634-B402-F0FFD4228A4A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{F6799F0A-0772-48B1-BFFD-D6E04910BAFD}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Applications/Red Pitaya Manager.vi</Property>

@@ -352,6 +352,7 @@
 					<Item Name="Micron Optics Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Micron Optics/Micron Optics Driver/Micron Optics Driver.lvclass"/>
 					<Item Name="SimpleStreamingExample.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Micron Optics/hyperion library source/SimpleExamples/SimpleStreamingExample.vi"/>
 					<Item Name="Micron Optics sm130.lvlib" Type="Library" URL="../../NHMFL_Core/Libraries/Instruments/Micron Optics/Micron Optics sm130/Micron Optics sm130.lvlib"/>
+					<Item Name="Test Micron Driver.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Micron Optics/Test Micron Driver.vi"/>
 				</Item>
 				<Item Name="NI-Scope Driver" Type="Folder">
 					<Item Name="NI-Scope Digitizer Configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/NI-Scope Digitizer/NI-Scope Digitizer Configuration.ctl"/>
@@ -1557,6 +1558,7 @@
 			<Item Name="RP Channel Filter.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Channel Filter.ctl"/>
 			<Item Name="RP Calibration 2ch.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Calibration 2ch.ctl"/>
 			<Item Name="RP Scale v2.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Scale v2.vi"/>
+			<Item Name="Read Startup Configuration.vi" Type="VI" URL="../Controllers/Application Controller/Read Startup Configuration.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">
@@ -1573,7 +1575,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">259</Property>
+				<Property Name="Bld_version.build" Type="Int">261</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">7</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>

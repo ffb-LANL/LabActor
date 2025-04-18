@@ -602,6 +602,7 @@
 		</Item>
 		<Item Name="Launch LabActor.vi" Type="VI" URL="../Launch LabActor.vi"/>
 		<Item Name="RP Logic Specs.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Logic Specs.vi"/>
+		<Item Name="compare sweeps.vi" Type="VI" URL="//dcstorage.lanl.gov/121767/My Documents/LabVIEW Data/compare sweeps.vi"/>
 		<Item Name="Package Dependencies" Type="IIO Ladder Diagram">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 		</Item>

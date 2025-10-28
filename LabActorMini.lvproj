@@ -214,6 +214,7 @@
 				<Item Name="Prema Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Prema/Prema Driver.lvclass"/>
 				<Item Name="CS580 Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/SRS/CS580 Driver/CS580 Driver.lvclass"/>
 				<Item Name="IdentifyAndReadInstr.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/IdentifyAndReadInstr.vi"/>
+				<Item Name="ITC-503 Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Oxford/ITC503/ITC-503 Driver.lvclass"/>
 			</Item>
 			<Item Name="Monitor" Type="Folder">
 				<Item Name="Spectrum Recorder" Type="Folder">

@@ -602,6 +602,133 @@
 			<Item Name="Generate Test Pattern.vi" Type="VI" URL="../../NHMFL_Core/Libraries/NI-DAQ/Generate Test Pattern.vi"/>
 			<Item Name="Red Pitaya Manager.vi" Type="VI" URL="../../NHMFL_Core/Applications/Utilities/Red Pitaya Manager.vi"/>
 		</Item>
+		<Item Name="Documentation" Type="Folder">
+			<Item Name="Draft" Type="Folder">
+				<Item Name="c1ddbl.png" Type="Document" URL="../Documentation/Draft/c1ddbl.png"/>
+				<Item Name="c1di32.png" Type="Document" URL="../Documentation/Draft/c1di32.png"/>
+				<Item Name="c1dpath.png" Type="Document" URL="../Documentation/Draft/c1dpath.png"/>
+				<Item Name="c1dstr.png" Type="Document" URL="../Documentation/Draft/c1dstr.png"/>
+				<Item Name="c2ddbl.png" Type="Document" URL="../Documentation/Draft/c2ddbl.png"/>
+				<Item Name="cbool.png" Type="Document" URL="../Documentation/Draft/cbool.png"/>
+				<Item Name="ccclst.png" Type="Document" URL="../Documentation/Draft/ccclst.png"/>
+				<Item Name="cdbl.png" Type="Document" URL="../Documentation/Draft/cdbl.png"/>
+				<Item Name="cenum.png" Type="Document" URL="../Documentation/Draft/cenum.png"/>
+				<Item Name="cerrcodeclst.png" Type="Document" URL="../Documentation/Draft/cerrcodeclst.png"/>
+				<Item Name="ci32.png" Type="Document" URL="../Documentation/Draft/ci32.png"/>
+				<Item Name="cLabActorlvclass.png" Type="Document" URL="../Documentation/Draft/cLabActorlvclass.png"/>
+				<Item Name="cLine_Detectorlvclass.png" Type="Document" URL="../Documentation/Draft/cLine_Detectorlvclass.png"/>
+				<Item Name="cMonitor_Controllerlvclass.png" Type="Document" URL="../Documentation/Draft/cMonitor_Controllerlvclass.png"/>
+				<Item Name="cpath.png" Type="Document" URL="../Documentation/Draft/cpath.png"/>
+				<Item Name="cSpectrum_Recorder_toolvclass.png" Type="Document" URL="../Documentation/Draft/cSpectrum_Recorder_toolvclass.png"/>
+				<Item Name="cstr.png" Type="Document" URL="../Documentation/Draft/cstr.png"/>
+				<Item Name="cXY_WFRM_Plotlvclass.png" Type="Document" URL="../Documentation/Draft/cXY_WFRM_Plotlvclass.png"/>
+				<Item Name="i1dcclst.png" Type="Document" URL="../Documentation/Draft/i1dcclst.png"/>
+				<Item Name="i1dmsdt.png" Type="Document" URL="../Documentation/Draft/i1dmsdt.png"/>
+				<Item Name="iActor_Framework_lvlib_Actorlvclass.png" Type="Document" URL="../Documentation/Draft/iActor_Framework_lvlib_Actorlvclass.png"/>
+				<Item Name="ibool.png" Type="Document" URL="../Documentation/Draft/ibool.png"/>
+				<Item Name="idbl.png" Type="Document" URL="../Documentation/Draft/idbl.png"/>
+				<Item Name="ierrcodeclst.png" Type="Document" URL="../Documentation/Draft/ierrcodeclst.png"/>
+				<Item Name="ii32.png" Type="Document" URL="../Documentation/Draft/ii32.png"/>
+				<Item Name="ipath.png" Type="Document" URL="../Documentation/Draft/ipath.png"/>
+				<Item Name="istr.png" Type="Document" URL="../Documentation/Draft/istr.png"/>
+				<Item Name="LabActor_lvclass_Actor_Core.html" Type="Document" URL="../Documentation/Draft/LabActor_lvclass_Actor_Core.html"/>
+				<Item Name="LabActor_lvclass_Actor_Corep.png" Type="Document" URL="../Documentation/Draft/LabActor_lvclass_Actor_Corep.png"/>
+				<Item Name="Line_Detector_lvclass_Actor_Corep.png" Type="Document" URL="../Documentation/Draft/Line_Detector_lvclass_Actor_Corep.png"/>
+				<Item Name="Monitor_Controller_lvclass_Actor_Corep.png" Type="Document" URL="../Documentation/Draft/Monitor_Controller_lvclass_Actor_Corep.png"/>
+				<Item Name="Spectrum_Recorder_too_lvclass_Actor_Corep.png" Type="Document" URL="../Documentation/Draft/Spectrum_Recorder_too_lvclass_Actor_Corep.png"/>
+				<Item Name="XY_WFRM_Plot_lvclass_Actor_Corep.png" Type="Document" URL="../Documentation/Draft/XY_WFRM_Plot_lvclass_Actor_Corep.png"/>
+			</Item>
+			<Item Name="LabActor" Type="Folder">
+				<Item Name="c1ddbl.png" Type="Document" URL="../Documentation/LabActor/c1ddbl.png"/>
+				<Item Name="c1di32.png" Type="Document" URL="../Documentation/LabActor/c1di32.png"/>
+				<Item Name="c1dpath.png" Type="Document" URL="../Documentation/LabActor/c1dpath.png"/>
+				<Item Name="c1dstr.png" Type="Document" URL="../Documentation/LabActor/c1dstr.png"/>
+				<Item Name="c2ddbl.png" Type="Document" URL="../Documentation/LabActor/c2ddbl.png"/>
+				<Item Name="cbool.png" Type="Document" URL="../Documentation/LabActor/cbool.png"/>
+				<Item Name="ccclst.png" Type="Document" URL="../Documentation/LabActor/ccclst.png"/>
+				<Item Name="cdbl.png" Type="Document" URL="../Documentation/LabActor/cdbl.png"/>
+				<Item Name="cenum.png" Type="Document" URL="../Documentation/LabActor/cenum.png"/>
+				<Item Name="cerrcodeclst.png" Type="Document" URL="../Documentation/LabActor/cerrcodeclst.png"/>
+				<Item Name="ci32.png" Type="Document" URL="../Documentation/LabActor/ci32.png"/>
+				<Item Name="cLabActorlvclass.png" Type="Document" URL="../Documentation/LabActor/cLabActorlvclass.png"/>
+				<Item Name="cLine_Detectorlvclass.png" Type="Document" URL="../Documentation/LabActor/cLine_Detectorlvclass.png"/>
+				<Item Name="cMonitor_Controllerlvclass.png" Type="Document" URL="../Documentation/LabActor/cMonitor_Controllerlvclass.png"/>
+				<Item Name="cpath.png" Type="Document" URL="../Documentation/LabActor/cpath.png"/>
+				<Item Name="cSpectrum_Recorder_toolvclass.png" Type="Document" URL="../Documentation/LabActor/cSpectrum_Recorder_toolvclass.png"/>
+				<Item Name="cstr.png" Type="Document" URL="../Documentation/LabActor/cstr.png"/>
+				<Item Name="cXY_WFRM_Plotlvclass.png" Type="Document" URL="../Documentation/LabActor/cXY_WFRM_Plotlvclass.png"/>
+				<Item Name="i1dcclst.png" Type="Document" URL="../Documentation/LabActor/i1dcclst.png"/>
+				<Item Name="i1dmsdt.png" Type="Document" URL="../Documentation/LabActor/i1dmsdt.png"/>
+				<Item Name="iActor_Framework_lvlib_Actorlvclass.png" Type="Document" URL="../Documentation/LabActor/iActor_Framework_lvlib_Actorlvclass.png"/>
+				<Item Name="ibool.png" Type="Document" URL="../Documentation/LabActor/ibool.png"/>
+				<Item Name="idbl.png" Type="Document" URL="../Documentation/LabActor/idbl.png"/>
+				<Item Name="ierrcodeclst.png" Type="Document" URL="../Documentation/LabActor/ierrcodeclst.png"/>
+				<Item Name="ii32.png" Type="Document" URL="../Documentation/LabActor/ii32.png"/>
+				<Item Name="ipath.png" Type="Document" URL="../Documentation/LabActor/ipath.png"/>
+				<Item Name="istr.png" Type="Document" URL="../Documentation/LabActor/istr.png"/>
+				<Item Name="LabActor.html" Type="Document" URL="../Documentation/LabActor/LabActor.html"/>
+				<Item Name="LabActor_lvclass_Actor_Corep.png" Type="Document" URL="../Documentation/LabActor/LabActor_lvclass_Actor_Corep.png"/>
+				<Item Name="Line_Detector_lvclass_Actor_Corep.png" Type="Document" URL="../Documentation/LabActor/Line_Detector_lvclass_Actor_Corep.png"/>
+				<Item Name="Monitor_Controller_lvclass_Actor_Corep.png" Type="Document" URL="../Documentation/LabActor/Monitor_Controller_lvclass_Actor_Corep.png"/>
+				<Item Name="Spectrum_Recorder_too_lvclass_Actor_Corep.png" Type="Document" URL="../Documentation/LabActor/Spectrum_Recorder_too_lvclass_Actor_Corep.png"/>
+				<Item Name="XY_WFRM_Plot_lvclass_Actor_Corep.png" Type="Document" URL="../Documentation/LabActor/XY_WFRM_Plot_lvclass_Actor_Corep.png"/>
+			</Item>
+			<Item Name="Lockin Digitizer" Type="Folder">
+				<Item Name="Lockin Digitizer_files" Type="Folder">
+					<Item Name="colorschememapping.xml" Type="Document" URL="../Documentation/Lockin Digitizer/Lockin Digitizer_files/colorschememapping.xml"/>
+					<Item Name="filelist.xml" Type="Document" URL="../Documentation/Lockin Digitizer/Lockin Digitizer_files/filelist.xml"/>
+					<Item Name="image001.jpg" Type="Document" URL="../Documentation/Lockin Digitizer/Lockin Digitizer_files/image001.jpg"/>
+					<Item Name="image002.png" Type="Document" URL="../Documentation/Lockin Digitizer/Lockin Digitizer_files/image002.png"/>
+					<Item Name="image002_old.png" Type="Document" URL="../Documentation/Lockin Digitizer/Lockin Digitizer_files/image002_old.png"/>
+					<Item Name="image003.jpg" Type="Document" URL="../Documentation/Lockin Digitizer/Lockin Digitizer_files/image003.jpg"/>
+					<Item Name="image004.jpg" Type="Document" URL="../Documentation/Lockin Digitizer/Lockin Digitizer_files/image004.jpg"/>
+					<Item Name="image004.png" Type="Document" URL="../Documentation/Lockin Digitizer/Lockin Digitizer_files/image004.png"/>
+					<Item Name="image004_old.jpg" Type="Document" URL="../Documentation/Lockin Digitizer/Lockin Digitizer_files/image004_old.jpg"/>
+					<Item Name="image005.png" Type="Document" URL="../Documentation/Lockin Digitizer/Lockin Digitizer_files/image005.png"/>
+					<Item Name="IMG_0833.jpg" Type="Document" URL="../Documentation/Lockin Digitizer/Lockin Digitizer_files/IMG_0833.jpg"/>
+					<Item Name="Locki-in Photo.pptx" Type="Document" URL="../Documentation/Lockin Digitizer/Lockin Digitizer_files/Locki-in Photo.pptx"/>
+					<Item Name="themedata.thmx" Type="Document" URL="../Documentation/Lockin Digitizer/Lockin Digitizer_files/themedata.thmx"/>
+					<Item Name="Thumbs.db" Type="Document" URL="../Documentation/Lockin Digitizer/Lockin Digitizer_files/Thumbs.db"/>
+				</Item>
+				<Item Name="c1ddbl.png" Type="Document" URL="../Documentation/Lockin Digitizer/c1ddbl.png"/>
+				<Item Name="c1dstr.png" Type="Document" URL="../Documentation/Lockin Digitizer/c1dstr.png"/>
+				<Item Name="cbool.png" Type="Document" URL="../Documentation/Lockin Digitizer/cbool.png"/>
+				<Item Name="ccclst.png" Type="Document" URL="../Documentation/Lockin Digitizer/ccclst.png"/>
+				<Item Name="cdbl.png" Type="Document" URL="../Documentation/Lockin Digitizer/cdbl.png"/>
+				<Item Name="cerrcodeclst.png" Type="Document" URL="../Documentation/Lockin Digitizer/cerrcodeclst.png"/>
+				<Item Name="ci32.png" Type="Document" URL="../Documentation/Lockin Digitizer/ci32.png"/>
+				<Item Name="cLockin_Digitizerlvclass.png" Type="Document" URL="../Documentation/Lockin Digitizer/cLockin_Digitizerlvclass.png"/>
+				<Item Name="cstr.png" Type="Document" URL="../Documentation/Lockin Digitizer/cstr.png"/>
+				<Item Name="i1ddbl.png" Type="Document" URL="../Documentation/Lockin Digitizer/i1ddbl.png"/>
+				<Item Name="iActor_Framework_lvlib_Actorlvclass.png" Type="Document" URL="../Documentation/Lockin Digitizer/iActor_Framework_lvlib_Actorlvclass.png"/>
+				<Item Name="ibool.png" Type="Document" URL="../Documentation/Lockin Digitizer/ibool.png"/>
+				<Item Name="idbl.png" Type="Document" URL="../Documentation/Lockin Digitizer/idbl.png"/>
+				<Item Name="ierrcodeclst.png" Type="Document" URL="../Documentation/Lockin Digitizer/ierrcodeclst.png"/>
+				<Item Name="ii32.png" Type="Document" URL="../Documentation/Lockin Digitizer/ii32.png"/>
+				<Item Name="ii64.png" Type="Document" URL="../Documentation/Lockin Digitizer/ii64.png"/>
+				<Item Name="istr.png" Type="Document" URL="../Documentation/Lockin Digitizer/istr.png"/>
+				<Item Name="Lockin Digitizer.html" Type="Document" URL="../Documentation/Lockin Digitizer/Lockin Digitizer.html"/>
+				<Item Name="Lockin_Digitizer_lvclass_Actor_Corep.png" Type="Document" URL="../Documentation/Lockin Digitizer/Lockin_Digitizer_lvclass_Actor_Corep.png"/>
+				<Item Name="Rack_setup.png" Type="Document" URL="../Documentation/Lockin Digitizer/Rack_setup.png"/>
+				<Item Name="Rack_setup_old.png" Type="Document" URL="../Documentation/Lockin Digitizer/Rack_setup_old.png"/>
+			</Item>
+			<Item Name="Log Record" Type="Folder">
+				<Item Name="images" Type="Folder">
+					<Item Name="image1.png" Type="Document" URL="../Documentation/Log Record/images/image1.png"/>
+					<Item Name="image2.png" Type="Document" URL="../Documentation/Log Record/images/image2.png"/>
+					<Item Name="image3.png" Type="Document" URL="../Documentation/Log Record/images/image3.png"/>
+					<Item Name="image4.png" Type="Document" URL="../Documentation/Log Record/images/image4.png"/>
+				</Item>
+				<Item Name="Log Record.html" Type="Document" URL="../Documentation/Log Record/Log Record.html"/>
+			</Item>
+			<Item Name="Flow digrams.pptx" Type="Document" URL="../Documentation/Flow digrams.pptx"/>
+			<Item Name="Generate Documentation.vi" Type="VI" URL="../Documentation/Generate Documentation.vi"/>
+			<Item Name="Init-Acquire steps.txt" Type="Document" URL="../Documentation/Init-Acquire steps.txt"/>
+			<Item Name="Project Documentation 2012 NIVerified.vi" Type="VI" URL="../Documentation/Project Documentation 2012 NIVerified.vi"/>
+			<Item Name="Recursive Documentation 2012.vi" Type="VI" URL="../Documentation/Recursive Documentation 2012.vi"/>
+			<Item Name="Self-addressed messaging.txt" Type="Document" URL="../Documentation/Self-addressed messaging.txt"/>
+			<Item Name="Worker cycle.pptx" Type="Document" URL="../Documentation/Worker cycle.pptx"/>
+		</Item>
 		<Item Name="Launch LabActor.vi" Type="VI" URL="../Launch LabActor.vi"/>
 		<Item Name="RP Logic Specs.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Logic Specs.vi"/>
 		<Item Name="compare sweeps.vi" Type="VI" URL="//dcstorage.lanl.gov/121767/My Documents/LabVIEW Data/compare sweeps.vi"/>
@@ -627,7 +754,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">290</Property>
+				<Property Name="Bld_version.build" Type="Int">292</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">7</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>
@@ -636,11 +763,15 @@
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/data</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Destination[2].destName" Type="Str">Documentation</Property>
+				<Property Name="Destination[2].path" Type="Path">../builds/NI_AB_PROJECTNAME/Documentation</Property>
+				<Property Name="Destination[2].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/LabActor/LabActor.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{28803B72-2427-4AF6-B7A1-F2464CCCBA69}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{D56BED33-60C1-41EA-BF68-1FE2D63E96F9}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Controllers/Monitor Controller.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[1].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[1].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[1].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -648,6 +779,7 @@
 				<Property Name="Source[1].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[10].itemID" Type="Ref">/My Computer/Post-Processors/Synth/NHMFL Synthesizer.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[10].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[10].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[10].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[10].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -655,6 +787,7 @@
 				<Property Name="Source[10].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[10].type" Type="Str">VI</Property>
 				<Property Name="Source[11].itemID" Type="Ref">/My Computer/Recorders/Monitor/Channel Scanner.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[11].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[11].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[11].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[11].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -662,6 +795,7 @@
 				<Property Name="Source[11].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[11].type" Type="Str">VI</Property>
 				<Property Name="Source[12].itemID" Type="Ref">/My Computer/Recorders/Monitor/Lock-in/Lock-in.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[12].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[12].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[12].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[12].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -669,6 +803,7 @@
 				<Property Name="Source[12].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[12].type" Type="Str">VI</Property>
 				<Property Name="Source[13].itemID" Type="Ref">/My Computer/Recorders/Monitor/Sweeper.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[13].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[13].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[13].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[13].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -676,6 +811,7 @@
 				<Property Name="Source[13].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[13].type" Type="Str">VI</Property>
 				<Property Name="Source[14].itemID" Type="Ref">/My Computer/Recorders/Monitor/Temperature Controller/Temperature Controller.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[14].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[14].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[14].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[14].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -704,6 +840,7 @@
 				<Property Name="Source[19].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Recorders/Pulse Recorders/Pulse Recorder Actor.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[2].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -751,16 +888,39 @@
 				<Property Name="Source[28].itemID" Type="Ref">/My Computer/Post-Processors/Log Record/Find Log Record.vi</Property>
 				<Property Name="Source[28].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[28].type" Type="Str">VI</Property>
+				<Property Name="Source[29].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[29].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[29].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[29].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[29].itemID" Type="Ref">/My Computer/Documentation/LabActor</Property>
+				<Property Name="Source[29].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[29].type" Type="Str">Container</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Plots/XY Plot.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[3].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[3].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[3].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[3].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[3].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[3].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[3].type" Type="Str">VI</Property>
+				<Property Name="Source[30].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[30].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[30].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[30].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[30].itemID" Type="Ref">/My Computer/Documentation/Lockin Digitizer</Property>
+				<Property Name="Source[30].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[30].type" Type="Str">Container</Property>
+				<Property Name="Source[31].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[31].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[31].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[31].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[31].itemID" Type="Ref">/My Computer/Documentation/Log Record</Property>
+				<Property Name="Source[31].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[31].type" Type="Str">Container</Property>
 				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Plots/XY WFRM Plot.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[4].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[4].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[4].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[4].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -768,6 +928,7 @@
 				<Property Name="Source[4].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[4].type" Type="Str">VI</Property>
 				<Property Name="Source[5].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Controllers/Pulse Controller.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[5].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[5].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[5].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[5].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -775,6 +936,7 @@
 				<Property Name="Source[5].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[5].type" Type="Str">VI</Property>
 				<Property Name="Source[6].itemID" Type="Ref">/My Computer/LabActor/LabActor.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[6].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[6].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[6].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[6].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -782,6 +944,7 @@
 				<Property Name="Source[6].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[6].type" Type="Str">VI</Property>
 				<Property Name="Source[7].itemID" Type="Ref">/My Computer/Post-Processors/Format Converter/Format Converter.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[7].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[7].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[7].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[7].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -789,6 +952,7 @@
 				<Property Name="Source[7].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[7].type" Type="Str">VI</Property>
 				<Property Name="Source[8].itemID" Type="Ref">/My Computer/Post-Processors/Integrate/Integrate.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[8].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[8].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[8].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[8].properties[1].type" Type="Str">Remove block diagram</Property>
@@ -796,13 +960,14 @@
 				<Property Name="Source[8].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[8].type" Type="Str">VI</Property>
 				<Property Name="Source[9].itemID" Type="Ref">/My Computer/Post-Processors/Lockin Proc/Lockin Processor.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[9].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[9].properties[0].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[9].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[9].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[9].properties[1].value" Type="Bool">true</Property>
 				<Property Name="Source[9].propertiesCount" Type="Int">2</Property>
 				<Property Name="Source[9].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">29</Property>
+				<Property Name="SourceCount" Type="Int">32</Property>
 				<Property Name="TgtF_companyName" Type="Str">Los Alamos National Laboratory</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">LabActor</Property>
 				<Property Name="TgtF_internalName" Type="Str">LabActor</Property>

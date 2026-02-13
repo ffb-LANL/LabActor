@@ -735,9 +735,6 @@
 		<Item Name="Queue growth test.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Test/Queue growth test.vi"/>
 		<Item Name="Plink Test.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Test/Plink Test.vi"/>
 		<Item Name="Reconnect VISA.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/VISA Instrument/Reconnect VISA.vi"/>
-		<Item Name="Package Dependencies" Type="IIO Ladder Diagram">
-			<Property Name="NI.SortType" Type="Int">0</Property>
-		</Item>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">

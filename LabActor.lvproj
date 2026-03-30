@@ -195,7 +195,13 @@
 				<Item Name="Add Metadata Msg.lvclass" Type="LVClass" URL="../Worker/Worker Messages/Add Metadata Msg/Add Metadata Msg.lvclass"/>
 				<Item Name="Write tdms stream Msg.lvclass" Type="LVClass" URL="../Template Module Messages/Write tdms stream Msg/Write tdms stream Msg.lvclass"/>
 			</Item>
-			<Item Name="Test" Type="Folder"/>
+			<Item Name="Test" Type="Folder">
+				<Item Name="Reconnect VISA.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/VISA Instrument/Reconnect VISA.vi"/>
+				<Item Name="Queue growth test.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Test/Queue growth test.vi"/>
+				<Item Name="Plink Test.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Test/Plink Test.vi"/>
+				<Item Name="compare sweeps.vi" Type="VI" URL="//dcstorage.lanl.gov/121767/My Documents/LabVIEW Data/compare sweeps.vi"/>
+				<Item Name="RP Logic Specs.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Logic Specs.vi"/>
+			</Item>
 			<Item Name="Publish-Subscribe" Type="Folder">
 				<Item Name="Interfaces" Type="Folder">
 					<Item Name="Publisher.lvclass" Type="LVClass" URL="../Publish-Subscribe/Interfaces/Publisher/Publisher.lvclass"/>
@@ -312,6 +318,7 @@
 					<Item Name="MagX Logoff.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Logoff.vi"/>
 					<Item Name="MagX Sort Info.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Sort Info.vi"/>
 					<Item Name="MagX Filter Info.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Filter Info.vi"/>
+					<Item Name="MagX Upload File.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagX/MagX Upload File.vi"/>
 				</Item>
 				<Item Name="Example" Type="Folder">
 					<Item Name="MagLab Hub Client.vi" Type="VI" URL="../../NHMFL_Core/Libraries/FAIR Data/MagLab Hub Client.vi"/>
@@ -730,11 +737,6 @@
 			<Item Name="Worker cycle.pptx" Type="Document" URL="../Documentation/Worker cycle.pptx"/>
 		</Item>
 		<Item Name="Launch LabActor.vi" Type="VI" URL="../Launch LabActor.vi"/>
-		<Item Name="RP Logic Specs.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/RP Logic Specs.vi"/>
-		<Item Name="compare sweeps.vi" Type="VI" URL="//dcstorage.lanl.gov/121767/My Documents/LabVIEW Data/compare sweeps.vi"/>
-		<Item Name="Queue growth test.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Test/Queue growth test.vi"/>
-		<Item Name="Plink Test.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Test/Plink Test.vi"/>
-		<Item Name="Reconnect VISA.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/VISA Instrument/Reconnect VISA.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">
@@ -744,16 +746,15 @@
 				<Property Name="App_INI_itemID" Type="Ref">/My Computer/LabActor/LabActor.ini</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="App_serverType" Type="Int">1</Property>
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{D477B9AB-3B4F-418C-8B8B-E27B3A0A5F5E}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">LabActor</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{584EF20D-DACA-4526-8279-DA20FAA1FEF4}</Property>
-				<Property Name="Bld_version.build" Type="Int">295</Property>
+				<Property Name="Bld_version.build" Type="Int">296</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Bld_version.minor" Type="Int">7</Property>
+				<Property Name="Bld_version.minor" Type="Int">8</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabActor.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/LabActor.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
@@ -765,7 +766,7 @@
 				<Property Name="Destination[2].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/LabActor/LabActor.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{D56BED33-60C1-41EA-BF68-1FE2D63E96F9}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{66220F0C-850F-4C6D-8D9A-27206BF51363}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Controllers/Monitor Controller.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[1].preventRename" Type="Bool">true</Property>

@@ -479,12 +479,15 @@
 							<Item Name="Read Arduino Temperature Controller.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Arduino Temperature Controller/Read Arduino Temperature Controller.vi"/>
 							<Item Name="Test Arduino Temperature Controller.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Arduino Temperature Controller/Test Arduino Temperature Controller.vi"/>
 						</Item>
+						<Item Name="SRS CTC100" Type="Folder">
+							<Item Name="Read CTC100.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/SRS/SRS CTC100 Coms/Read CTC100.vi"/>
+							<Item Name="SRS CTC100 Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/SRS/SRS CTC100 Driver/SRS CTC100 Driver.lvclass"/>
+						</Item>
 						<Item Name="T controller configuration.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/Temperature Controller Driver/T controller configuration.ctl"/>
 						<Item Name="Temperature Controller Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Temperature Controller Driver/Temperature Controller Driver.lvclass"/>
 						<Item Name="LakeShore T Controller Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/LakeShore/LakeShore T Controller Driver/LakeShore T Controller Driver.lvclass"/>
 						<Item Name="LakeShore340 Mode.ctl" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/LakeShore/LakeShore340/LakeShore340 Mode.ctl"/>
 						<Item Name="LakeShore 336 Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/LakeShore/LakeShore 336/LakeShore 336 Driver.lvclass"/>
-						<Item Name="SRS CTC100 Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/SRS/SRS CTC100 Driver/SRS CTC100 Driver.lvclass"/>
 					</Item>
 					<Item Name="Keithley 622x2182 Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Keithley/Keithley 6220-6221/Keithley 622x driver/Keithley 622x2182 Driver.lvclass"/>
 					<Item Name="Spectrometer Driver.lvclass" Type="LVClass" URL="../../NHMFL_Core/Libraries/Instruments/Spectrometer Driver/Spectrometer Driver.lvclass"/>
@@ -739,7 +742,6 @@
 			<Item Name="Worker cycle.pptx" Type="Document" URL="../Documentation/Worker cycle.pptx"/>
 		</Item>
 		<Item Name="Launch LabActor.vi" Type="VI" URL="../Launch LabActor.vi"/>
-		<Item Name="Read CTC100.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Instruments/SRS/SRS CTC100 Coms/Read CTC100.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">

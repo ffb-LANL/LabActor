@@ -742,6 +742,7 @@
 			<Item Name="Worker cycle.pptx" Type="Document" URL="../Documentation/Worker cycle.pptx"/>
 		</Item>
 		<Item Name="Launch LabActor.vi" Type="VI" URL="../Launch LabActor.vi"/>
+		<Item Name="RP_Test_DDS_settings.vi" Type="VI" URL="../../NHMFL_Core/Libraries/Red Pitaya/Test/RP_Test_DDS_settings.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LabActor" Type="EXE">
@@ -771,7 +772,7 @@
 				<Property Name="Destination[2].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/LabActor/LabActor.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{66220F0C-850F-4C6D-8D9A-27206BF51363}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{CCA71028-B73D-42A4-BD18-5589DBB4F1CD}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Item[@Label='Dependencies' and @Type='Folder']/Actors/Controllers/Monitor Controller.lvclass/Actor Core.vi</Property>
 				<Property Name="Source[1].preventRename" Type="Bool">true</Property>
